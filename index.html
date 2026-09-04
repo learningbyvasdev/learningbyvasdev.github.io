@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learning by Vasdev — Study Material</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#182033}
+header{background:linear-gradient(135deg,#173b8f,#6d28d9);color:#fff;text-align:center;padding:45px 18px}
+header h1{margin:8px 0;font-size:38px}.tag{opacity:.9}
+nav{background:#111827;padding:14px;text-align:center}nav a{color:#fff;text-decoration:none;margin:0 10px}
+main{max-width:1050px;margin:auto;padding:28px 18px}.box{background:#fff;border-radius:18px;padding:24px;margin:20px 0;box-shadow:0 5px 20px #0001}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+input,select,button{width:100%;padding:12px;margin:7px 0;border:1px solid #ccd3df;border-radius:10px;font-size:15px}
+button{background:#2746a8;color:#fff;border:0;cursor:pointer;font-weight:bold}
+.material{border:1px solid #e1e5ed;border-radius:14px;padding:18px}.material h3{margin:0 0 7px}
+a.btn{display:inline-block;background:#2746a8;color:white;padding:10px 14px;border-radius:9px;text-decoration:none;margin-top:8px}
+.small{font-size:13px;color:#667085}.danger{background:#b42318}
+footer{background:#111827;color:#fff;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<header>
+<h1>Learning by Vasdev</h1>
+<div class="tag">Learn • Think • Grow</div>
+</header>
+<nav><a href="#home">Home</a><a href="#materials">Study Material</a><a href="#upload">Upload</a></nav>
+
+<main>
+<section id="home" class="box">
+<h2>📚 Welcome</h2>
+<p>Find educational notes, PDFs, images and other learning resources in one place.</p>
+</section>
+
+<section id="upload" class="box">
+<h2>⬆️ Add Study Material</h2>
+<p class="small">This demo stores uploaded files in this browser only. For a public website where everyone can see your uploads, connect it to online storage/database.</p>
+<input id="title" placeholder="Material title">
+<select id="category">
+<option>Class 8</option><option>Class 9</option><option>Class 10</option>
+<option>Punjabi</option><option>English</option><option>General Knowledge</option><option>Motivational</option><option>Other</option>
+</select>
+<input id="file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,.txt">
+<button onclick="addMaterial()">Add Material</button>
+</section>
+
+<section id="materials">
+<h2>📖 Study Material</h2>
+<div class="box">
+<input id="search" placeholder="Search material..." oninput="render()">
+</div>
+<div id="list" class="grid"></div>
+</section>
+</main>
+
+<footer>© 2026 Learning by Vasdev • Learn • Think • Grow</footer>
+
+<script>
+const KEY="lbv_materials";
+function get(){return JSON.parse(localStorage.getItem(KEY)||"[]")}
+function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
+function addMaterial(){
+ const title=document.getElementById("title").value.trim();
+ const category=document.getElementById("category").value;
+ const file=document.getElementById("file").files[0];
+ if(!title||!file){alert("Please enter a title and choose a file.");return}
+ if(file.size>5*1024*1024){alert("For this browser demo, please keep files under 5 MB.");return}
+ const r=new FileReader();
+ r.onload=()=>{let a=get();a.unshift({id:Date.now(),title,category,name:file.name,data:r.result});save(a);document.getElementById("title").value="";document.getElementById("file").value="";render();alert("Material added on this device.");}
+ r.readAsDataURL(file);
+}
+function render(){
+ const q=document.getElementById("search").value.toLowerCase();
+ const list=document.getElementById("list"); list.innerHTML="";
+ get().filter(x=>(x.title+" "+x.category+" "+x.name).toLowerCase().includes(q)).forEach(x=>{
+  const d=document.createElement("div");d.className="material";
+  d.innerHTML="<h3>"+esc(x.title)+"</h3><div>"+esc(x.category)+"</div><p class='small'>"+esc(x.name)+"</p>"+
+  "<a class='btn' href='"+x.data+"' download='"+esc(x.name)+"'>View / Download</a> "+
+  "<button class='danger' onclick='removeItem("+x.id+")'>Delete</button>";
+  list.appendChild(d);
+ });
+ if(!list.children.length) list.innerHTML="<div class='box'>No material added yet.</div>";
+}
+function removeItem(id){save(get().filter(x=>x.id!==id));render()}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+render();
+</script>
+</body>
+</html>
