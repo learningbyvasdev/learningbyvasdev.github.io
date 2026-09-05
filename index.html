@@ -56,33 +56,64 @@ footer{background:#111827;color:#fff;text-align:center;padding:25px}
 <footer>© 2026 Learning by Vasdev • Learn • Think • Grow</footer>
 
 <script>
-const KEY="lbv_materials";
+const KEY='lbv_materials';
 function get(){return JSON.parse(localStorage.getItem(KEY)||"[]")}
-function save(x){localStorage.setItem(KEY,JSON.stringify(x))}
+function save(s){localStorage.setItem(KEY,JSON.stringify(s))}
+
 function addMaterial(){
- const title=document.getElementById("title").value.trim();
- const category=document.getElementById("category").value;
- const file=document.getElementById("file").files[0];
- if(!title||!file){alert("Please enter a title and choose a file.");return}
- if(file.size>5*1024*1024){alert("For this browser demo, please keep files under 5 MB.");return}
- const r=new FileReader();
- r.onload=()=>{let a=get();a.unshift({id:Date.now(),title,category,name:file.name,data:r.result});save(a);document.getElementById("title").value="";document.getElementById("file").value="";render();alert("Material added on this device.");}
- r.readAsDataURL(file);
+  const title=document.getElementById('title').value.trim();
+  const category=document.getElementById('category').value;
+  const fileInput=document.getElementById('file');
+  const file=fileInput.files[0];
+  const linkInput=document.getElementById('materialLink');
+  const link=linkInput ? linkInput.value.trim() : '';
+
+  if(!title){alert("Please enter a title");return}
+
+  // 1. ਜੇ ਫਾਈਲ ਚੁਣੀ ਹੈ
+  if(file){
+    if(file.size > 5*1024*1024){alert("For this browser demo, please keep files under 5 MB.");return}
+    const r=new FileReader();
+    r.onload=()=>{
+      let data = get();
+      data.unshift({id:Date.now(),title,category,name:file.name,data:r.result});
+      save(data);
+      document.getElementById('title').value='';
+      fileInput.value='';
+      if(linkInput) linkInput.value='';
+      render();
+    };
+    r.readAsDataURL(file);
+  } 
+  // 2. ਜੇਕਰ ਲਿੰਕ ਪਾਇਆ ਹੈ
+  else if(link){
+    let data = get();
+    data.unshift({id:Date.now(),title,category,name:'External Link',data:link});
+    save(data);
+    document.getElementById('title').value='';
+    fileInput.value='';
+    if(linkInput) linkInput.value='';
+    render();
+  } 
+  else {
+    alert("Please choose a file OR enter a link!");
+  }
 }
+
 function render(){
- const q=document.getElementById("search").value.toLowerCase();
- const list=document.getElementById("list"); list.innerHTML="";
- get().filter(x=>(x.title+" "+x.category+" "+x.name).toLowerCase().includes(q)).forEach(x=>{
-  const d=document.createElement("div");d.className="material";
-  d.innerHTML="<h3>"+esc(x.title)+"</h3><div>"+esc(x.category)+"</div><p class='small'>"+esc(x.name)+"</p>"+
-  "<a class='btn' href='"+x.data+"' download='"+esc(x.name)+"'>View / Download</a> "+
-  "<button class='danger' onclick='removeItem("+x.id+")'>Delete</button>";
-  list.appendChild(d);
- });
- if(!list.children.length) list.innerHTML="<div class='box'>No material added yet.</div>";
+  const q=document.getElementById('search').value.toLowerCase();
+  const list=document.getElementById('list');list.innerHTML='';
+  get().filter(x=>x.title.toLowerCase().includes(q)||x.category.toLowerCase().includes(q)||x.name.toLowerCase().includes(q)).forEach(x=>{
+    const d=document.createElement('div');d.className='material';
+    d.innerHTML=`<h3>${esc(x.title)}</h3><p>Class ${esc(x.category)}</p><p class="small">${esc(x.name)}</p><a class="btn" href="${esc(x.data)}" target="_blank">View / Download</a> <button class="danger" onclick="removeItem(${x.id})">Delete</button>`;
+    list.appendChild(d);
+  });
+  if(!list.children.length)list.innerHTML='<div class="box">No material added yet.</div>';
 }
+
 function removeItem(id){save(get().filter(x=>x.id!==id));render()}
-function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+
 render();
 </script>
 </body>
