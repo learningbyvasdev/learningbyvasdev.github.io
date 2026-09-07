@@ -24,14 +24,14 @@
     .box h2 { font-size: 22px; color: #334155; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
     
     /* Colourful Grid Buttons */
-    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; margin-top: 15px; }
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 15px; }
     
     /* Class Buttons Styling */
-    .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 20px 10px; border-radius: 14px; font-weight: 700; font-size: 18px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 18px 10px; border-radius: 14px; font-weight: 700; font-size: 17px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
     .card-btn:hover { transform: translateY(-4px); box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; }
     .card-btn.active { background: linear-gradient(135deg, #0284c7, #0369a1); color: #fff; border-color: #0369a1; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5); }
     
-    /* Subject Buttons Styling */
+    /* Subject / Book Buttons Styling */
     .subject-btn { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; color: #b45309; }
     .subject-btn:hover { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 8px 15px rgba(245, 158, 11, 0.4); }
     .subject-btn.active { background: linear-gradient(135deg, #d97706, #b45309); color: #fff; border-color: #b45309; }
@@ -76,9 +76,9 @@
       </div>
     </section>
 
-    <!-- 2. Subject Selection Section -->
+    <!-- 2. Subject / Book Selection Section -->
     <section id="subjectSection" class="box" style="display:none;">
-      <h2>📖 2. Subject ਚੁਣੋ (Select Subject)</h2>
+      <h2>📖 2. Book / Category ਚੁਣੋ</h2>
       <div id="subjectContainer" class="grid-container"></div>
     </section>
 
@@ -110,8 +110,11 @@
         "English 📘": []
       },
       class10: {
-        "English 📘": [
-          { title: "Chapter 1: The Happy Prince Notes", url: "https://docs.google.com/document/d/1UCSbfntFdHQhlSTc4oewD97gSOZHd2DqXL-bjGPOJJ0/edit?usp=drivesdk" }
+        "Main Course Book 📘": [
+          { title: "Chapter 1: The Happy Prince", url: "https://docs.google.com/document/d/1UghlN0-keNus9uC5y-quZQuYnrqCt92u/edit?usp=drivesdk&ouid=114829802236095474764&rtpof=true&sd=true" }
+        ],
+        "Supplementary Reader 📙": [
+          // ਇੱਥੇ Supplementary Reader ਦੇ ਲਿੰਕ ਆਉਣਗੇ
         ]
       }
     };
@@ -148,7 +151,7 @@
             lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
           });
         } else {
-          lessonLinks.innerHTML = "<p style='color:#64748b;'>ਇਸ ਵਿਸ਼ੇ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
+          lessonLinks.innerHTML = "<p style='color:#64748b;'>ਇਸ ਕਿਤਾਬ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
         }
         document.getElementById("lessonSection").style.display = "block";
       }
