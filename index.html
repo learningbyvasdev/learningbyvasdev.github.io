@@ -79,28 +79,93 @@ footer{background:#111827;color:#fff;text-align:center;padding:25px}
 <script>
 // ਸਬਜੈਕਟ ਅਤੇ ਲੈਸਨਾਂ ਦੀ ਜਾਣਕਾਰੀ (ਇੱਥੇ ਆਪਣੇ ਲਿੰਕ ਪੇਸਟ ਕਰੋ)
 const data = {
-  class10: {
+  class6: {
     "English": [
-      { title: "Chapter 1: The Happy Prince Notes", url: "YOUR_LINK_HERE_1" },
-      { title: "Chapter 2: Where Is Science Taking Us?", url: "YOUR_LINK_HERE_2" }
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Punjabi": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
     ],
     "Maths": [
-      { title: "Chapter 1: Real Numbers Notes", url: "YOUR_LINK_HERE_3" }
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Science": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Social Studies": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ]
+  },
+  class7: {
+    "English": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Punjabi": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Maths": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Science": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Social Studies": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ]
+  },
+  class8: {
+    "English": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Punjabi": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Maths": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Science": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Social Studies": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
     ]
   },
   class9: {
     "English": [
-      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE_4" }
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Punjabi": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Maths": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Science": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Social Studies": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ]
+  },
+  class10: {
+    "English": [
+      { title: "Chapter 1: The Happy Prince Notes", url: "YOUR_LINK_HERE" },
+      { title: "Chapter 2: Where Is Science Taking Us?", url: "YOUR_LINK_HERE" }
+    ],
+    "Punjabi": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Maths": [
+      { title: "Chapter 1: Real Numbers Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Science": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+    ],
+    "Social Studies": [
+      { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
     ]
   }
 };
-
-function showSubjects() {
-  const classVal = document.getElementById("classSelect").value;
-  const subjectSelect = document.getElementById("subjectSelect");
-  const subjectContainer = document.getElementById("subjectContainer");
-  const lessonContainer = document.getElementById("lessonContainer");
-
   subjectSelect.innerHTML = '<option value="">-- Subject ਚੁਣੋ --</option>';
   lessonContainer.style.display = "none";
 
