@@ -7,19 +7,21 @@
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #102a43; }
-    header { background: linear-gradient(135deg, #173b6f, #602d8d); color: #fff; text-align: center; padding: 45px 15px; }
-    header h1 { margin: 0; font-size: 38px; }
+    header { background: linear-gradient(135deg, #173b6f, #602d8d); color: #fff; text-align: center; padding: 40px 15px; }
+    header h1 { margin: 0; font-size: 36px; }
     .tag { opacity: 0.9; margin-top: 5px; }
     nav { background: #111827; padding: 14px; text-align: center; }
     nav a { color: #fff; text-decoration: none; margin: 0 12px; font-weight: bold; }
-    main { max-width: 1050px; margin: auto; padding: 20px 12px; }
+    main { max-width: 900px; margin: auto; padding: 20px 15px; }
     .box { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
-    select, input, button { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
-    button { background: #173b6f; color: #fff; border: none; cursor: pointer; font-weight: bold; }
-    button:hover { background: #112a50; }
-    footer { background: #111827; color: #fff; text-align: center; padding: 25px; margin-top: 40px; }
+    
+    /* Box Buttons Grid Style */
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 15px; }
+    .card-btn { background: #f0f4f8; border: 2px solid #cbd5e1; padding: 16px; border-radius: 10px; font-weight: bold; font-size: 16px; color: #173b6f; cursor: pointer; text-align: center; transition: 0.2s; }
+    .card-btn:hover, .card-btn.active { background: #173b6f; color: #fff; border-color: #173b6f; }
+    
+    footer { background: #111827; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
     a { color: #0056b3; text-decoration: none; }
-    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -35,40 +37,33 @@
   </nav>
 
   <main>
-    <!-- Welcome Section -->
     <section id="home" class="box">
       <h2>📚 Welcome</h2>
-      <p>Find educational notes, PDFs, and learning resources organized by Class and Subject.</p>
+      <p>Select your class below to access English study materials.</p>
     </section>
 
-    <!-- Dropdown Section for Classes & Subjects -->
+    <!-- 1. Classes Grid Section -->
     <section id="materials" class="box">
-      <h2>Select Class & Subject</h2>
-
-      <!-- 1. Class Dropdown -->
-      <label for="classSelect"><strong>Class ਚੁਣੋ:</strong></label>
-      <select id="classSelect" onchange="showSubjects()">
-        <option value="">-- Class ਚੁਣੋ --</option>
-        <option value="class6">Class 6</option>
-        <option value="class7">Class 7</option>
-        <option value="class8">Class 8</option>
-        <option value="class9">Class 9</option>
-        <option value="class10">Class 10</option>
-      </select>
-
-      <!-- 2. Subject Dropdown -->
-      <div id="subjectContainer" style="display:none;">
-        <label for="subjectSelect"><strong>Subject ਚੁਣੋ:</strong></label>
-        <select id="subjectSelect" onchange="showLessons()">
-          <!-- Dynamic Subjects -->
-        </select>
+      <h2>1. Class ਚੁਣੋ (Select Class)</h2>
+      <div class="grid-container">
+        <button class="card-btn" onclick="selectClass('class6', this)">Class 6</button>
+        <button class="card-btn" onclick="selectClass('class7', this)">Class 7</button>
+        <button class="card-btn" onclick="selectClass('class8', this)">Class 8</button>
+        <button class="card-btn" onclick="selectClass('class9', this)">Class 9</button>
+        <button class="card-btn" onclick="selectClass('class10', this)">Class 10</button>
       </div>
+    </section>
 
-      <!-- 3. Lessons Box -->
-      <div id="lessonContainer" style="display:none; margin-top:15px; background:#f8fafc; padding:15px; border-radius:8px; border:1px solid #e2e8f0;">
-        <h3>English Lessons / Notes Links:</h3>
-        <div id="lessonLinks"></div>
-      </div>
+    <!-- 2. Subject Selection Section -->
+    <section id="subjectSection" class="box" style="display:none;">
+      <h2>2. Subject ਚੁਣੋ (Select Subject)</h2>
+      <div id="subjectContainer" class="grid-container"></div>
+    </section>
+
+    <!-- 3. Lessons Links Section -->
+    <section id="lessonSection" class="box" style="display:none;">
+      <h3>3. Lessons / Notes Links:</h3>
+      <div id="lessonLinks"></div>
     </section>
   </main>
 
@@ -77,7 +72,9 @@
   </footer>
 
   <script>
-    // ਫਿਲਹਾਲ ਸਿਰਫ਼ English ਦਾ ਡਾਟਾ ਜੋੜਿਆ ਗਿਆ ਹੈ
+    let selectedClass = "";
+
+    // ਫਿਲਹਾਲ ਸਿਰਫ਼ English ਜੋੜਿਆ ਗਿਆ ਹੈ
     const data = {
       class6: {
         "English": [
@@ -107,41 +104,39 @@
       }
     };
 
-    function showSubjects() {
-      const classVal = document.getElementById("classSelect").value;
-      const subjectSelect = document.getElementById("subjectSelect");
+    function selectClass(cls, btn) {
+      selectedClass = cls;
+      
+      // Class buttons active state
+      document.querySelectorAll('#materials .card-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
       const subjectContainer = document.getElementById("subjectContainer");
-      const lessonContainer = document.getElementById("lessonContainer");
+      subjectContainer.innerHTML = "";
+      document.getElementById("lessonSection").style.display = "none";
 
-      subjectSelect.innerHTML = '<option value="">-- Subject ਚੁਣੋ --</option>';
-      lessonContainer.style.display = "none";
-
-      if (classVal && data[classVal]) {
-        for (let subject in data[classVal]) {
-          subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
+      if (data[cls]) {
+        for (let subject in data[cls]) {
+          subjectContainer.innerHTML += `<button class="card-btn" onclick="selectSubject('${subject}', this)">${subject}</button>`;
         }
-        subjectContainer.style.display = "block";
-      } else {
-        subjectContainer.style.display = "none";
+        document.getElementById("subjectSection").style.display = "block";
       }
     }
 
-    function showLessons() {
-      const classVal = document.getElementById("classSelect").value;
-      const subjectVal = document.getElementById("subjectSelect").value;
-      const lessonLinks = document.getElementById("lessonLinks");
-      const lessonContainer = document.getElementById("lessonContainer");
+    function selectSubject(subject, btn) {
+      // Subject buttons active state
+      document.querySelectorAll('#subjectContainer .card-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
 
+      const lessonLinks = document.getElementById("lessonLinks");
       lessonLinks.innerHTML = "";
 
-      if (classVal && subjectVal && data[classVal][subjectVal]) {
-        const lessons = data[classVal][subjectVal];
+      if (selectedClass && data[selectedClass][subject]) {
+        const lessons = data[selectedClass][subject];
         lessons.forEach(lesson => {
-          lessonLinks.innerHTML += `<p style="margin-bottom:12px;"><a href="${lesson.url}" target="_blank" style="color:#0056b3; font-weight:bold; font-size:16px;">📄 ${lesson.title}</a></p>`;
+          lessonLinks.innerHTML += `<p style="margin-bottom:12px; font-size:17px;"><a href="${lesson.url}" target="_blank" style="color:#0056b3; font-weight:bold;">📄 ${lesson.title}</a></p>`;
         });
-        lessonContainer.style.display = "block";
-      } else {
-        lessonContainer.style.display = "none";
+        document.getElementById("lessonSection").style.display = "block";
       }
     }
   </script>
