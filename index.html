@@ -96,7 +96,7 @@
   <script>
     let selectedClass = "";
 
-    // ਫਿਲਹਾਲ ਸਿਰਫ਼ English ਦਾ ਡਾਟਾ ਜੋੜਿਆ ਗਿਆ ਹੈ
+    // ਨਵੇਂ ਲਿੰਕ ਪਾਉਣ ਲਈ ਢਾਂਚਾ (YOUR_LINK_HERE ਦੀ ਜਗ੍ਹਾ ਆਪਣੇ ਨਵੇਂ ਲਿੰਕ ਪਾਓ)
     const data = {
       class6: {
         "English 📘": [
@@ -120,8 +120,7 @@
       },
       class10: {
         "English 📘": [
-          { title: "Chapter 1: The Happy Prince Notes", url: "YOUR_LINK_HERE" },
-          { title: "Chapter 2: Where Is Science Taking Us?", url: "YOUR_LINK_HERE" }
+          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
         ]
       }
     };
@@ -129,7 +128,6 @@
     function selectClass(cls, btn) {
       selectedClass = cls;
       
-      // Class buttons active animation
       document.querySelectorAll('#materials .card-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -146,7 +144,6 @@
     }
 
     function selectSubject(subject, btn) {
-      // Subject buttons active animation
       document.querySelectorAll('#subjectContainer .card-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
