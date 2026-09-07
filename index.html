@@ -96,31 +96,22 @@
   <script>
     let selectedClass = "";
 
-    // ਨਵੇਂ ਲਿੰਕ ਪਾਉਣ ਲਈ ਢਾਂਚਾ (YOUR_LINK_HERE ਦੀ ਜਗ੍ਹਾ ਆਪਣੇ ਨਵੇਂ ਲਿੰਕ ਪਾਓ)
     const data = {
       class6: {
-        "English 📘": [
-          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
-        ]
+        "English 📘": []
       },
       class7: {
-        "English 📘": [
-          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
-        ]
+        "English 📘": []
       },
       class8: {
-        "English 📘": [
-          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
-        ]
+        "English 📘": []
       },
       class9: {
-        "English 📘": [
-          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
-        ]
+        "English 📘": []
       },
       class10: {
         "English 📘": [
-          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+          { title: "Chapter 1: The Happy Prince Notes", url: "https://docs.google.com/document/d/1UCSbfntFdHQhlSTc4oewD97gSOZHd2DqXL-bjGPOJJ0/edit?usp=drivesdk" }
         ]
       }
     };
@@ -152,9 +143,13 @@
 
       if (selectedClass && data[selectedClass][subject]) {
         const lessons = data[selectedClass][subject];
-        lessons.forEach(lesson => {
-          lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
-        });
+        if (lessons.length > 0) {
+          lessons.forEach(lesson => {
+            lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
+          });
+        } else {
+          lessonLinks.innerHTML = "<p style='color:#64748b;'>ਇਸ ਵਿਸ਼ੇ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
+        }
         document.getElementById("lessonSection").style.display = "block";
       }
     }
