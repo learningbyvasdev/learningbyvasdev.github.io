@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning by Vasdev - Study Material</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #102a43; }
+    header { background: linear-gradient(135deg, #173b6f, #602d8d); color: #fff; text-align: center; padding: 45px 15px; }
+    header h1 { margin: 0; font-size: 38px; }
+    .tag { opacity: 0.9; margin-top: 5px; }
+    nav { background: #111827; padding: 14px; text-align: center; }
+    nav a { color: #fff; text-decoration: none; margin: 0 12px; font-weight: bold; }
+    main { max-width: 1050px; margin: auto; padding: 20px 12px; }
+    .box { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    select, input, button { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
+    button { background: #173b6f; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+    button:hover { background: #112a50; }
+    footer { background: #111827; color: #fff; text-align: center; padding: 25px; margin-top: 40px; }
+    a { color: #0056b3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Learning by Vasdev</h1>
+    <div class="tag">Learn • Think • Grow</div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#materials">Study Material</a>
+  </nav>
+
+  <main>
+    <!-- Welcome Section -->
+    <section id="home" class="box">
+      <h2>📚 Welcome</h2>
+      <p>Find educational notes, PDFs, and learning resources organized by Class and Subject.</p>
+    </section>
+
+    <!-- Dropdown Section for Classes & Subjects -->
+    <section id="materials" class="box">
+      <h2>Select Class & Subject</h2>
+
+      <!-- 1. Class Dropdown -->
+      <label for="classSelect"><strong>Class ਚੁਣੋ:</strong></label>
+      <select id="classSelect" onchange="showSubjects()">
+        <option value="">-- Class ਚੁਣੋ --</option>
+        <option value="class6">Class 6</option>
+        <option value="class7">Class 7</option>
+        <option value="class8">Class 8</option>
+        <option value="class9">Class 9</option>
+        <option value="class10">Class 10</option>
+      </select>
+
+      <!-- 2. Subject Dropdown -->
+      <div id="subjectContainer" style="display:none;">
+        <label for="subjectSelect"><strong>Subject ਚੁਣੋ:</strong></label>
+        <select id="subjectSelect" onchange="showLessons()">
+          <!-- Dynamic Subjects -->
+        </select>
+      </div>
+
+      <!-- 3. Lessons Box -->
+      <div id="lessonContainer" style="display:none; margin-top:15px; background:#f8fafc; padding:15px; border-radius:8px; border:1px solid #e2e8f0;">
+        <h3>English Lessons / Notes Links:</h3>
+        <div id="lessonLinks"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Learning by Vasdev • Learn • Think • Grow
+  </footer>
+
+  <script>
+    // ਫਿਲਹਾਲ ਸਿਰਫ਼ English ਦਾ ਡਾਟਾ ਜੋੜਿਆ ਗਿਆ ਹੈ
+    const data = {
+      class6: {
+        "English": [
+          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+        ]
+      },
+      class7: {
+        "English": [
+          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+        ]
+      },
+      class8: {
+        "English": [
+          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+        ]
+      },
+      class9: {
+        "English": [
+          { title: "Chapter 1 Notes", url: "YOUR_LINK_HERE" }
+        ]
+      },
+      class10: {
+        "English": [
+          { title: "Chapter 1: The Happy Prince Notes", url: "YOUR_LINK_HERE" },
+          { title: "Chapter 2: Where Is Science Taking Us?", url: "YOUR_LINK_HERE" }
+        ]
+      }
+    };
+
+    function showSubjects() {
+      const classVal = document.getElementById("classSelect").value;
+      const subjectSelect = document.getElementById("subjectSelect");
+      const subjectContainer = document.getElementById("subjectContainer");
+      const lessonContainer = document.getElementById("lessonContainer");
+
+      subjectSelect.innerHTML = '<option value="">-- Subject ਚੁਣੋ --</option>';
+      lessonContainer.style.display = "none";
+
+      if (classVal && data[classVal]) {
+        for (let subject in data[classVal]) {
+          subjectSelect.innerHTML += `<option value="${subject}">${subject}</option>`;
+        }
+        subjectContainer.style.display = "block";
+      } else {
+        subjectContainer.style.display = "none";
+      }
+    }
+
+    function showLessons() {
+      const classVal = document.getElementById("classSelect").value;
+      const subjectVal = document.getElementById("subjectSelect").value;
+      const lessonLinks = document.getElementById("lessonLinks");
+      const lessonContainer = document.getElementById("lessonContainer");
+
+      lessonLinks.innerHTML = "";
+
+      if (classVal && subjectVal && data[classVal][subjectVal]) {
+        const lessons = data[classVal][subjectVal];
+        lessons.forEach(lesson => {
+          lessonLinks.innerHTML += `<p style="margin-bottom:12px;"><a href="${lesson.url}" target="_blank" style="color:#0056b3; font-weight:bold; font-size:16px;">📄 ${lesson.title}</a></p>`;
+        });
+        lessonContainer.style.display = "block";
+      } else {
+        lessonContainer.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
