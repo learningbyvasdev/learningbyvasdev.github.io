@@ -8,40 +8,32 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f9; color: #1e293b; }
     
-    /* Header & Banner */
     header { background: linear-gradient(135deg, #FF6B6B, #5562EA); color: #fff; text-align: center; padding: 45px 15px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
     header h1 { font-size: 38px; font-weight: 800; letter-spacing: 1px; }
     .tag { font-size: 16px; opacity: 0.95; margin-top: 8px; font-weight: 500; }
     
-    /* Navigation Bar */
     nav { background: #1e1b4b; padding: 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
     nav a { color: #f8fafc; text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 16px; transition: color 0.3s; }
     nav a:hover { color: #FFD166; }
     
-    /* Main Content Structure */
     main { max-width: 950px; margin: auto; padding: 25px 15px; }
     .box { background: #fff; border-radius: 18px; padding: 25px; margin-bottom: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
     .box h2 { font-size: 22px; color: #334155; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
     
-    /* Colourful Grid Buttons */
     .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 15px; }
     
-    /* Class Buttons Styling */
     .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 18px 10px; border-radius: 14px; font-weight: 700; font-size: 17px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
     .card-btn:hover { transform: translateY(-4px); box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; }
     .card-btn.active { background: linear-gradient(135deg, #0284c7, #0369a1); color: #fff; border-color: #0369a1; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5); }
     
-    /* Subject / Book Buttons Styling */
     .subject-btn { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; color: #b45309; }
     .subject-btn:hover { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 8px 15px rgba(245, 158, 11, 0.4); }
     .subject-btn.active { background: linear-gradient(135deg, #d97706, #b45309); color: #fff; border-color: #b45309; }
     
-    /* Lessons Links Section */
     .lesson-card { background: #f8fafc; border-left: 5px solid #10b981; padding: 15px 20px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.2s; }
     .lesson-card:hover { transform: translateX(5px); background: #f1f5f9; }
     .lesson-card a { color: #047857; text-decoration: none; font-weight: 700; font-size: 17px; display: block; }
     
-    /* Footer */
     footer { background: #1e1b4b; color: #cbd5e1; text-align: center; padding: 25px; margin-top: 40px; font-weight: 500; }
   </style>
 </head>
@@ -58,13 +50,11 @@
   </nav>
 
   <main>
-    <!-- Welcome Section -->
     <section id="home" class="box">
       <h2>🎉 Welcome Students!</h2>
       <p style="color: #64748b; font-size: 16px; line-height: 1.6;">ਹੇਠਾਂ ਦਿੱਤੇ ਕਲਾਸ ਦੇ ਬਟਨ 'ਤੇ ਟੱਚ ਕਰਕੇ ਆਪਣੇ ਇੰਗਲਿਸ਼ ਦੇ ਚੈਪਟਰ ਨੋਟਸ ਅਤੇ ਸਟੱਡੀ ਮਟੀਰੀਅਲ ਪ੍ਰਾਪਤ ਕਰੋ।</p>
     </section>
 
-    <!-- 1. Class Selection Section -->
     <section id="materials" class="box">
       <h2>🏫 1. Class ਚੁਣੋ (Select Class)</h2>
       <div class="grid-container">
@@ -76,13 +66,11 @@
       </div>
     </section>
 
-    <!-- 2. Subject / Book Selection Section -->
     <section id="subjectSection" class="box" style="display:none;">
       <h2>📖 2. Book / Category ਚੁਣੋ</h2>
       <div id="subjectContainer" class="grid-container"></div>
     </section>
 
-    <!-- 3. Lessons Links Section -->
     <section id="lessonSection" class="box" style="display:none;">
       <h2>📝 3. Lessons / Notes Links</h2>
       <div id="lessonLinks" style="margin-top: 15px;"></div>
@@ -97,31 +85,20 @@
     let selectedClass = "";
 
     const data = {
-      class6: {
-        "English 📘": []
-      },
-      class7: {
-        "English 📘": []
-      },
-      class8: {
-        "English 📘": []
-      },
-      class9: {
-        "English 📘": []
-      },
+      class6: { "English 📘": [] },
+      class7: { "English 📘": [] },
+      class8: { "English 📘": [] },
+      class9: { "English 📘": [] },
       class10: {
         "Main Course Book 📘": [
-          { title: "Chapter 1: The Happy Prince", url: "https://docs.google.com/document/d/1UghlN0-keNus9uC5y-quZQuYnrqCt92u/edit?usp=drivesdk&ouid=114829802236095474764&rtpof=true&sd=true" }
+          { title: "Chapter 1: The Happy Prince", url: "https://docs.google.com/document/d/1UghlN0-keNus9uC5y-quZQuYnrqCt92u/preview" }
         ],
-        "Supplementary Reader 📙": [
-          // ਇੱਥੇ Supplementary Reader ਦੇ ਲਿੰਕ ਆਉਣਗੇ
-        ]
+        "Supplementary Reader 📙": []
       }
     };
 
     function selectClass(cls, btn) {
       selectedClass = cls;
-      
       document.querySelectorAll('#materials .card-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
