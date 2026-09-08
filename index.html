@@ -6,35 +6,40 @@
   <title>Learning by Vasdev - Study Material</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f9; color: #1e293b; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f4f9; color: #1e293b; min-height: 100vh; display: flex; flex-direction: column; }
     
-    header { background: linear-gradient(135deg, #FF6B6B, #5562EA); color: #fff; text-align: center; padding: 45px 15px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
-    header h1 { font-size: 38px; font-weight: 800; letter-spacing: 1px; }
-    .tag { font-size: 16px; opacity: 0.95; margin-top: 8px; font-weight: 500; }
+    /* Header & Banner */
+    header { background: linear-gradient(135deg, #FF6B6B, #5562EA); color: #fff; text-align: center; padding: 35px 15px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+    header h1 { font-size: 34px; font-weight: 800; letter-spacing: 1px; }
+    .tag { font-size: 15px; opacity: 0.95; margin-top: 6px; font-weight: 500; }
     
-    nav { background: #1e1b4b; padding: 14px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    nav a { color: #f8fafc; text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 16px; transition: color 0.3s; }
-    nav a:hover { color: #FFD166; }
+    /* Main Content Structure */
+    main { max-width: 800px; margin: 20px auto; padding: 0 15px; flex: 1; width: 100%; }
+    .box { background: #fff; border-radius: 18px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
+    .box h2 { font-size: 22px; color: #334155; margin-bottom: 20px; text-align: center; }
     
-    main { max-width: 950px; margin: auto; padding: 25px 15px; }
-    .box { background: #fff; border-radius: 18px; padding: 25px; margin-bottom: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; }
-    .box h2 { font-size: 22px; color: #334155; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+    /* Back Button */
+    .back-btn { background: #e2e8f0; color: #334155; border: none; padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
+    .back-btn:hover { background: #cbd5e1; }
+
+    /* Colourful Grid Buttons */
+    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; margin-top: 10px; }
     
-    .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-top: 15px; }
+    /* Class Buttons Styling */
+    .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 22px 10px; border-radius: 16px; font-weight: 700; font-size: 18px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .card-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; }
     
-    .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 18px 10px; border-radius: 14px; font-weight: 700; font-size: 17px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-    .card-btn:hover { transform: translateY(-4px); box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; }
-    .card-btn.active { background: linear-gradient(135deg, #0284c7, #0369a1); color: #fff; border-color: #0369a1; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.5); }
-    
+    /* Book/Subject Buttons Styling */
     .subject-btn { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; color: #b45309; }
     .subject-btn:hover { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 8px 15px rgba(245, 158, 11, 0.4); }
-    .subject-btn.active { background: linear-gradient(135deg, #d97706, #b45309); color: #fff; border-color: #b45309; }
     
-    .lesson-card { background: #f8fafc; border-left: 5px solid #10b981; padding: 15px 20px; border-radius: 10px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.2s; }
+    /* Lessons Links Section */
+    .lesson-card { background: #f8fafc; border-left: 5px solid #10b981; padding: 16px 20px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.2s; }
     .lesson-card:hover { transform: translateX(5px); background: #f1f5f9; }
     .lesson-card a { color: #047857; text-decoration: none; font-weight: 700; font-size: 17px; display: block; }
     
-    footer { background: #1e1b4b; color: #cbd5e1; text-align: center; padding: 25px; margin-top: 40px; font-weight: 500; }
+    /* Footer */
+    footer { background: #1e1b4b; color: #cbd5e1; text-align: center; padding: 20px; margin-top: 40px; font-weight: 500; }
   </style>
 </head>
 <body>
@@ -44,35 +49,30 @@
     <div class="tag">Learn • Think • Grow</div>
   </header>
 
-  <nav>
-    <a href="#home">🏠 Home</a>
-    <a href="#materials">📚 Study Material</a>
-  </nav>
-
   <main>
-    <section id="home" class="box">
-      <h2>🎉 Welcome Students!</h2>
-      <p style="color: #64748b; font-size: 16px; line-height: 1.6;">ਹੇਠਾਂ ਦਿੱਤੇ ਕਲਾਸ ਦੇ ਬਟਨ 'ਤੇ ਟੱਚ ਕਰਕੇ ਆਪਣੇ ਇੰਗਲਿਸ਼ ਦੇ ਚੈਪਟਰ ਨੋਟਸ ਅਤੇ ਸਟੱਡੀ ਮਟੀਰੀਅਲ ਪ੍ਰਾਪਤ ਕਰੋ।</p>
-    </section>
-
-    <section id="materials" class="box">
-      <h2>🏫 1. Class ਚੁਣੋ (Select Class)</h2>
+    <!-- PAGE 1: Class Selection -->
+    <section id="pageClass" class="box">
+      <h2>🏫 ਆਪਣੀ Class ਚੁਣੋ (Select Class)</h2>
       <div class="grid-container">
-        <button class="card-btn" onclick="selectClass('class6', this)">Class 6</button>
-        <button class="card-btn" onclick="selectClass('class7', this)">Class 7</button>
-        <button class="card-btn" onclick="selectClass('class8', this)">Class 8</button>
-        <button class="card-btn" onclick="selectClass('class9', this)">Class 9</button>
-        <button class="card-btn" onclick="selectClass('class10', this)">Class 10</button>
+        <button class="card-btn" onclick="openSubjects('class6')">Class 6</button>
+        <button class="card-btn" onclick="openSubjects('class7')">Class 7</button>
+        <button class="card-btn" onclick="openSubjects('class8')">Class 8</button>
+        <button class="card-btn" onclick="openSubjects('class9')">Class 9</button>
+        <button class="card-btn" onclick="openSubjects('class10')">Class 10</button>
       </div>
     </section>
 
-    <section id="subjectSection" class="box" style="display:none;">
-      <h2>📖 2. Book / Category ਚੁਣੋ</h2>
+    <!-- PAGE 2: Book / Category Selection -->
+    <section id="pageSubject" class="box" style="display:none;">
+      <button class="back-btn" onclick="goToPage('pageClass')">⬅️ Back to Classes</button>
+      <h2 id="subjectTitle">📖 Book / Category ਚੁਣੋ</h2>
       <div id="subjectContainer" class="grid-container"></div>
     </section>
 
-    <section id="lessonSection" class="box" style="display:none;">
-      <h2>📝 3. Lessons / Notes Links</h2>
+    <!-- PAGE 3: Lessons / Notes Links -->
+    <section id="pageLesson" class="box" style="display:none;">
+      <button class="back-btn" onclick="goToPage('pageSubject')">⬅️ Back to Books</button>
+      <h2 id="lessonTitle">📝 Chapter Notes</h2>
       <div id="lessonLinks" style="margin-top: 15px;"></div>
     </section>
   </main>
@@ -82,7 +82,7 @@
   </footer>
 
   <script>
-    let selectedClass = "";
+    let currentClass = "";
 
     const data = {
       class6: { "English 📘": [] },
@@ -97,40 +97,46 @@
       }
     };
 
-    function selectClass(cls, btn) {
-      selectedClass = cls;
-      document.querySelectorAll('#materials .card-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    function goToPage(pageId) {
+      document.getElementById('pageClass').style.display = 'none';
+      document.getElementById('pageSubject').style.display = 'none';
+      document.getElementById('pageLesson').style.display = 'none';
 
+      document.getElementById(pageId).style.display = 'block';
+      window.scrollTo(0, 0);
+    }
+
+    function openSubjects(cls) {
+      currentClass = cls;
       const subjectContainer = document.getElementById("subjectContainer");
       subjectContainer.innerHTML = "";
-      document.getElementById("lessonSection").style.display = "none";
+
+      const classNames = { class6: "Class 6", class7: "Class 7", class8: "Class 8", class9: "Class 9", class10: "Class 10" };
+      document.getElementById("subjectTitle").innerText = `📖 ${classNames[cls]} - Select Book`;
 
       if (data[cls]) {
         for (let subject in data[cls]) {
-          subjectContainer.innerHTML += `<button class="card-btn subject-btn" onclick="selectSubject('${subject}', this)">${subject}</button>`;
+          subjectContainer.innerHTML += `<button class="card-btn subject-btn" onclick="openLessons('${subject}')">${subject}</button>`;
         }
-        document.getElementById("subjectSection").style.display = "block";
+        goToPage('pageSubject');
       }
     }
 
-    function selectSubject(subject, btn) {
-      document.querySelectorAll('#subjectContainer .card-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
+    function openLessons(subject) {
       const lessonLinks = document.getElementById("lessonLinks");
       lessonLinks.innerHTML = "";
+      document.getElementById("lessonTitle").innerText = `📝 ${subject} - Notes`;
 
-      if (selectedClass && data[selectedClass][subject]) {
-        const lessons = data[selectedClass][subject];
+      if (currentClass && data[currentClass][subject]) {
+        const lessons = data[currentClass][subject];
         if (lessons.length > 0) {
           lessons.forEach(lesson => {
             lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
           });
         } else {
-          lessonLinks.innerHTML = "<p style='color:#64748b;'>ਇਸ ਕਿਤਾਬ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
+          lessonLinks.innerHTML = "<p style='color:#64748b; text-align:center;'>ਇਸ ਕਿਤਾਬ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
         }
-        document.getElementById("lessonSection").style.display = "block";
+        goToPage('pageLesson');
       }
     }
   </script>
