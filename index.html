@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -22,22 +22,29 @@
     .back-btn { background: #e2e8f0; color: #334155; border: none; padding: 10px 18px; border-radius: 10px; font-weight: 700; font-size: 15px; cursor: pointer; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 6px; transition: background 0.2s; }
     .back-btn:hover { background: #cbd5e1; }
 
-    /* Colourful Grid Buttons */
+    /* Grid Buttons */
     .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; margin-top: 10px; }
     
-    /* Class Buttons Styling */
+    /* Buttons Styling */
     .card-btn { background: linear-gradient(135deg, #e0f2fe, #bae6fd); border: 2px solid #38bdf8; padding: 22px 10px; border-radius: 16px; font-weight: 700; font-size: 18px; color: #0369a1; cursor: pointer; text-align: center; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
     .card-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(56, 189, 248, 0.4); background: linear-gradient(135deg, #38bdf8, #0284c7); color: #fff; }
     
-    /* Book/Subject Buttons Styling */
     .subject-btn { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; color: #b45309; }
     .subject-btn:hover { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; box-shadow: 0 8px 15px rgba(245, 158, 11, 0.4); }
     
     /* Lessons Links Section */
-    .lesson-card { background: #f8fafc; border-left: 5px solid #10b981; padding: 16px 20px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.2s; }
+    .lesson-card { background: #f8fafc; border-left: 5px solid #10b981; padding: 16px 20px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.2s; cursor: pointer; }
     .lesson-card:hover { transform: translateX(5px); background: #f1f5f9; }
     .lesson-card a { color: #047857; text-decoration: none; font-weight: 700; font-size: 17px; display: block; }
-    
+
+    /* Notes Content Display */
+    .notes-container { line-height: 1.7; font-size: 16px; color: #1e293b; }
+    .notes-container h3 { color: #0284c7; margin-top: 25px; border-bottom: 2px solid #e2e8f0; padding-bottom: 5px; font-size: 20px; }
+    .qa-block { background: #f8fafc; border-radius: 10px; padding: 15px; margin-bottom: 15px; border: 1px solid #e2e8f0; }
+    .qa-block p { margin-bottom: 6px; }
+    .punjabi-txt { color: #475569; font-size: 15px; }
+    .ans-txt { color: #047857; font-weight: 600; }
+
     /* Footer */
     footer { background: #1e1b4b; color: #cbd5e1; text-align: center; padding: 20px; margin-top: 40px; font-weight: 500; }
   </style>
@@ -75,6 +82,12 @@
       <h2 id="lessonTitle">📝 Chapter Notes</h2>
       <div id="lessonLinks" style="margin-top: 15px;"></div>
     </section>
+
+    <!-- PAGE 4: Directly View Notes -->
+    <section id="pageViewNotes" class="box" style="display:none;">
+      <button class="back-btn" onclick="goToPage('pageLesson')">⬅️ Back to Lessons</button>
+      <div id="notesContent" class="notes-container"></div>
+    </section>
   </main>
 
   <footer>
@@ -91,7 +104,7 @@
       class9: { "English 📘": [] },
       class10: {
         "Main Course Book 📘": [
-          { title: "Chapter 1: The Happy Prince", url: "https://drive.google.com/file/d/12ZJbMidzZyf-qwNgg8JLXZGpwmdCYHeN/view" },
+          { title: "Chapter 1: The Happy Prince (Read Online)", isInline: true, id: "happy_prince" },
           { title: "Chapter 2: Where is Science Taking Us?", url: "https://drive.google.com/file/d/1diIT1Fvm7DJBJYdY4zZreHhl6O7DjyfW/view" },
           { title: "Chapter 3: Secret of Happiness", url: "https://drive.google.com/file/d/16tKwiBGs48uEs89N8WjppgY-frjwjN1T/view" },
           { title: "Chapter 4: A Gift for Christmas", url: "https://drive.google.com/file/d/15GtuC4_88Vb37GOQoZT6F957y9pJruki/view" },
@@ -106,10 +119,262 @@
       }
     };
 
+    const inlineNotes = {
+      happy_prince: `
+        <h2>Class 10th - Chapter 1: The Happy Prince</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Where did the statue of the Happy Prince stand?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਕਿੱਥੇ ਖੜ੍ਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue of the Happy Prince stood high above the city on a tall column.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਸ਼ਹਿਰ ਦੇ ਉੱਪਰ ਇੱਕ ਉੱਚੇ ਥੰਮ 'ਤੇ ਖੜ੍ਹਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. How was the statue decorated?</strong></p>
+          <p class="punjabi-txt">ਬੁੱਤ ਨੂੰ ਕਿਵੇਂ ਸਜਾਇਆ ਗਿਆ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue was covered with thin leaves of fine gold. It had two bright sapphires for its eyes and a large red ruby glowing on its sword hilt.</p>
+          <p class="punjabi-txt">ਬੁੱਤ ਦੇ ਪੂਰੇ ਸਰੀਰ 'ਤੇ ਬਾਰੀਕ ਸੋਨੇ ਦੀਆਂ ਪਤਲੀਆਂ ਪਰਤਾਂ ਚੜ੍ਹਾਈਆਂ ਹੋਈਆਂ ਸਨ। ਇਸ ਦੀਆਂ ਅੱਖਾਂ ਲਈ ਦੋ ਚਮਕਦਾਰ ਨੀਲਮ ਸਨ ਅਤੇ ਇਸ ਦੀ ਤਲਵਾਰ ਦੇ ਮੁੱਠੇ 'ਤੇ ਇੱਕ ਵੱਡਾ ਲਾਲ ਮਾਣਕ ਚਮਕ ਰਿਹਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Where was the Swallow going?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਕਿੱਥੇ ਜਾ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow was going to Egypt to join his friends who had flown there six weeks earlier.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਮਿਸਰ ਜਾ ਰਿਹਾ ਸੀ ਤਾਂ ਜੋ ਉਹ ਆਪਣੇ ਦੋਸਤਾਂ ਨਾਲ ਮਿਲ ਸਕੇ ਜੋ ਛੇ ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਉੱਥੇ ਉੱਡ ਗਏ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Why did the Swallow put up between the feet of the Happy Prince?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੇ ਪੈਰਾਂ ਦੇ ਵਿਚਕਾਰ ਠਹਿਰਨ ਦਾ ਫੈਸਲਾ ਕਿਉਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow put up there because it was a fine position with plenty of fresh air to sleep for the night.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਉੱਥੇ ਇਸ ਲਈ ਠਹਿਰਿਆ ਕਿਉਂਕਿ ਰਾਤ ਨੂੰ ਸੌਣ ਲਈ ਤਾਜ਼ੀ ਹਵਾ ਵਾਲੀ ਇਹ ਇੱਕ ਵਧੀਆ ਥਾਂ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Where were the drops coming from?</strong></p>
+          <p class="punjabi-txt">ਪਾਣੀ ਦੀਆਂ ਬੂੰਦਾਂ ਕਿੱਥੋਂ ਆ ਰਹੀਆਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The drops were coming from the eyes of the Happy Prince.</p>
+          <p class="punjabi-txt">ਪਾਣੀ ਦੀਆਂ ਬੂੰਦਾਂ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀਆਂ ਅੱਖਾਂ ਵਿੱਚੋਂ ਆ ਰਹੀਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. Why was the Happy Prince crying?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਿਉਂ ਰੋ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was crying because from his high position he could see all the ugliness and suffering of the poor people in his city.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇਸ ਲਈ ਰੋ ਰਿਹਾ ਸੀ ਕਿਉਂਕਿ ਆਪਣੇ ਉੱਚੇ ਸਥਾਨ ਤੋਂ ਉਹ ਆਪਣੇ ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਲੋਕਾਂ ਦੀ ਬਦਹਾਲੀ ਅਤੇ ਦੁੱਖਾਂ ਨੂੰ ਦੇਖ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. Describe the seamstress in the words of the prince.</strong></p>
+          <p class="punjabi-txt">ਰਾਜਕੁਮਾਰ ਦੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਦਰਜ਼ਨ (ਕੱਪੜੇ ਸਿਊਣ ਵਾਲੀ) ਦਾ ਵਰਣਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The seamstress had a thin, worn face and coarse, red hands pricked all over by the needle. She was embroidering flowers on a satin gown for the Queen’s maid of honour.</p>
+          <p class="punjabi-txt">ਦਰਜ਼ਨ ਦਾ ਚਿਹਰਾ ਪਤਲਾ ਤੇ ਥੱਕਿਆ ਹੋਇਆ ਸੀ ਅਤੇ ਉਸਦੇ ਲਾਲ, ਖੁਰਦਰੇ ਹੱਥਾਂ 'ਤੇ ਸੂਈਆਂ ਚੁੱਭੀਆਂ ਹੋਈਆਂ ਸਨ। ਉਹ ਰਾਣੀ ਦੀ ਖਾਸ ਦਾਸੀ ਲਈ ਰੇਸ਼ਮੀ ਗਾਊਨ 'ਤੇ ਫੁੱਲਾਂ ਦੀ ਕਢਾਈ ਕਰ ਰਹੀ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. Why was the seamstress's little boy crying?</strong></p>
+          <p class="punjabi-txt">ਦਰਜ਼ਨ ਦਾ ਛੋਟਾ ਮੁੰਡਾ ਕਿਉਂ ਰੋ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The little boy was ill. He had fever. He was crying for oranges.</p>
+          <p class="punjabi-txt">ਛੋਟਾ ਮੁੰਡਾ ਬੀਮਾਰ ਸੀ। ਉਸ ਨੂੰ ਤੇਜ ਬੁਖਾਰ ਸੀ। ਉਹ ਸੰਤਰਿਆਂ ਲਈ ਰੋ ਰਿਹਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. How did both the Happy Prince and the Swallow help the seamstress?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਅਤੇ ਅਬਾਬੀਲ ਦੋਵਾਂ ਨੇ ਮਿਲ ਕੇ ਦਰਜ਼ਨ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince sent the ruby from his sword hilt through the Swallow to the seamstress.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਬਾਬੀਲ ਰਾਹੀਂ ਆਪਣੀ ਤਲਵਾਰ ਦਾ ਲਾਲ ਮਾਣਕ ਦਰਜ਼ਨ ਨੂੰ ਭੇਜਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. Why did the Swallow feel warm?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੂੰ ਗਰਮੀ (ਨਿੱਘ) ਕਿਉਂ ਮਹਿਸੂਸ ਹੋਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow felt warm because he had done a good and noble deed by helping the poor seamstress and her child.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੂੰ ਨਿੱਘ ਮਹਿਸੂਸ ਹੋਇਆ ਕਿਉਂਕਿ ਉਸਨੇ ਗਰੀਬ ਦਰਜ਼ਨ ਅਤੇ ਉਸਦੇ ਬੱਚੇ ਦੀ ਮਦਦ ਕਰਕੇ ਇੱਕ ਨੇਕ ਅਤੇ ਚੰਗਾ ਕੰਮ ਕੀਤਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. What troubled the young man in the garret?</strong></p>
+          <p class="punjabi-txt">ਚੁਬਾਰੇ ਵਿੱਚ ਰਹਿਣ ਵਾਲੇ ਨੌਜਵਾਨ ਨੂੰ ਕੀ ਪਰੇਸ਼ਾਨੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The young man in the garret was a poor playwright. He was feeling very cold and there was no fire in the grate. He was feeling hungry also.</p>
+          <p class="punjabi-txt">ਅਟਾਰੀ ਵਿੱਚ ਬੈਠਾ ਨੌਜਵਾਨ ਇੱਕ ਨਾਟਕਕਾਰ ਸੀ। ਉਸਨੂੰ ਬਹੁਤ ਠੰਡ ਲੱਗ ਰਹੀ ਸੀ ਅਤੇ ਅੰਗੀਠੀ ਵਿੱਚ ਅੱਗ ਨਹੀਂ ਸੀ, ਉਸ ਨੂੰ ਭੁੱਖ ਵੀ ਲੱਗ ਰਹੀ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. How was the young man helped?</strong></p>
+          <p class="punjabi-txt">ਨੌਜਵਾਨ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ ਗਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince asked the Swallow to pluck out the sapphire from his eye and give it to the young man. The Swallow did as he was told. The young man became happy on getting the sapphire. He was now able to finish his play.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਬਾਬੀਲ ਨੂੰ ਉਸ ਦੀ ਅੱਖ ਵਿੱਚੋਂ ਇੱਕ ਨੀਲਮ ਕੱਢ ਕੇ ਨੌਜਵਾਨ ਨੂੰ ਦੇਣ ਲਈ ਕਿਹਾ। ਅਬਾਬੀਲ ਨੇ ਉਸੇ ਤਰ੍ਹਾਂ ਹੀ ਕੀਤਾ ਜਿਵੇਂ ਉਸ ਨੂੰ ਕਿਹਾ ਗਿਆ ਸੀ। ਨੀਲਮ ਪਾ ਕੇ ਨੌਜਵਾਨ ਖੁਸ਼ ਹੋ ਗਿਆ ਹੁਣ ਆਪਣਾ ਨਾਟਕ ਪੂਰਾ ਕਰ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. Why was the match girl crying?</strong></p>
+          <p class="punjabi-txt">ਮਾਚਿਸਾਂ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਕਿਉਂ ਰੋ ਰਹੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The match girl was crying because her matches had fallen into the gutter and were spoiled.</p>
+          <p class="punjabi-txt">ਮਾਚਿਸਾਂ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਇਸ ਲਈ ਰੋ ਰਹੀ ਸੀ ਕਿਉਂਕਿ ਉਸਦੀਆਂ ਮਾਚਿਸਾਂ ਨਾਲੀ ਵਿੱਚ ਡਿੱਗ ਕੇ ਖਰਾਬ ਹੋ ਗਈਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>14. The Swallow said to the prince, “I will stay with you always.” Why?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਰਾਜਕੁਮਾਰ ਨੂੰ ਕਿਹਾ, "ਮੈਂ ਹਮੇਸ਼ਾ ਤੁਹਾਡੇ ਨਾਲ ਰਹਾਂਗਾ।" ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow decided to stay forever because the Prince had given away both of his sapphire eyes and was now completely blind.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਹਮੇਸ਼ਾ ਲਈ ਠਹਿਰਨ ਦਾ ਫੈਸਲਾ ਕੀਤਾ ਕਿਉਂਕਿ ਰਾਜਕੁਮਾਰ ਨੇ ਆਪਣੇ ਦੋਵੇਂ ਨੀਲਮ ਦਾਨ ਕਰ ਦਿੱਤੇ ਸਨ ਅਤੇ ਹੁਣ ਉਹ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅੰਨ੍ਹਾ ਹੋ ਚੁੱਕਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>15. How did the poor Swallow manage to live in so much cold?</strong></p>
+          <p class="punjabi-txt">ਵਿਚਾਰਾ ਅਬਾਬੀਲ ਇੰਨੀ ਜ਼ਿਆਦਾ ਠੰਢ ਵਿੱਚ ਕਿਵੇਂ ਜਿਉਂਦਾ ਰਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow picked up crumbs outside the baker’s door to eat and tried to keep himself warm by flapping his wings.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਖਾਣ ਲਈ ਬੇਕਰ (ਨਾਨਬਾਈ) ਦੀ ਦੁਕਾਨ ਦੇ ਬਾਹਰੋਂ ਰੋਟੀ ਦੇ ਟੁਕੜੇ ਚੁਗਦਾ ਸੀ ਅਤੇ ਆਪਣੇ ਖੰਭ ਫੜਫੜਾ ਕੇ ਆਪਣੇ ਆਪ ਨੂੰ ਗਰਮ ਰੱਖਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>16. Why was the statue of the Happy Prince pulled down?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਹੇਠਾਂ ਕਿਉਂ ਡੇਗ ਦਿੱਤਾ ਗਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue was pulled down because it looked dull and shabby without its gold, ruby, and sapphires, and the Mayor felt it was no longer beautiful or useful.</p>
+          <p class="punjabi-txt">ਬੁੱਤ ਨੂੰ ਹੇਠਾਂ ਡੇਗ ਦਿੱਤਾ ਗਿਆ ਕਿਉਂਕਿ ਸੋਨੇ, ਮਾਣਕ ਅਤੇ ਨੀਲਮ ਤੋਂ ਬਿਨਾਂ ਇਹ ਬੇਰੰਗ ਅਤੇ ਭੱਦਾ ਲੱਗ ਰਹਾ ਸੀ, ਅਤੇ ਮੇਅਰ ਨੂੰ ਲੱਗਿਆ ਕਿ ਇਹ ਹੁਣ ਸੁੰਦਰ ਜਾਂ ਉਪਯੋਗੀ ਨਹੀਂ ਰਿਹਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>17. What were the two most precious things in the city?</strong></p>
+          <p class="punjabi-txt">ਸ਼ਹਿਰ ਵਿੱਚ ਦੋ ਸਭ ਤੋਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਕਿਹੜੀਆਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The two most precious things were the leaden heart of the Happy Prince and the dead Swallow.</p>
+          <p class="punjabi-txt">ਦੋ ਸਭ ਤੋਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਸਿੱਕੇ (ਸੀਸੇ) ਦਾ ਦਿਲ ਅਤੇ ਮਰਿਆ ਹੋਇਆ ਅਬਾਬੀਲ ਸਨ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. Why was the prince called the Happy Prince?</strong></p>
+          <p class="punjabi-txt">ਰਾਜਕੁਮਾਰ ਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਿਉਂ ਕਿਹਾ ਜਾਂਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue covered with fine gold. It stood high above the city on a tall column. When the Prince was alive, he lived in a palace where sorrow was not allowed to enter. He spent his life in happiness and pleasure. Therefore, people called him the Happy Prince.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ ਜਿਸ ਉੱਤੇ ਬਰੀਕ ਸੋਨੇ ਦੀ ਪਰਤ ਚੜ੍ਹੀ ਹੋਈ ਸੀ। ਇਹ ਸ਼ਹਿਰ ਦੇ ਉੱਪਰ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਜਦੋਂ ਰਾਜਕੁਮਾਰ ਜ਼ਿੰਦਾ ਸੀ, ਉਹ ਇੱਕ ਅਜਿਹੇ ਮਹਲ ਵਿੱਚ ਰਹਿੰਦਾ ਸੀ ਜਿੱਥੇ ਦੁੱਖ ਨੂੰ ਅੰਦਰ ਆਉਣ ਦੀ ਆਗਿਆ ਨਹੀਂ ਸੀ। ਉਸਨੇ ਆਪਣੀ ਜ਼ਿੰਦਗੀ ਖੁਸ਼ੀ ਅਤੇ ਸੁਖ ਨਾਲ ਬਿਤਾਈ। ਇਸ ਲਈ ਲੋਕ ਉਸਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਹਿੰਦੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. “I cannot choose but weep.” Why did the Happy Prince say so?</strong></p>
+          <p class="punjabi-txt">“ਮੈਂ ਰੋਣ ਤੋਂ ਬਿਨਾਂ ਰਹਿ ਨਹੀਂ ਸਕਦਾ।” ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਜਿਹਾ ਕਿਉਂ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue. It stood on a tall column. When the prince was alive, he was always happy. But now he could see the problems of the people. But he could not help them. Therefore, he could not choose but weep.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ। ਇਹ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਜਦੋਂ ਰਾਜਕੁਮਾਰ ਜ਼ਿੰਦਾ ਸੀ, ਉਹ ਹਮੇਸ਼ਾ ਖੁਸ਼ ਰਹਿੰਦਾ ਸੀ। ਪਰ ਹੁਣ ਉਹ ਲੋਕਾਂ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਦੇਖ ਸਕਦਾ ਸੀ। ਪਰ ਉਹ ਉਨ੍ਹਾਂ ਦੀ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦਾ ਸੀ। ਇਸ ਲਈ ਉਹ ਰੋਣ ਤੋਂ ਬਿਨਾਂ ਰਹਿ ਨਹੀਂ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Comment on the remark—“The living always think that gold can make them happy.”</strong></p>
+          <p class="punjabi-txt">ਇਸ ਕਥਨ ਉੱਤੇ ਟਿੱਪਣੀ ਕਰੋ—“ਜੀਉਂਦੇ ਲੋਕ ਹਮੇਸ਼ਾ ਸੋਚਦੇ ਹਨ ਕਿ ਸੋਨਾ ਉਨ੍ਹਾਂ ਨੂੰ ਖੁਸ਼ ਕਰ ਸਕਦਾ ਹੈ।”</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gold here means money. Money makes the mare go. The living think that money is the most powerful thing in the world. Therefore, the living always think that gold can make them happy.</p>
+          <p class="punjabi-txt">ਇੱਥੇ ਸੋਨੇ ਦਾ ਅਰਥ ਪੈਸੇ ਤੋਂ ਹੈ। ਪੈਸਾ ਕੰਮਾਂ ਨੂੰ ਚਲਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਜੀਉਂਦੇ ਲੋਕ ਸੋਚਦੇ ਹਨ ਕਿ ਪੈਸਾ ਦੁਨੀਆ ਦੀ ਸਭ ਤੋਂ ਤਾਕਤਵਰ ਚੀਜ਼ ਹੈ। ਇਸ ਲਈ, ਜੀਉਂਦੇ ਲੋਕ ਹਮੇਸ਼ਾ ਸੋਚਦੇ ਹਨ ਕਿ ਸੋਨਾ ਉਨ੍ਹਾਂ ਨੂੰ ਖੁਸ਼ ਕਰ ਸਕਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Why did the Mayor dislike the statue so much?</strong></p>
+          <p class="ans-txt"><strong>Ans:</strong> The Mayor disliked the statue because the Happy Prince was no longer beautiful. He had given away all his gold and his precious stones to help the poor and needy people of the city. The statue had become dull and unattractive. Therefore, he disliked the statue and ordered it to be pulled down.</p>
+          <p class="punjabi-txt">ਮੇਅਰ ਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀ ਮੂਰਤੀ ਇਸ ਲਈ ਨਾਪਸੰਦ ਸੀ ਕਿਉਂਕਿ ਹੈਪੀ ਪ੍ਰਿੰਸ ਹੁਣ ਪਹਿਲਾਂ ਵਾਂਗ ਸੁੰਦਰ ਨਹੀਂ ਰਹਿ ਗਿਆ ਸੀ। ਉਸਨੇ ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਅਤੇ ਲੋੜਵੰਦ ਲੋਕਾਂ ਦੀ ਮਦਦ ਕਰਨ ਲਈ ਆਪਣਾ ਸਾਰਾ ਸੋਨਾ ਅਤੇ ਕੀਮਤੀ ਰਤਨ ਦੇ ਦਿੱਤੇ ਸਨ। ਮੂਰਤੀ ਹੁਣ ਫਿੱਕੀ ਅਤੇ ਬਦਸੂਰਤ ਦਿਖਾਈ ਦੇਣ ਲੱਗ ਪਈ ਸੀ। ਇਸ ਲਈ ਮੇਅਰ ਨੂੰ ਮੂਰਤੀ ਨਾਪਸੰਦ ਸੀ ਅਤੇ ਉਸਨੇ ਇਸਨੂੰ ਹੇਠਾਂ ਉਤਾਰਨ ਦਾ ਹੁਕਮ ਦੇ ਦਿੱਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Write a short note on the sufferings of the poor people in the city.</strong></p>
+          <p class="punjabi-txt">ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਲੋਕਾਂ ਦੇ ਦੁੱਖਾਂ ਬਾਰੇ ਇੱਕ ਛੋਟਾ ਨੋਟ ਲਿਖੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue. It stood on a tall column. He could see the problems of the people in the city. The people in the city were very poor. The seamstress was poor. Her son was ill. Cold and hunger troubled the playwright. The little match girl was also very poor. There were hungry and homeless children. There was ugliness and misery everywhere.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ। ਇਹ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਉਹ ਸ਼ਹਿਰ ਦੇ ਲੋਕਾਂ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਦੇਖ ਸਕਦਾ ਸੀ। ਸ਼ਹਿਰ ਦੇ ਲੋਕ ਬਹੁਤ ਗਰੀਬ ਸਨ। ਦਰਜ਼ਣ ਗਰੀਬ ਸੀ। ਉਸਦਾ ਪੁੱਤਰ ਬਿਮਾਰ ਸੀ। ਠੰਢ ਅਤੇ ਭੁੱਖ ਨੇ ਨਾਟਕਕਾਰ ਨੂੰ ਪਰੇਸ਼ਾਨ ਕੀਤਾ ਹੋਇਆ ਸੀ। ਛੋਟੀ ਮਾਚਿਸ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਵੀ ਬਹੁਤ ਗਰੀਬ ਸੀ। ਉਥੇ ਭੁੱਖੇ ਅਤੇ ਬੇਘਰ ਬੱਚੇ ਸਨ। ਹਰ ਪਾਸੇ ਕੁਰੂਪਤਾ ਅਤੇ ਮੁਸੀਬਤ (ਦੁੱਖ) ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. What is the message conveyed by the author?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਦੁਆਰਾ ਕੀ ਸੰਦੇਸ਼ ਦਿੱਤਾ ਗਿਆ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author brings out the secret of true happiness. True happiness comes from serving the poor and the needy. God also blesses such persons. It is clear from the examples of the Happy Prince and the Swallow. The Happy Prince gives his all for the sake of the poor. The poor Swallow sacrifices his life for the sake of the Happy Prince. God blesses both of them. He gives them place in His Paradise.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਸੱਚੀ ਖੁਸ਼ੀ ਦਾ ਭੇਤ ਦੱਸਦਾ ਹੈ। ਸੱਚੀ ਖੁਸ਼ੀ ਗਰੀਬਾਂ ਅਤੇ ਲੋੜਵੰਦਾਂ ਦੀ ਸੇਵਾ ਕਰਨ ਨਾਲ ਮਿਲਦੀ ਹੈ। ਪਰਮਾਤਮਾ ਵੀ ਅਜਿਹੇ ਲੋਕਾਂ ਨੂੰ ਅਸੀਸ ਦਿੰਦਾ ਹੈ। ਇਹ ਗੱਲ ਹੈਪੀ ਪ੍ਰਿੰਸ ਅਤੇ ਅਬਾਬੀਲ ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਤੋਂ ਸਪੱਸ਼ਟ ਹੁੰਦੀ ਹੈ। ਹੈਪੀ ਪ੍ਰਿੰਸ ਗਰੀਬਾਂ ਦੀ ਭਲਾਈ ਲਈ ਆਪਣਾ ਸਭ ਕੁਝ ਦੇ ਦਿੰਦਾ ਹੈ। ਵਿਚਾਰਾ ਅਬਾਬੀਲ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀ ਖਾਤਰ ਆਪਣੀ ਜਾਨ ਕੁਰਬਾਨ ਕਰ ਦਿੰਦਾ ਹੈ। ਪਰਮਾਤਮਾ ਦੋਵਾਂ ਨੂੰ ਅਸੀਸ ਦਿੰਦਾ ਹੈ। ਉਹ ਦੋਵਾਂ ਨੂੰ ਆਪਣੇ ਸਵਰਗ ਵਿੱਚ ਥਾਂ ਦਿੰਦਾ ਹੈ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. The drops were coming from the _________ of the Happy Prince.</p>
+          <p class="ans-txt"><strong>Ans:</strong> eyes</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. The son of the seamstress was crying because he wanted to go to Egypt. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. The poor seamstress was given the _________ by the swallow.</p>
+          <p>i) gold &nbsp;&nbsp; ii) sapphire &nbsp;&nbsp; iii) ruby &nbsp;&nbsp; iv) oranges</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) ruby</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Who ordered to pull down the statue of the Happy Prince?</p>
+          <p>i) Mayor &nbsp;&nbsp; ii) swallow &nbsp;&nbsp; iii) seamstress &nbsp;&nbsp; iv) playwright</p>
+          <p class="ans-txt"><strong>Ans:</strong> i) Mayor</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. The statue of Happy Prince was decorated with diamonds. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. Why are you weeping then?</p>
+          <p class="ans-txt">ਫਿਰ ਤੁਸੀਂ ਰੋ ਕਿਉਂ ਰਹੇ ਹੋ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. They pulled down the statue of the Happy Prince.</p>
+          <p class="ans-txt">ਉਹਨਾਂ ਨੇ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੇ ਬੁੱਤ ਨੂੰ ਹੇਠਾਂ ਡੇਗ ਦਿੱਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. I am waited for in Egypt.</p>
+          <p class="ans-txt">ਮੇਰਾ ਮਿਸਰ ਵਿੱਚ ਇੰਤਜ਼ਾਰ ਹੋ ਰਿਹਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. It is very cold here.</p>
+          <p class="ans-txt">ਇੱਥੇ ਬਹੁਤ ਠੰਡ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. I have a golden bed-room.</p>
+          <p class="ans-txt">ਮੇਰੇ ਕੋਲ ਇੱਕ ਸੁਨਹਿਰੀ ਸੌਣ ਵਾਲਾ ਕਮਰਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. There is not a single cloud in the sky.</p>
+          <p class="ans-txt">ਅਸਮਾਨ ਵਿੱਚ ਇੱਕ ਵੀ ਬੱਦਲ ਨਹੀਂ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. Then another drop fell.</p>
+          <p class="ans-txt">ਫਿਰ ਇੱਕ ਹੋਰ ਬੂੰਦ ਆ ਡਿੱਗੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. My courtiers called me the Happy Prince.</p>
+          <p class="ans-txt">ਮੇਰੇ ਦਰਬਾਰੀ ਮੈਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਹਿ ਕੇ ਬੁਲਾਉਂਦੇ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. I have come to bid you good bye.</p>
+          <p class="ans-txt">ਮੈਂ ਤੁਹਾਨੂੰ ਅਲਵਿਦਾ ਕਹਿਣ ਆਇਆ ਹਾਂ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. How hungry we are!</p>
+          <p class="ans-txt">ਅਸੀਂ ਕਿੰਨੇ ਭੁੱਖੇ ਹਾਂ!</p>
+        </div>
+      `
+    };
+
     function goToPage(pageId) {
       document.getElementById('pageClass').style.display = 'none';
       document.getElementById('pageSubject').style.display = 'none';
       document.getElementById('pageLesson').style.display = 'none';
+      document.getElementById('pageViewNotes').style.display = 'none';
 
       document.getElementById(pageId).style.display = 'block';
       window.scrollTo(0, 0);
@@ -140,7 +405,11 @@
         const lessons = data[currentClass][subject];
         if (lessons.length > 0) {
           lessons.forEach(lesson => {
-            lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
+            if(lesson.isInline) {
+              lessonLinks.innerHTML += `<div class="lesson-card" onclick="showInlineNotes('${lesson.id}')"><a>📖 ${lesson.title}</a></div>`;
+            } else {
+              lessonLinks.innerHTML += `<div class="lesson-card"><a href="${lesson.url}" target="_blank">📄 ${lesson.title}</a></div>`;
+            }
           });
         } else {
           lessonLinks.innerHTML = "<p style='color:#64748b; text-align:center;'>ਇਸ ਕਿਤਾਬ ਦੇ ਨੋਟਸ ਜਲਦੀ ਹੀ ਅਪਲੋਡ ਕੀਤੇ ਜਾਣਗੇ।</p>";
@@ -148,9 +417,14 @@
         goToPage('pageLesson');
       }
     }
+
+    function showInlineNotes(noteId) {
+      if (inlineNotes[noteId]) {
+        document.getElementById("notesContent").innerHTML = inlineNotes[noteId];
+        goToPage('pageViewNotes');
+      }
+    }
   </script>
 
 </body>
 </html>
-
- 
