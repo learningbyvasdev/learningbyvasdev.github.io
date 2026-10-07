@@ -78,14 +78,14 @@
 
     <!-- PAGE 3: Lessons / Notes Links -->
     <section id="pageLesson" class="box" style="display:none;">
-      <button class="back-btn" onclick="goToPage('pageSubject')">⬅️️ Back to Books</button>
+      <button class="back-btn" onclick="goToPage('pageSubject')">⬅️ Back to Books</button>
       <h2 id="lessonTitle">📝 Chapter Notes</h2>
       <div id="lessonLinks" style="margin-top: 15px;"></div>
     </section>
 
     <!-- PAGE 4: Directly View Notes -->
     <section id="pageViewNotes" class="box" style="display:none;">
-      <button class="back-btn" onclick="goToPage('pageLesson')">⬅ Back to Lessons</button>
+      <button class="back-btn" onclick="goToPage('pageLesson')">⬅️️ Back to Lessons</button>
       <div id="notesContent" class="notes-container"></div>
     </section>
   </main>
@@ -119,128 +119,1756 @@
           { title: "Chapter 3: One Thousand Dollars (Read Online)", isInline: true, id: "one_thousand_dollars" },
           { title: "Chapter 4: The Dying Detective (Read Online)", isInline: true, id: "dying_detective" },
           { title: "Chapter 5: How Much Land Does A Man Need? (Read Online)", isInline: true, id: "how_much_land" },
-          { title: "Chapter 6: Return to Air (Read Online)", isInline: true, id: "return_to_air" }
+          { title: "Chapter 6: Return to Earth", url: "#" }
         ]
       }
     };
 
     const inlineNotes = {
-      return_to_air: `
-        <h2>Class 10th - Supplementary Reader - Chapter 6: Return to Air</h2>
+      happy_prince: `
+        <h2>Class 10th - Chapter 1: The Happy Prince</h2>
         
         <h3>Short Answer Type Questions</h3>
-
+        
         <div class="qa-block">
-          <p><strong>1. Why was the boy called 'Sausage'?</strong></p>
-          <p class="punjabi-txt">ਮੁੰਡੇ ਨੂੰ ‘Sausage’ ਕਿਉਂ ਕਿਹਾ ਜਾਂਦਾ ਸੀ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> The boy was called 'Sausage' because he was fat.</p>
-          <p class="punjabi-txt">ਮੁੰਡੇ ਨੂੰ 'ਸੌਸੇਜ' (Sausage) ਕਿਹਾ ਜਾਂਦਾ ਸੀ ਕਿਉਂਕਿ ਉਹ ਮੋਟਾ ਸੀ।</p>
+          <p><strong>1. Where did the statue of the Happy Prince stand?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਕਿੱਥੇ ਖੜ੍ਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue of the Happy Prince stood high above the city on a tall column.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਸ਼ਹਿਰ ਦੇ ਉੱਪਰ ਇੱਕ ਉੱਚੇ ਥੰਮ 'ਤੇ ਖੜ੍ਹਾ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>2. Why did Sausage not like diving?</strong></p>
-          <p class="punjabi-txt">Sausage ਨੂੰ ਗੋਤਾ ਲਗਾਉਣਾ ਕਿਉਂ ਪਸੰਦ ਨਹੀਂ ਸੀ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> He did not like diving because he had weak eyesight and had to take off his glasses before going into the water.</p>
-          <p class="punjabi-txt">ਉਸ ਨੂੰ ਗੋਤਾ ਲਗਾਉਣਾ ਪਸੰਦ ਨਹੀਂ ਸੀ ਕਿਉਂਕਿ ਉਸ ਦੀ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਸੀ ਅਤੇ ਪਾਣੀ ਵਿੱਚ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਉਸ ਨੂੰ ਆਪਣੀ ਐਨਕ ਉਤਾਰਨੀ ਪੈਂਦੀ ਸੀ।</p>
+          <p><strong>2. How was the statue decorated?</strong></p>
+          <p class="punjabi-txt">ਬੁੱਤ ਨੂੰ ਕਿਵੇਂ ਸਜਾਇਆ ਗਿਆ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue was covered with thin leaves of fine gold. It had two bright sapphires for its eyes and a large red ruby glowing on its sword hilt.</p>
+          <p class="punjabi-txt">ਬੁੱਤ ਦੇ ਪੂਰੇ ਸਰੀਰ 'ਤੇ ਬਾਰੀਕ ਸੋਨੇ ਦੀਆਂ ਪਤਲੀਆਂ ਪਰਤਾਂ ਚੜ੍ਹਾਈਆਂ ਹੋਈਆਂ ਸਨ। ਇਸ ਦੀਆਂ ਅੱਖਾਂ ਲਈ ਦੋ ਚਮਕਦਾਰ ਨੀਲਮ ਸਨ ਅਤੇ ਇਸ ਦੀ ਤਲਵਾਰ ਦੇ ਮੁੱਠੇ 'ਤੇ ਇੱਕ ਵੱਡਾ ਲਾਲ ਮਾਣਕ ਚਮਕ ਰਿਹਾ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>3. Choose the correct answer: They all wanted me to learn duck-diving. Who were ‘they’?</strong></p>
-          <p class="punjabi-txt">ਸਹੀ ਉੱਤਰ ਚੁਣੋ: ਉਹ ਸਾਰੇ ਚਾਹੁੰਦੇ ਸਨ ਕਿ ਮੈਂ ਡੱਕ-ਡਾਈਵਿੰਗ (duck-diving) ਸਿੱਖਾਂ। 'ਉਹ' ਕੌਣ ਸਨ?</p>
-          <p>(a) His friends<br>(b) His friends and the instructor<br>(c) His parents</p>
-          <p class="ans-txt"><strong>Ans:</strong> (b) His friends and the instructor.</p>
-          <p class="punjabi-txt">(b) ਉਸ ਦੇ ਦੋਸਤ ਅਤੇ ਇੰਸਟ੍ਰਕਟਰ।</p>
+          <p><strong>3. Where was the Swallow going?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਕਿੱਥੇ ਜਾ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow was going to Egypt to join his friends who had flown there six weeks earlier.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਮਿਸਰ ਜਾ ਰਿਹਾ ਸੀ ਤਾਂ ਜੋ ਉਹ ਆਪਣੇ ਦੋਸਤਾਂ ਨਾਲ ਮਿਲ ਸਕੇ ਜੋ ਛੇ ਹਫ਼ਤੇ ਪਹਿਲਾਂ ਉੱਥੇ ਉੱਡ ਗਏ ਸਨ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>4. What is duck-diving? How is it taught?</strong></p>
-          <p class="punjabi-txt">Duck-diving ਕੀ ਹੈ? ਇਹ ਕਿਵੇਂ ਸਿਖਾਈ ਜਾਂਦੀ ਹੈ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> Duck-diving means diving deep into the water like a duck. To teach it, the instructor throws a brick into the water. The swimmer dives to the bottom, picks up the brick and brings it back up.</p>
-          <p class="punjabi-txt">Duck-diving ਦਾ ਅਰਥ ਬਤਖ਼ ਵਾਂਗ ਪਾਣੀ ਵਿੱਚ ਡੂੰਘਾ ਗੋਤਾ ਲਗਾਉਣਾ ਹੈ। ਇਸ ਨੂੰ ਸਿਖਾਉਣ ਲਈ ਇੰਸਟ੍ਰਕਟਰ ਪਾਣੀ ਵਿੱਚ ਇੱਕ ਇੱਟ ਸੁੱਟਦਾ ਹੈ। ਤੈਰਾਕ ਹੇਠਾਂ ਤੱਕ ਗੋਤਾ ਲਗਾ ਕੇ ਇੱਟ ਚੁੱਕਦਾ ਹੈ ਅਤੇ ਵਾਪਸ ਉੱਪਰ ਲਿਆਉਂਦਾ ਹੈ।</p>
+          <p><strong>4. Why did the Swallow put up between the feet of the Happy Prince?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੇ ਪੈਰਾਂ ਦੇ ਵਿਚਕਾਰ ਠਹਿਰਨ ਦਾ ਫੈਸਲਾ ਕਿਉਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow put up there because it was a fine position with plenty of fresh air to sleep for the night.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਉੱਥੇ ਇਸ ਲਈ ਠਹਿਰਿਆ ਕਿਉਂਕਿ ਰਾਤ ਨੂੰ ਸੌਣ ਲਈ ਤਾਜ਼ੀ ਹਵਾ ਵਾਲੀ ਇਹ ਇੱਕ ਵਧੀਆ ਥਾਂ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>5. What happened to Sausage when he tried duck-diving the first time?</strong></p>
-          <p class="punjabi-txt">ਜਦੋਂ Sausage ਨੇ ਪਹਿਲੀ ਵਾਰ duck-diving ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਤਾਂ ਉਸ ਨਾਲ ਕੀ ਹੋਇਆ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> When Sausage tried duck-diving for the first time, he took off his glasses and could not see clearly underwater. He went deep down to the bottom of the pond. Instead of picking up the brick, he grabbed an old tin box full of mud and brought it up.</p>
-          <p class="punjabi-txt">ਜਦੋਂ Sausage ਨੇ ਪਹਿਲੀ ਵਾਰ duck-diving ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ, ਤਾਂ ਉਸ ਨੇ ਆਪਣੀ ਐਨਕ ਉਤਾਰ ਦਿੱਤੀ ਅਤੇ ਉਹ ਪਾਣੀ ਦੇ ਅੰਦਰ ਸਾਫ਼ ਨਹੀਂ ਦੇਖ ਸਕਿਆ। ਉਹ ਤਲਾਬ ਦੇ ਤਲ ਤੱਕ ਡੂੰਘਾ ਚਲਾ ਗਿਆ। ਇੱਟ ਚੁੱਕਣ ਦੀ ਬਜਾਏ ਉਸ ਨੇ ਮਿੱਟੀ ਨਾਲ ਭਰਿਆ ਇੱਕ ਪੁਰਾਣਾ ਟੀਨ ਦਾ ਡੱਬਾ ਫੜ ਲਿਆ ਅਤੇ ਉਸ ਨੂੰ ਉੱਪਰ ਲੈ ਆਇਆ।</p>
+          <p><strong>5. Where were the drops coming from?</strong></p>
+          <p class="punjabi-txt">ਪਾਣੀ ਦੀਆਂ ਬੂੰਦਾਂ ਕਿੱਥੋਂ ਆ ਰਹੀਆਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The drops were coming from the eyes of the Happy Prince.</p>
+          <p class="punjabi-txt">ਪਾਣੀ ਦੀਆਂ ਬੂੰਦਾਂ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀਆਂ ਅੱਖਾਂ ਵਿੱਚੋਂ ਆ ਰਹੀਆਂ ਸਨ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>6. Why couldn’t Sausage see inside the water?</strong></p>
-          <p class="punjabi-txt">Sausage ਪਾਣੀ ਦੇ ਅੰਦਰ ਕਿਉਂ ਨਹੀਂ ਦੇਖ ਸਕਦਾ ਸੀ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> He could not see well because he had weak eyesight and had to remove his glasses. The water was also dark, muddy and cloudy.</p>
-          <p class="punjabi-txt">ਉਹ ਚੰਗੀ ਤਰ੍ਹਾਂ ਨਹੀਂ ਦੇਖ ਸਕਦਾ ਸੀ ਕਿਉਂਕਿ ਉਸ ਦੀ ਨਜ਼ਰ ਕਮਜ਼ੋਰ ਸੀ ਅਤੇ ਉਸ ਨੂੰ ਆਪਣੀ ਐਨਕ ਉਤਾਰਨੀ ਪੈਂਦੀ ਸੀ। ਪਾਣੀ ਵੀ ਹਨੇਰਾ, ਚਿੱਕੜ ਵਾਲਾ ਅਤੇ ਧੁੰਦਲਾ ਸੀ।</p>
+          <p><strong>6. Why was the Happy Prince crying?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਿਉਂ ਰੋ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was crying because from his high position he could see all the ugliness and suffering of the poor people in his city.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇਸ ਲਈ ਰੋ ਰਿਹਾ ਸੀ ਕਿਉਂਕਿ ਆਪਣੇ ਉੱਚੇ ਸਥਾਨ ਤੋਂ ਉਹ ਆਪਣੇ ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਲੋਕਾਂ ਦੀ ਬਦਹਾਲੀ ਅਤੇ ਦੁੱਖਾਂ ਨੂੰ ਦੇਖ ਸਕਦਾ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>7. Why did the water change colours? How did it change colours?</strong></p>
-          <p class="punjabi-txt">ਪਾਣੀ ਦਾ ਰੰਗ ਕਿਉਂ ਬਦਲ ਗਿਆ? ਇਹ ਕਿਵੇਂ ਬਦਲਿਆ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> The water changed colour because it became darker as he went deeper away from the sunlight. It changed from a green-brown lemonade colour to a dark blackish-brown colour at the bottom.</p>
-          <p class="punjabi-txt">ਪਾਣੀ ਦਾ ਰੰਗ ਇਸ ਲਈ ਬਦਲ ਗਿਆ ਕਿਉਂਕਿ ਜਿਵੇਂ ਉਹ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਤੋਂ ਦੂਰ ਡੂੰਘਾਈ ਵਿੱਚ ਜਾਂਦਾ ਗਿਆ, ਪਾਣੀ ਹੋਰ ਹਨੇਰਾ ਹੁੰਦਾ ਗਿਆ। ਇਹ ਹਰੇ-ਭੂਰੇ ਨਿੰਬੂ ਪਾਣੀ ਵਰਗੇ ਰੰਗ ਤੋਂ ਹੇਠਾਂ ਕਾਲੇ-ਭੂਰੇ ਰੰਗ ਵਿੱਚ ਬਦਲ ਗਿਆ।</p>
+          <p><strong>7. Describe the seamstress in the words of the prince.</strong></p>
+          <p class="punjabi-txt">ਰਾਜਕੁਮਾਰ ਦੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਦਰਜ਼ਨ (ਕੱਪੜੇ ਸਿਊਣ ਵਾਲੀ) ਦਾ ਵਰਣਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The seamstress had a thin, worn face and coarse, red hands pricked all over by the needle. She was embroidering flowers on a satin gown for the Queen’s maid of honour.</p>
+          <p class="punjabi-txt">ਦਰਜ਼ਨ ਦਾ ਚਿਹਰਾ ਪਤਲਾ ਤੇ ਥੱਕਿਆ ਹੋਇਆ ਸੀ ਅਤੇ ਉਸਦੇ ਲਾਲ, ਖੁਰਦਰੇ ਹੱਥਾਂ 'ਤੇ ਸੂਈਆਂ ਚੁੱਭੀਆਂ ਹੋਈਆਂ ਸਨ। ਉਹ ਰਾਣੀ ਦੀ ਖਾਸ ਦਾਸੀ ਲਈ ਰੇਸ਼ਮੀ ਗਾਊਨ 'ਤੇ ਫੁੱਲਾਂ ਦੀ ਕਢਾਈ ਕਰ ਰਹੀ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>8. Was Sausage sure that he would not come out alive? Give examples to support your answer.</strong></p>
-          <p class="punjabi-txt">ਕੀ Sausage ਨੂੰ ਯਕੀਨ ਸੀ ਕਿ ਉਹ ਜ਼ਿੰਦਾ ਬਾਹਰ ਨਹੀਂ ਆਵੇਗਾ? ਆਪਣੇ ਉੱਤਰ ਦੇ ਸਮਰਥਨ ਵਿੱਚ ਉਦਾਹਰਨ ਦਿਓ।</p>
-          <p class="ans-txt"><strong>Ans:</strong> Yes, Sausage was sure that he would not come out alive. He thought he would get lost underwater and never find the surface or air again.</p>
-          <p class="punjabi-txt">ਹਾਂ, Sausage ਨੂੰ ਯਕੀਨ ਸੀ ਕਿ ਉਹ ਜ਼ਿੰਦਾ ਬਾਹਰ ਨਹੀਂ ਆਵੇਗਾ। ਉਸ ਨੂੰ ਲੱਗਿਆ ਕਿ ਉਹ ਪਾਣੀ ਦੇ ਅੰਦਰ ਗੁੰਮ ਹੋ ਜਾਵੇਗਾ ਅਤੇ ਦੁਬਾਰਾ ਪਾਣੀ ਦੀ ਸਤ੍ਹਾ ਜਾਂ ਹਵਾ ਨਹੀਂ ਲੱਭ ਸਕੇਗਾ।</p>
+          <p><strong>8. Why was the seamstress's little boy crying?</strong></p>
+          <p class="punjabi-txt">ਦਰਜ਼ਨ ਦਾ ਛੋੋਟਾ ਮੁੰਡਾ ਕਿਉਂ ਰੋ ਰਿਹਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The little boy was ill. He had fever. He was crying for oranges.</p>
+          <p class="punjabi-txt">ਛੋਟਾ ਮੁੰਡਾ ਬੀਮਾਰ ਸੀ। ਉਸ ਨੂੰ ਤੇਜ ਬੁਖਾਰ ਸੀ। ਉਹ ਸੰਤਰਿਆਂ ਲਈ ਰੋ ਰਿਹਾ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>9. What did Sausage dig out? Did he know what he had caught hold of when he was inside the water? Why?</strong></p>
-          <p class="punjabi-txt">Sausage ਨੇ ਕੀ ਪੁੱਟ ਕੇ ਕੱਢਿਆ? ਕੀ ਉਸ ਨੂੰ ਪਤਾ ਸੀ ਕਿ ਪਾਣੀ ਦੇ ਅੰਦਰ ਉਸ ਨੇ ਕਿਸ ਚੀਜ਼ ਨੂੰ ਫੜਿਆ ਸੀ? ਕਿਉਂ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> Sausage dug out an old tin box filled with mud. He did not know what he had caught hold of because he had removed his glasses and the water was dark and muddy. He thought it was the brick.</p>
-          <p class="punjabi-txt">Sausage ਨੇ ਮਿੱਟੀ ਨਾਲ ਭਰਿਆ ਇੱਕ ਪੁਰਾਣਾ ਟੀਨ ਦਾ ਡੱਬਾ ਪੁੱਟ ਕੇ ਕੱਢਿਆ। ਉਸ ਨੂੰ ਪਤਾ ਨਹੀਂ ਸੀ ਕਿ ਉਸ ਨੇ ਕੀ ਫੜਿਆ ਸੀ ਕਿਉਂਕਿ ਉਸ ਨੇ ਆਪਣੀ ਐਨਕ ਉਤਾਰ ਦਿੱਤੀ ਸੀ ਅਤੇ ਪਾਣੀ ਹਨੇਰਾ ਤੇ ਚਿੱਕੜ ਵਾਲਾ ਸੀ। ਉਸ ਨੂੰ ਲੱਗਿਆ ਕਿ ਇਹ ਇੱਟ ਸੀ।</p>
+          <p><strong>9. How did both the Happy Prince and the Swallow help the seamstress?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਅਤੇ ਅਬਾਬੀਲ ਦੋਵਾਂ ਨੇ ਮਿਲ ਕੇ ਦਰਜ਼ਨ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince sent the ruby from his sword hilt through the Swallow to the seamstress.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਬਾਬੀਲ ਰਾਹੀਂ ਆਪਣੀ ਤਲਵਾਰ ਦਾ ਲਾਲ ਮਾਣਕ ਦਰਜ਼ਨ ਨੂੰ ਭੇਜਿਆ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>10. Where did Sausage reach while swimming?</strong></p>
-          <p class="punjabi-txt">ਤੈਰਦੇ ਹੋਏ Sausage ਕਿੱਥੇ ਪਹੁੰਚ ਗਿਆ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> He reached almost to the other end of the pond.</p>
-          <p class="punjabi-txt">ਉਹ ਤਲਾਬ ਦੇ ਲਗਭਗ ਦੂਜੇ ਸਿਰੇ ਤੱਕ ਪਹੁੰਚ ਗਿਆ।</p>
+          <p><strong>10. Why did the Swallow feel warm?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੂੰ ਗਰਮੀ (ਨਿੱਘ) ਕਿਉਂ ਮਹਿਸੂਸ ਹੋਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow felt warm because he had done a good and noble deed by helping the poor seamstress and her child.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੂੰ ਨਿੱਘ ਮਹਿਸੂਸ ਹੋਇਆ ਕਿਉਂਕਿ ਉਸਨੇ ਗਰੀਬ ਦਰਜ਼ਨ ਅਤੇ ਉਸਦੇ ਬੱਚੇ ਦੀ ਮਦਦ ਕਰਕੇ ਇੱਕ ਨੇਕ ਅਤੇ ਚੰਗਾ ਕੰਮ ਕੀਤਾ ਸੀ।</p>
         </div>
 
         <div class="qa-block">
-          <p><strong>11. What did Sausage do with the tin?</strong></p>
-          <p class="punjabi-txt">Sausage ਨੇ ਟੀਨ ਦੇ ਡੱਬੇ ਦਾ ਕੀ ਕੀਤਾ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> He cleaned the tin box and kept it on the mantelpiece at home. He used it to store his coin collection.</p>
-          <p class="punjabi-txt">ਉਸ ਨੇ ਟੀਨ ਦੇ ਡੱਬੇ ਨੂੰ ਸਾਫ਼ ਕੀਤਾ ਅਤੇ ਘਰ ਵਿੱਚ ਮੈਨਟਲਪੀਸ ਉੱਤੇ ਰੱਖ ਦਿੱਤਾ। ਉਸ ਨੇ ਇਸ ਵਿੱਚ ਆਪਣੇ ਸਿੱਕਿਆਂ ਦਾ ਸੰਗ੍ਰਹਿ ਰੱਖਿਆ।</p>
+          <p><strong>11. What troubled the young man in the garret?</strong></p>
+          <p class="punjabi-txt">ਚੁਬਾਰੇ ਵਿੱਚ ਰਹਿਣ ਵਾਲੇ ਨੌਜਵਾਨ ਨੂੰ ਕੀ ਪਰੇਸ਼ਾਨੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The young man in the garret was a poor playwright. He was feeling very cold and there was no fire in the grate. He was feeling hungry also.</p>
+          <p class="punjabi-txt">ਅਟਾਰੀ ਵਿੱਚ ਬੈਠਾ ਨੌਜਵਾਨ ਇੱਕ ਨਾਟਕਕਾਰ ਸੀ। ਉਸਨੂੰ ਬਹੁਤ ਠੰਡ ਲੱਗ ਰਹੀ ਸੀ ਅਤੇ ਅੰਗੀਠੀ ਵਿੱਚ ਅੱਗ ਨਹੀਂ ਸੀ, ਉਸ ਨੂੰ ਭੁੱਖ ਵੀ ਲੱਗ ਰਹੀ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. How was the young man helped?</strong></p>
+          <p class="punjabi-txt">ਨੌਜਵਾਨ ਦੀ ਮਦਦ ਕਿਵੇਂ ਕੀਤੀ ਗਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince asked the Swallow to pluck out the sapphire from his eye and give it to the young man. The Swallow did as he was told. The young man became happy on getting the sapphire. He was now able to finish his play.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਬਾਬੀਲ ਨੂੰ ਉਸ ਦੀ ਅੱਖ ਵਿੱਚੋਂ ਇੱਕ ਨੀਲਮ ਕੱਢ ਕੇ ਨੌਜਵਾਨ ਨੂੰ ਦੇਣ ਲਈ ਕਿਹਾ। ਅਬਾਬੀਲ ਨੇ ਉਸੇ ਤਰ੍ਹਾਂ ਹੀ ਕੀਤਾ ਜਿਵੇਂ ਉਸ ਨੂੰ ਕਿਹਾ ਗਿਆ ਸੀ। ਨੀਲਮ ਪਾ ਕੇ ਨੌਜਵਾਨ ਖੁਸ਼ ਹੋ ਗਿਆ ਹੁਣ ਆਪਣਾ ਨਾਟਕ ਪੂਰਾ ਕਰ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. Why was the match girl crying?</strong></p>
+          <p class="punjabi-txt">ਮਾਚਿਸਾਂ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਕਿਉਂ ਰੋ ਰਹੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The match girl was crying because her matches had fallen into the gutter and were spoiled.</p>
+          <p class="punjabi-txt">ਮਾਚਿਸਾਂ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਇਸ ਲਈ ਰੋ ਰਹੀ ਸੀ ਕਿਉਂਕਿ ਉਸਦੀਆਂ ਮਾਚਿਸਾਂ ਨਾਲੀ ਵਿੱਚ ਡਿੱਗ ਕੇ ਖਰਾਬ ਹੋ ਗਈਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>14. The Swallow said to the prince, “I will stay with you always.” Why?</strong></p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਰਾਜਕੁਮਾਰ ਨੂੰ ਕਿਹਾ, "ਮੈਂ ਹਮੇਸ਼ਾ ਤੁਹਾਡੇ ਨਾਲ ਰਹਾਂਗਾ।" ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow decided to stay forever because the Prince had given away both of his sapphire eyes and was now completely blind.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਨੇ ਹਮੇਸ਼ਾ ਲਈ ਠਹਿਰਨ ਦਾ ਫੈਸਲਾ ਕੀਤਾ ਕਿਉਂਕਿ ਰਾਜਕੁਮਾਰ ਨੇ ਆਪਣੇ ਦੋਵੇਂ ਨੀਲਮ ਦਾਨ ਕਰ ਦਿੱਤੇ ਸਨ ਅਤੇ ਹੁਣ ਉਹ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅੰਨ੍ਹਾ ਹੋ ਚੁੱਕਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>15. How did the poor Swallow manage to live in so much cold?</strong></p>
+          <p class="punjabi-txt">ਵਿਚਾਰਾ ਅਬਾਬੀਲ ਇੰਨੀ ਜ਼ਿਆਦਾ ਠੰਢ ਵਿੱਚ ਕਿਵੇਂ ਜਿਉਂਦਾ ਰਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Swallow picked up crumbs outside the baker’s door to eat and tried to keep himself warm by flapping his wings.</p>
+          <p class="punjabi-txt">ਅਬਾਬੀਲ ਖਾਣ ਲਈ ਬੇਕਰ (ਨਾਨਬਾਈ) ਦੀ ਦੁਕਾਨ ਦੇ ਬਾਹਰੋਂ ਰੋਟੀ ਦੇ ਟੁਕੜੇ ਚੁਗਦਾ ਸੀ ਅਤੇ ਆਪਣੇ ਖੰਭ ਫੜਫੜਾ ਕੇ ਆਪਣੇ ਆਪ ਨੂੰ ਗਰਮ ਰੱਖਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>16. Why was the statue of the Happy Prince pulled down?</strong></p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਬੁੱਤ ਹੇਠਾਂ ਕਿਉਂ ਡੇਗ ਦਿੱਤਾ ਗਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The statue was pulled down because it looked dull and shabby without its gold, ruby, and sapphires, and the Mayor felt it was no longer beautiful or useful.</p>
+          <p class="punjabi-txt">ਬੁੱਤ ਨੂੰ ਹੇਠਾਂ ਡੇਗ ਦਿੱਤਾ ਗਿਆ ਕਿਉਂਕਿ ਸੋਨੇ, ਮਾਣਕ ਅਤੇ ਨੀਲਮ ਤੋਂ ਬਿਨਾਂ ਇਹ ਬੇਰੰਗ ਅਤੇ ਭੱਦਾ ਲੱਗ ਰਹਾ ਸੀ, ਅਤੇ ਮੇਅਰ ਨੂੰ ਲੱਗਿਆ ਕਿ ਇਹ ਹੁਣ ਸੁੰਦਰ ਜਾਂ ਉਪਯੋਗੀ ਨਹੀਂ ਰਿਹਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>17. What were the two most precious things in the city?</strong></p>
+          <p class="punjabi-txt">ਸ਼ਹਿਰ ਵਿੱਚ ਦੋ ਸਭ ਤੋਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਕਿਹੜੀਆਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The two most precious things were the leaden heart of the Happy Prince and the dead Swallow.</p>
+          <p class="punjabi-txt">ਦੋ ਸਭ ਤੋਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦਾ ਸਿੱਕੇ (ਸੀਸੇ) ਦਾ ਦਿਲ ਅਤੇ ਮਰਿਆ ਹੋਇਆ ਅਬਾਬੀਲ ਸਨ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. Why was the prince called the Happy Prince?</strong></p>
+          <p class="punjabi-txt">ਰਾਜਕੁਮਾਰ ਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਿਉਂ ਕਿਹਾ ਜਾਂਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue covered with fine gold. It stood high above the city on a tall column. When the Prince was alive, he lived in a palace where sorrow was not allowed to enter. He spent his life in happiness and pleasure. Therefore, people called him the Happy Prince.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ ਜਿਸ ਉੱਤੇ ਬਰੀਕ ਸੋਨੇ ਦੀ ਪਰਤ ਚੜ੍ਹੀ ਹੋਈ ਸੀ। ਇਹ ਸ਼ਹਿਰ ਦੇ ਉੱਪਰ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਜਦੋਂ ਰਾਜਕੁਮਾਰ ਜ਼ਿੰਦਾ ਸੀ, ਉਹ ਇੱਕ ਅਜਿਹੇ ਮਹਲ ਵਿੱਚ ਰਹਿੰਦਾ ਸੀ ਜਿੱਥੇ ਦੁੱਖ ਨੂੰ ਅੰਦਰ ਆਉਣ ਦੀ ਆਗਿਆ ਨਹੀਂ ਸੀ। ਉਸਨੇ ਆਪਣੀ ਜ਼ਿੰਦਗੀ ਖੁਸ਼ੀ ਅਤੇ ਸੁਖ ਨਾਲ ਬਿਤਾਈ। ਇਸ ਲਈ ਲੋਕ ਉਸਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਹਿੰਦੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. “I cannot choose but weep.” Why did the Happy Prince say so?</strong></p>
+          <p class="punjabi-txt">“ਮੈਂ ਰੋਣ ਤੋਂ ਬਿਨਾਂ ਰਹਿ ਨਹੀਂ ਸਕਦਾ।” ਹੈਪੀ ਪ੍ਰਿੰਸ ਨੇ ਅਜਿਹਾ ਕਿਉਂ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue. It stood on a tall column. When the prince was alive, he was always happy. But now he could see the problems of the people. But he could not help them. Therefore, he could not choose but weep.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ। ਇਹ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਜਦੋਂ ਰਾਜਕੁਮਾਰ ਜ਼ਿੰਦਾ ਸੀ, ਉਹ ਹਮੇਸ਼ਾ ਖੁਸ਼ ਰਹਿੰਦਾ ਸੀ। ਪਰ ਹੁਣ ਉਹ ਲੋਕਾਂ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਦੇਖ ਸਕਦਾ ਸੀ। ਪਰ ਉਹ ਉਨ੍ਹਾਂ ਦੀ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦਾ ਸੀ। ਇਸ ਲਈ ਉਹ ਰੋਣ ਤੋਂ ਬਿਨਾਂ ਰਹਿ ਨਹੀਂ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Comment on the remark—“The living always think that gold can make them happy.”</strong></p>
+          <p class="punjabi-txt">ਇਸ ਕਥਨ ਉੱਤੇ ਟਿੱਪਣੀ ਕਰੋ—“ਜੀਉਂਦੇ ਲੋਕ ਹਮੇਸ਼ਾ ਸੋਚਦੇ ਹਨ ਕਿ ਸੋਨਾ ਉਨ੍ਹਾਂ ਨੂੰ ਖੁਸ਼ ਕਰ ਸਕਦਾ ਹੈ।”</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gold here means money. Money makes the mare go. The living think that money is the most powerful thing in the world. Therefore, the living always think that gold can make them happy.</p>
+          <p class="punjabi-txt">ਇੱਥੇ ਸੋਨੇ ਦਾ ਅਰਥ ਪੈਸੇ ਤੋਂ ਹੈ। ਪੈਸਾ ਕੰਮਾਂ ਨੂੰ ਚਲਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਜੀਉਂਦੇ ਲੋਕ ਸੋਚਦੇ ਹਨ ਕਿ ਪੈਸਾ ਦੁਨੀਆ ਦੀ ਸਭ ਤੋਂ ਤਾਕਤਵਰ ਚੀਜ਼ ਹੈ। ਇਸ ਲਈ, ਜੀਉਂਦੇ ਲੋਕ ਹਮੇਸ਼ਾ ਸੋਚਦੇ ਹਨ ਕਿ ਸੋਨਾ ਉਨ੍ਹਾਂ ਨੂੰ ਖੁਸ਼ ਕਰ ਸਕਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Why did the Mayor dislike the statue so much?</strong></p>
+          <p class="ans-txt"><strong>Ans:</strong> The Mayor disliked the statue because the Happy Prince was no longer beautiful. He had given away all his gold and his precious stones to help the poor and needy people of the city. The statue had become dull and unattractive. Therefore, he disliked the statue and ordered it to be pulled down.</p>
+          <p class="punjabi-txt">ਮੇਅਰ ਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀ ਮੂਰਤੀ ਇਸ ਲਈ ਨਾਪਸੰਦ ਸੀ ਕਿਉਂਕਿ ਹੈਪੀ ਪ੍ਰਿੰਸ ਹੁਣ ਪਹਿਲਾਂ ਵਾਂਗ ਸੁੰਦਰ ਨਹੀਂ ਰਹਿ ਗਿਆ ਸੀ। ਉਸਨੇ ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਅਤੇ ਲੋੜਵੰਦ ਲੋਕਾਂ ਦੀ ਮਦਦ ਕਰਨ ਲਈ ਆਪਣਾ ਸਾਰਾ ਸੋਨਾ ਅਤੇ ਕੀਮਤੀ ਰਤਨ ਦੇ ਦਿੱਤੇ ਸਨ। ਮੂਰਤੀ ਹੁਣ ਫਿੱਕੀ ਅਤੇ ਬਦਸੂਰਤ ਦਿਖਾਈ ਦੇਣ ਲੱਗ ਪਈ ਸੀ। ਇਸ ਲਈ ਮੇਅਰ ਨੂੰ ਮੂਰਤੀ ਨਾਪਸੰਦ ਸੀ ਅਤੇ ਉਸਨੇ ਇਸਨੂੰ ਹੇਠਾਂ ਉਤਾਰਨ ਦਾ ਹੁਕਮ ਦੇ ਦਿੱਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Write a short note on the sufferings of the poor people in the city.</strong></p>
+          <p class="punjabi-txt">ਸ਼ਹਿਰ ਦੇ ਗਰੀਬ ਲੋਕਾਂ ਦੇ ਦੁੱਖਾਂ ਬਾਰੇ ਇੱਕ ਛੋਟਾ ਨੋਟ ਲਿਖੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Happy Prince was a beautiful statue. It stood on a tall column. He could see the problems of the people in the city. The people in the city were very poor. The seamstress was poor. Her son was ill. Cold and hunger troubled the playwright. The little match girl was also very poor. There were hungry and homeless children. There was ugliness and misery everywhere.</p>
+          <p class="punjabi-txt">ਹੈਪੀ ਪ੍ਰਿੰਸ ਇੱਕ ਸੁੰਦਰ ਮੂਰਤੀ ਸੀ। ਇਹ ਇੱਕ ਉੱਚੇ ਥੰਮ੍ਹੇ ਉੱਤੇ ਖੜ੍ਹੀ ਸੀ। ਉਹ ਸ਼ਹਿਰ ਦੇ ਲੋਕਾਂ ਦੀਆਂ ਸਮੱਸਿਆਵਾਂ ਦੇਖ ਸਕਦਾ ਸੀ। ਸ਼ਹਿਰ ਦੇ ਲੋਕ ਬਹੁਤ ਗਰੀਬ ਸਨ। ਦਰਜ਼ਣ ਗਰੀਬ ਸੀ। ਉਸਦਾ ਪੁੱਤਰ ਬਿਮਾਰ ਸੀ। ਠੰਢ ਅਤੇ ਭੁੱਖ ਨੇ ਨਾਟਕਕਾਰ ਨੂੰ ਪਰੇਸ਼ਾਨ ਕੀਤਾ ਹੋਇਆ ਸੀ। ਛੋਟੀ ਮਾਚਿਸ ਵੇਚਣ ਵਾਲੀ ਕੁੜੀ ਵੀ ਬਹੁਤ ਗਰੀਬ ਸੀ। ਉਥੇ ਭੁੱਖੇ ਅਤੇ ਬੇਘਰ ਬੱਚੇ ਸਨ। ਹਰ ਪਾਸੇ ਕੁਰੂਪਤਾ ਅਤੇ ਮੁਸੀਬਤ (ਦੁੱਖ) ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. What is the message conveyed by the author?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਦੁਆਰਾ ਕੀ ਸੰਦੇਸ਼ ਦਿੱਤਾ ਗਿਆ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author brings out the secret of true happiness. True happiness comes from serving the poor and the needy. God also blesses such persons. It is clear from the examples of the Happy Prince and the Swallow. The Happy Prince gives his all for the sake of the poor. The poor Swallow sacrifices his life for the sake of the Happy Prince. God blesses both of them. He gives them place in His Paradise.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਸੱਚੀ ਖੁਸ਼ੀ ਦਾ ਭੇਤ ਦੱਸਦਾ ਹੈ। ਸੱਚੀ ਖੁਸ਼ੀ ਗਰੀਬਾਂ ਅਤੇ ਲੋੜਵੰਦਾਂ ਦੀ ਸੇਵਾ ਕਰਨ ਨਾਲ ਮਿਲਦੀ ਹੈ। ਪਰਮਾਤਮਾ ਵੀ ਅਜਿਹੇ ਲੋਕਾਂ ਨੂੰ ਅਸੀਸ ਦਿੰਦਾ ਹੈ। ਇਹ ਗੱਲ ਹੈਪੀ ਪ੍ਰਿੰਸ ਅਤੇ ਅਬਾਬੀਲ ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਤੋਂ ਸਪੱਸ਼ਟ ਹੁੰਦੀ ਹੈ। ਹੈਪੀ ਪ੍ਰਿੰਸ ਗਰੀਬਾਂ ਦੀ ਭਲਾਈ ਲਈ ਆਪਣਾ ਸਭ ਕੁਝ ਦੇ ਦਿੰਦਾ ਹੈ। ਵਿਚਾਰਾ ਅਬਾਬੀਲ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੀ ਖਾਤਰ ਆਪਣੀ ਜਾਨ ਕੁਰਬਾਨ ਕਰ ਦਿੰਦਾ ਹੈ। ਪਰਮਾਤਮਾ ਦੋਵਾਂ ਨੂੰ ਅਸੀਸ ਦਿੰਦਾ ਹੈ। ਉਹ ਦੋਵਾਂ ਨੂੰ ਆਪਣੇ ਸਵਰਗ ਵਿੱਚ ਥਾਂ ਦਿੰਦਾ ਹੈ।</p>
         </div>
 
         <h3>Objective Type Questions</h3>
 
         <div class="qa-block">
-          <p>1. The boy was called …………..</p>
-          <p>(i) flabby &nbsp;&nbsp; (ii) filthy &nbsp;&nbsp; (iii) Sausage &nbsp;&nbsp; (iv) honest.</p>
-          <p class="ans-txt"><strong>Ans:</strong> (iii) Sausage</p>
+          <p>1. The drops were coming from the _________ of the Happy Prince.</p>
+          <p class="ans-txt"><strong>Ans:</strong> eyes</p>
         </div>
 
         <div class="qa-block">
-          <p>2. The instructor threw a tin in the pond. (True/False)</p>
+          <p>2. The son of the seamstress was crying because he wanted to go to Egypt. (True/False)</p>
           <p class="ans-txt"><strong>Ans:</strong> False</p>
         </div>
 
         <div class="qa-block">
-          <p>3. Sausage put his stamp collection in the tin. (True/False)</p>
+          <p>3. The poor seamstress was given the _________ by the swallow.</p>
+          <p>i) gold &nbsp;&nbsp; ii) sapphire &nbsp;&nbsp; iii) ruby &nbsp;&nbsp; iv) oranges</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) ruby</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Who ordered to pull down the statue of the Happy Prince?</p>
+          <p>i) Mayor &nbsp;&nbsp; ii) swallow &nbsp;&nbsp; iii) seamstress &nbsp;&nbsp; iv) playwright</p>
+          <p class="ans-txt"><strong>Ans:</strong> i) Mayor</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. The statue of Happy Prince was decorated with diamonds. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. Why are you weeping then?</p>
+          <p class="ans-txt">ਫਿਰ ਤੁਸੀਂ ਰੋ ਕਿਉਂ ਰਹੇ ਹੋ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. They pulled down the statue of the Happy Prince.</p>
+          <p class="ans-txt">ਉਹਨਾਂ ਨੇ ਹੈਪੀ ਪ੍ਰਿੰਸ ਦੇ ਬੁੱਤ ਨੂੰ ਹੇਠਾਂ ਡੇਗ ਦਿੱਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. I am waited for in Egypt.</p>
+          <p class="ans-txt">ਮੇਰਾ ਮਿਸਰ ਵਿੱਚ ਇੰਤਜ਼ਾਰ ਹੋ ਰਿਹਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. It is very cold here.</p>
+          <p class="ans-txt">ਇੱਥੇ ਬਹੁਤ ਠੰਡ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. I have a golden bed-room.</p>
+          <p class="ans-txt">ਮੇਰੇ ਕੋਲ ਇੱਕ ਸੁਨਹਿਰੀ ਸੌਣ ਵਾਲਾ ਕਮਰਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. There is not a single cloud in the sky.</p>
+          <p class="ans-txt">ਅਸਮਾਨ ਵਿੱਚ ਇੱਕ ਵੀ ਬੱਦਲ ਨਹੀਂ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. Then another drop fell.</p>
+          <p class="ans-txt">ਫਿਰ ਇੱਕ ਹੋਰ ਬੂੰਦ ਆ ਡਿੱਗੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. My courtiers called me the Happy Prince.</p>
+          <p class="ans-txt">ਮੇਰੇ ਦਰਬਾਰੀ ਮੈਨੂੰ ਹੈਪੀ ਪ੍ਰਿੰਸ ਕਹਿ ਕੇ ਬੁਲਾਉਂਦੇ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. I have come to bid you good bye.</p>
+          <p class="ans-txt">ਮੈਂ ਤੁਹਾਨੂੰ ਅਲਵਿਦਾ ਕਹਿਣ ਆਇਆ ਹਾਂ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. How hungry we are!</p>
+          <p class="ans-txt">ਅਸੀਂ ਕਿੰਨੇ ਭੁੱਖੇ ਹਾਂ!</p>
+        </div>
+      `,
+      science_taking_us: `
+        <h2>Class 10th - Chapter 2: Where is Science Taking Us?</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Why does the author say that science is doing "less than nothing" in non-material things?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਇਹ ਕਿਉਂ ਕਹਿੰਦਾ ਹੈ ਕਿ ਵਿਗਿਆਨ ਗੈਰ-ਭੌਤਿਕ ਚੀਜ਼ਾਂ ਵਿੱਚ "ਕੁੱਛ ਵੀ ਨਹੀਂ" ਕਰ ਰਿਹਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Science has given man all powers to have control over the physical world. But it has done nothing for the progress of ethical and spiritual values. Therefore, the author says that science is doing less than nothing.</p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਨੇ ਮਨੁੱਖ ਨੂੰ ਭੌਤਿਕ ਸੰਸਾਰ ਉੱਤੇ ਕਾਬੂ ਪਾਉਣ ਲਈ ਸਾਰੀਆਂ ਸ਼ਕਤੀਆਂ ਪ੍ਰਦਾਨ ਕਰ ਦਿੱਤੀਆਂ ਹਨ। ਪਰ ਇਸ ਨੇ ਨੈਤਿਕ ਅਤੇ ਆਧਿਆਤਮਿਕ ਕਦਰਾਂ-ਕੀਮਤਾਂ ਦੀ ਤਰੱਕੀ ਲਈ ਕੁਝ ਨਹੀਂ ਕੀਤਾ। ਇਸ ਲਈ ਲੇਖਕ ਕਹਿੰਦਾ ਹੈ ਕਿ ਵਿਗਿਆਨ ਕੁਝ ਨਾ ਕਰਨ ਨਾਲੋਂ ਵੀ ਘੱਟ ਕਰ ਰਿਹਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. What are machines doing for human beings?</strong></p>
+          <p class="punjabi-txt">ਮਸ਼ੀਨਾਂ ਮਨੁੱਖਾਂ ਲਈ ਕੀ ਕਰ ਰਹੀਆਂ ਹਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Machines have given humans abnormal power. They help us to fly in air and travel under water. They save our time and energy.</p>
+          <p class="punjabi-txt">ਮਸ਼ੀਨਾਂ ਨੇ ਮਨੁੱਖਾਂ ਨੂੰ ਅਸਧਾਰਨ ਸ਼ਕਤੀ ਦਿੱਤੀ ਹੈ। ਉਹ ਸਾਨੂੰ ਹਵਾ ਵਿੱਚ ਉੱਡਣ ਅਤੇ ਪਾਣੀ ਦੇ ਅੰਦਰ ਯਾਤਰਾ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀਆਂ ਹਨ। ਉਹ ਸਾਡਾ ਸਮਾਂ ਅਤੇ ਊਰਜਾ ਬਚਾਉਂਦੀਆਂ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What is the greatest triumph of science?</strong></p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਭੌਤਿਕ ਜਿੱਤ ਕੀ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The greatest triumph of science is to provide food, clothing and shelter to all the people.</p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਉਪਲਬਧੀ ਸਾਰੇ ਲੋਕਾਂ ਲਈ ਭੋਜਨ, ਕੱਪੜੇ ਅਤੇ ਰਹਿਣ ਲਈ ਘਰ ਮੁਹੱਈਆ ਕਰਵਾਉਣਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. What are the consequences of war?</strong></p>
+          <p class="punjabi-txt">ਯੁੱਧ ਦੇ ਕੀ ਸਿੱਟੇ ਨਿਕਲਦੇ ਹਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> War causes death and destruction. Hospitals get crowded with wounded people. There is scarcity of food.</p>
+          <p class="punjabi-txt">ਯੁੱਧ ਮੌਤ ਅਤੇ ਤਬਾਹੀ ਦਾ ਕਾਰਨ ਬਣਦਾ ਹੈ। ਹਸਪਤਾਲ ਜ਼ਖਮੀ ਲੋਕਾਂ ਨਾਲ ਭਰ ਜਾਂਦੇ ਹਨ। ਭੋਜਨ ਦੀ ਕਮੀ ਹੋ ਜਾਂਦੀ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. "Today the upper age group is overcrowded." Why?</strong></p>
+          <p class="punjabi-txt">ਅੱਜ ਵੱਡੀ ਉਮਰ ਦੇ ਲੋਕਾਂ ਦੀ ਗਿਣਤੀ ਕਿਉਂ ਵੱਧ ਰਹੀ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Science has helped man to live longer. Due to discoveries of medicines and drugs, the average life span has increased. So the upper age group is overcrowded.</p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਨੇ ਮਨੁੱਖ ਨੂੰ ਲੰਬਾ ਜੀਵਨ ਜਿਉਣ ਵਿੱਚ ਮਦਦ ਕੀਤੀ ਹੈ। ਦਵਾਈਆਂ ਅਤੇ ਔਸ਼ਧੀਆਂ ਦੀਆਂ ਖੋਜਾਂ ਕਾਰਨ ਔਸਤ ਉਮਰ ਵੱਧ ਗਈ ਹੈ। ਇਸ ਲਈ ਵੱਡੀ ਉਮਰ ਦੇ ਲੋਕਾਂ ਦੀ ਗਿਣਤੀ ਵੱਧ ਰਹੀ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. What has happened to the ethics and morals in the modern world?</strong></p>
+          <p class="punjabi-txt">ਆਧੁਨਿਕ ਸੰਸਾਰ ਵਿੱਚ ਨੈਤਿਕਤਾ ਅਤੇ ਅਖਲਾਕ ਦਾ ਕੀ ਹੋਇਆ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> There has been a decline in ethics and morals in the modern world. In the modern world, everybody is running after material things. Nobody cares about ethics and morals.</p>
+          <p class="punjabi-txt">ਆਧੁਨਿਕ ਸੰਸਾਰ ਵਿੱਚ ਨੈਤਿਕਤਾ ਅਤੇ ਅਖਲਾਕ ਵਿੱਚ ਗਿਰਾਵਟ ਆਈ ਹੈ। ਆਧੁਨਿਕ ਸੰਸਾਰ ਵਿੱਚ ਹਰ ਕੋਈ ਭੌਤਿਕ ਚੀਜ਼ਾਂ ਦੇ ਪਿੱਛੇ ਭੱਜ ਰਿਹਾ ਹੈ। ਕੋਈ ਵੀ ਨੈਤਿਕਤਾ ਅਤੇ ਅਖਲਾਕ ਦੀ ਪ੍ਰਵਾਹ ਨਹੀਂ ਕਰਦਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. What is really needed in the world today?</strong></p>
+          <p class="punjabi-txt">ਅੱਜ ਦੁਨੀਆ ਵਿੱਚ ਅਸਲ ਵਿੱਚ ਕਿਸ ਚੀਜ਼ ਦੀ ਲੋੜ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The qualities of charity, mercy, understanding, tolerance and justice are really needed in the world today.</p>
+          <p class="punjabi-txt">ਅੱਜ ਦੁਨੀਆ ਵਿੱਚ ਦਾਨ, ਦਇਆ, ਸਮਝਦਾਰੀ, ਸਹਿਣਸ਼ੀਲਤਾ ਅਤੇ ਨਿਆਂ ਦੇ ਗੁਣਾਂ ਦੀ ਅਸਲ ਵਿੱਚ ਲੋੜ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. Why does the author of ‘Where Is Science Taking Us?’ wish to live another hundred years?</strong></p>
+          <p class="punjabi-txt">‘Where Is Science Taking Us?’ ਦਾ ਲੇਖਕ ਹੋਰ ਸੌ ਸਾਲ ਕਿਉਂ ਜਿਊਣਾ ਚਾਹੁੰਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author is an optimist. He hopes that life will become more interesting, and exciting in the future. He wants to enjoy this kind of life. That is why he wishes to live another hundred years.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਇੱਕ ਆਸ਼ਾਵਾਦੀ ਹੈ। ਉਸਨੂੰ ਉਮੀਦ ਹੈ ਕਿ ਭਵਿੱਖ ਵਿੱਚ ਜ਼ਿੰਦਗੀ ਹੋਰ ਦਿਲਚਸਪ ਅਤੇ ਉਤਸ਼ਾਹਜਨਕ ਬਣ ਜਾਵੇਗੀ। ਉਹ ਅਜਿਹੇ ਜੀਵਨ ਦਾ ਆਨੰਦ ਮਾਣਨਾ ਚਾਹੁੰਦਾ ਹੈ। ਇਸੇ ਲਈ ਉਹ ਹੋਰ ਸੌ ਸਾਲ ਜਿਊਣ ਦੀ ਇੱਛਾ ਰੱਖਦਾ ਹੈ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. List the material triumphs of Science and the non-material necessities to make the world a better place.</strong></p>
+          <p class="punjabi-txt">ਦੁਨੀਆ ਨੂੰ ਇੱਕ ਬਿਹਤਰ ਸਥਾਨ ਬਣਾਉਣ ਲਈ ਵਿਗਿਆਨ ਦੀਆਂ ਭੌਤਿਕ ਪ੍ਰਾਪਤੀਆਂ ਅਤੇ ਗੈਰ-ਭੌਤਿਕ ਲੋੜਾਂ ਦੀ ਸੂਚੀ ਦਿਓ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The greatest triumph of Science is to provide food, clothing and shelter to all the people. Science has made machines. But Science is doing nothing for non-material things. The morals and ethics are declining in the modern world. A small advance in charity, justice and mercy is needed today.</p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਪ੍ਰਾਪਤੀ ਸਾਰੇ ਲੋਕਾਂ ਲਈ ਭੋਜਨ, ਕੱਪੜੇ ਅਤੇ ਮਕਾਨ ਪ੍ਰਦਾਨ ਕਰਨਾ ਹੈ। ਵਿਗਿਆਨ ਨੇ ਮਸ਼ੀਨਾਂ ਬਣਾਈਆਂ ਹਨ। ਪਰ ਵਿਗਿਆਨ ਗੈਰ-ਭੌਤਿਕ ਚੀਜ਼ਾਂ ਲਈ ਕੁਝ ਨਹੀਂ ਕਰ ਰਿਹਾ। ਆਧੁਨਿਕ ਸੰਸਾਰ ਵਿੱਚ ਨੈਤਿਕਤਾ ਅਤੇ ਸਦਾਚਾਰ ਘਟਦੇ ਜਾ ਰਹੇ ਹਨ। ਅੱਜ ਦਾਨ, ਨਿਆਂ ਅਤੇ ਦਇਆ ਵਿੱਚ ਥੋੜ੍ਹੀ ਜਿਹੀ ਤਰੱਕੀ ਦੀ ਲੋੜ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. What should be the ultimate aim of Science?</strong></p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਦਾ ਅੰਤਿਮ ਉਦੇਸ਼ ਕੀ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Science should make human life free from hunger, poverty, fear and superstition. It should do everything to make man's life happy and peaceful. No doubt, science has given man the comfort of all material things. But more than material things, it is the non-material things that man needs. They are the qualities of charity, mercy, tolerance and justice. A small advance in non-material things should be the ultimate aim of science.</p>
+          <p class="punjabi-txt">ਵਿਗਿਆਨ ਨੂੰ ਮਨੁੱਖੀ ਜੀਵਨ ਨੂੰ ਭੁੱਖ, ਗਰੀਬੀ, ਡਰ ਅਤੇ ਅੰਧਵਿਸ਼ਵਾਸ ਤੋਂ ਮੁਕਤ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ। ਇਸ ਨੂੰ ਮਨੁੱਖ ਦੇ ਜੀਵਨ ਨੂੰ ਖੁਸ਼ਹਾਲ ਅਤੇ ਸ਼ਾਂਤਮਈ ਬਣਾਉਣ ਲਈ ਹਰ ਸੰਭਵ ਕੰਮ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ। ਬਿਨਾਂ ਸ਼ੱਕ, ਵਿਗਿਆਨ ਨੇ ਮਨੁੱਖ ਨੂੰ ਸਾਰੀਆਂ ਭੌਤਿਕ ਚੀਜ਼ਾਂ ਦਾ ਸੁਖ ਦਿੱਤਾ ਹੈ। ਪਰ ਭੌਤਿਕ ਚੀਜ਼ਾਂ ਨਾਲੋਂ ਵੱਧ ਮਨੁੱਖ ਨੂੰ ਗੈਰ-ਭੌਤਿਕ ਗੁਣਾਂ ਦੀ ਲੋੜ ਹੈ। ਇਹ ਗੁਣ ਦਾਨ, ਦਇਆ, ਸਹਿਣਸ਼ੀਲਤਾ ਅਤੇ ਨਿਆਂ ਹਨ। ਗੈਰ-ਭੌਤਿਕ ਗੁਣਾਂ ਵਿੱਚ ਥੋੜ੍ਹੀ ਜਿਹੀ ਤਰੱਕੀ ਵਿਗਿਆਨ ਦਾ ਅੰਤਿਮ ਉਦੇਸ਼ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Modern drugs have decreased the average span of life of human beings. (True/False)</p>
           <p class="ans-txt"><strong>Ans:</strong> False</p>
         </div>
 
         <div class="qa-block">
-          <p>4. Sausage brought a ………….. from under the water.</p>
-          <p>(i) tin-box &nbsp;&nbsp; (ii) fish &nbsp;&nbsp; (iii) duck &nbsp;&nbsp; (iv) pearl.</p>
-          <p class="ans-txt"><strong>Ans:</strong> (i) tin-box</p>
+          <p>2. Machines give us more and more hours of ________.</p>
+          <p>i) hard work &nbsp;&nbsp; ii) leisure &nbsp;&nbsp; iii) life &nbsp;&nbsp; iv) health</p>
+          <p class="ans-txt"><strong>Ans:</strong> ii) leisure</p>
         </div>
 
         <div class="qa-block">
-          <p>5. Duck-diving means diving into water in the manner of a …………..</p>
-          <p>(i) fish &nbsp;&nbsp; (ii) duck &nbsp;&nbsp; (iii) crocodile &nbsp;&nbsp; (iv) turtles.</p>
-          <p class="ans-txt"><strong>Ans:</strong> (ii) duck</p>
+          <p>3. Name two non-material things mentioned in the lesson.</p>
+          <p class="ans-txt"><strong>Ans:</strong> Mercy and charity.</p>
         </div>
 
         <div class="qa-block">
-          <p>6. Where did Sausage reach while diving ?</p>
-          <p class="ans-txt"><strong>Ans:</strong> The other end of the pond.</p>
+          <p>4. According to the writer, Science is doing 'less than nothing' for material things. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Which age group is overcrowded today?</p>
+          <p>i) childhood &nbsp;&nbsp; ii) middle age group &nbsp;&nbsp; iii) upper age group &nbsp;&nbsp; iv) none of these</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) upper age group</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Science has helped man to live _____.</p>
+          <p>i) forever &nbsp;&nbsp; ii) no more &nbsp;&nbsp; iii) longer &nbsp;&nbsp; iv) a short life</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) longer</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. Where is Science taking us?</p>
+          <p class="ans-txt">ਵਿਗਿਆਨ ਸਾਨੂੰ ਕਿੱਥੇ ਲੈ ਕੇ ਜਾ ਰਿਹਾ ਹੈ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. This is the age of the machine.</p>
+          <p class="ans-txt">ਇਹ ਮਸ਼ੀਨਾਂ ਦਾ ਯੁੱਗ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. War is the worst example.</p>
+          <p class="ans-txt">ਯੁੱਧ ਇਸ ਦੀ ਸਭ ਤੋਂ ਭੈੜੀ ਉਦਾਹਰਨ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. I wish I had another hundred years.</p>
+          <p class="ans-txt">ਕਾਸ਼ ਮੇਰੇ ਕੋਲ ਹੋਰ ਸੌ ਸਾਲ ਹੁੰਦੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Here Science is actually doing less than nothing.</p>
+          <p class="ans-txt">ਇੱਥੇ ਵਿਗਿਆਨ ਅਸਲ ਵਿੱਚ ਕੁਝ ਨਹੀਂ ਤੋਂ ਵੀ ਘੱਟ ਕਰ ਰਿਹਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Who is to keep them?</p>
+          <p class="ans-txt">ਉਨ੍ਹਾਂ ਨੂੰ ਕੌਣ ਸੰਭਾਲੇਗਾ? (ਉਹਨਾਂ ਨੂੰ ਕਿਸ ਨੇ ਰੱਖਣਾ ਹੈ।)</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. Science goes on raising its problems.</p>
+          <p class="ans-txt">ਵਿਗਿਆਨ ਆਪਣੀਆਂ ਸਮੱਸਿਆਵਾਂ ਪੈਦਾ ਕਰਦਾ ਜਾਂਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. What is really needed in the world today?</p>
+          <p class="ans-txt">ਅੱਜ ਦੁਨੀਆ ਵਿੱਚ ਅਸਲ ਵਿੱਚ ਕਿਸ ਚੀਜ਼ ਦੀ ਲੋੜ ਹੈ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. What is Science really after?</p>
+          <p class="ans-txt">ਵਿਗਿਆਨ ਅਸਲ ਵਿੱਚ ਕੀ ਹਾਸਲ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹੈ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. What is its goal?</p>
+          <p class="ans-txt">ਇਸ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?</p>
+        </div>
+      `,
+      secret_of_happiness: `
+        <h2>Class 10th - Main Course Book - Chapter 3: Secret of Happiness</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Which is the greatest day in any individual’s life?</strong></p>
+          <p class="punjabi-txt">ਕਿਸੇ ਵੀ ਵਿਅਕਤੀ ਦੇ ਜੀਵਨ ਦਾ ਸਭ ਤੋਂ ਮਹਾਨ ਦਿਨ ਕਿਹੜਾ ਹੁੰਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The greatest day in any individual’s life is when he realizes for the first time the power that lies within him.</p>
+          <p class="punjabi-txt">ਕਿਸੇ ਵੀ ਵਿਅਕਤੀ ਦੇ ਜੀਵਨ ਦਾ ਸਭ ਤੋਂ ਮਹਾਨ ਦਿਨ ਉਹ ਹੁੰਦਾ ਹੈ, ਜਦੋਂ ਉਸਨੂੰ ਪਹਿਲੀ ਵਾਰ ਆਪਣੇ ਅੰਦਰ ਮੌਜੂਦ ਸ਼ਕਤੀ ਦਾ ਅਹਿਸਾਸ ਹੁੰਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. What enthralled the student in the Psychology class?</strong></p>
+          <p class="punjabi-txt">ਮਨੋਵਿਗਿਆਨ ਦੀ ਕਲਾਸ ਵਿੱਚ ਵਿਦਿਆਰਥੀ ਨੂੰ ਕਿਹੜੀ ਗੱਲ ਨੇ ਬਹੁਤ ਪ੍ਰਭਾਵਿਤ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The professor's lecture on the potential of an individual's inner power enthralled the student. He said that if all our inner powers are focused on what we want to achieve, success will knock at our gate.</p>
+          <p class="punjabi-txt">ਵਿਅਕਤੀ ਦੀ ਅੰਦਰੂਨੀ ਸ਼ਕਤੀ ਦੀ ਸਮਰੱਥਾ ਬਾਰੇ ਪ੍ਰੋਫੈਸਰ ਦੇ ਭਾਸ਼ਣ ਨੇ ਵਿਦਿਆਰਥੀ ਨੂੰ ਬਹੁਤ ਪ੍ਰਭਾਵਿਤ ਕੀਤਾ। ਉਸਨੇ ਕਿਹਾ ਕਿ ਜੇਕਰ ਸਾਡੀਆਂ ਸਾਰੀਆਂ ਅੰਦਰੂਨੀ ਸ਼ਕਤੀਆਂ ਉਸ ਚੀਜ਼ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨ ਵੱਲ ਕੇਂਦਰਿਤ ਹੋ ਜਾਣ, ਜਿਸਨੂੰ ਅਸੀਂ ਹਾਸਲ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ, ਤਾਂ ਸਫਲਤਾ ਸਾਡੇ ਦਰਵਾਜ਼ੇ ’ਤੇ ਦਸਤਕ ਦੇਵੇਗੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Did the boy change as a result of the realization?</strong></p>
+          <p class="punjabi-txt">ਕੀ ਇਸ ਅਹਿਸਾਸ ਦੇ ਨਤੀਜੇ ਵਜੋਂ ਲੜਕੇ ਵਿੱਚ ਕੋਈ ਬਦਲਾਅ ਆਇਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Yes, the boy changed dramatically. He became a successful person.</p>
+          <p class="punjabi-txt">ਹਾਂ, ਲੜਕੇ ਵਿੱਚ ਬਹੁਤ ਵੱਡਾ ਬਦਲਾਅ ਆਇਆ। ਉਹ ਇੱਕ ਸਫਲ ਵਿਅਕਤੀ ਬਣ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. What is there in the personality of every man?</strong></p>
+          <p class="punjabi-txt">ਹਰੇਕ ਮਨੁੱਖ ਦੀ ਸ਼ਖ਼ਸੀਅਤ ਵਿੱਚ ਕੀ ਹੁੰਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> There is a great store of unused power in the personality of every man.</p>
+          <p class="punjabi-txt">ਹਰੇਕ ਮਨੁੱਖ ਦੀ ਸ਼ਖ਼ਸੀਅਤ ਵਿੱਚ ਅਣਵਰਤੀ ਸ਼ਕਤੀ ਦਾ ਇੱਕ ਬਹੁਤ ਵੱਡਾ ਭੰਡਾਰ ਹੁੰਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. How can weak personalities become strong?</strong></p>
+          <p class="punjabi-txt">ਕਮਜ਼ੋਰ ਸ਼ਖ਼ਸੀਅਤਾਂ ਮਜ਼ਬੂਤ ਕਿਵੇਂ ਬਣ ਸਕਦੀਆਂ ਹਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> There is a great store of unused power in the personality of every man. By using this, weak personalities can become strong.</p>
+          <p class="punjabi-txt">ਹਰੇਕ ਮਨੁੱਖ ਦੀ ਸ਼ਖ਼ਸੀਅਤ ਵਿੱਚ ਅਣਵਰਤੀ ਸ਼ਕਤੀ ਦਾ ਇੱਕ ਵੱਡਾ ਭੰਡਾਰ ਹੁੰਦਾ ਹੈ। ਇਸ ਸ਼ਕਤੀ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਕਮਜ਼ੋਰ ਸ਼ਖ਼ਸੀਅਤਾਂ ਮਜ਼ਬੂਤ ਬਣ ਸਕਦੀਆਂ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. What would Chesterton preach if he had just one sermon to deliver?</strong></p>
+          <p class="punjabi-txt">ਜੇ ਚੈਸਟਰਟਨ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਹੀ ਉਪਦੇਸ਼ ਦੇਣਾ ਹੋਵੇ, ਤਾਂ ਉਹ ਕੀ ਉਪਦੇਸ਼ ਦੇਵੇਗਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> If Gilbert Chesterton had only one sermon to preach, he would preach it against fear.</p>
+          <p class="punjabi-txt">ਜੇ ਗਿਲਬਰਟ ਚੈਸਟਰਟਨ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਹੀ ਉਪਦੇਸ਼ ਦੇਣਾ ਹੁੰਦਾ, ਤਾਂ ਉਹ ਡਰ ਦੇ ਵਿਰੁੱਧ ਉਪਦੇਸ਼ ਦੇਵੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. What are the different types of fear experienced by people?</strong></p>
+          <p class="punjabi-txt">ਲੋਕਾਂ ਨੂੰ ਕਿਹੜੇ-ਕਿਹੜੇ ਤਰ੍ਹਾਂ ਦੇ ਡਰ ਦਾ ਸਾਹਮਣਾ ਕਰਨਾ ਪੈਂਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> People experience various fears such as financial insecurity, fear of ill health or disease, fear of a bleak future, and fear of the consequences of past actions.</p>
+          <p class="punjabi-txt">ਲੋਕਾਂ ਨੂੰ ਕਈ ਤਰ੍ਹਾਂ ਦੇ ਡਰ ਹੁੰਦੇ ਹਨ, ਜਿਵੇਂ ਆਰਥਿਕ ਅਸੁਰੱਖਿਆ ਦਾ ਡਰ, ਖਰਾਬ ਸਿਹਤ ਜਾਂ ਬਿਮਾਰੀ ਦਾ ਡਰ, ਹਨੇਰੇ ਭਵਿੱਖ ਦਾ ਡਰ ਅਤੇ ਪਿਛਲੇ ਕੰਮਾਂ ਦੇ ਨਤੀਜਿਆਂ ਦਾ ਡਰ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. What did the author of 'Secret of Happiness' find when he flung open the door?</strong></p>
+          <p class="punjabi-txt">‘Secret of Happiness’ ਦੇ ਲੇਖਕ ਨੇ ਦਰਵਾਜ਼ਾ ਖੋਲ੍ਹ ਕੇ ਕੀ ਦੇਖਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He found a small chipmunk when he flung open the door.</p>
+          <p class="punjabi-txt">ਜਦੋਂ ਉਸਨੇ ਦਰਵਾਜ਼ਾ ਖੋਲ੍ਹਿਆ ਤਾਂ ਉਸਨੂੰ ਇੱਕ ਛੋਟੀ ਜਿਹੀ ਚਿਪਮੰਕ (ਗਿਲਹਿਰੀ ਵਰਗਾ ਜਾਨਵਰ) ਮਿਲੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. How can one have a real escape from fear?</strong></p>
+          <p class="punjabi-txt">ਇਨਸਾਨ ਡਰ ਤੋਂ ਅਸਲ ਮੁਕਤੀ ਕਿਵੇਂ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> We must have faith in God. We must have faith that God is always with us and cares for us. Such faith can give us real freedom from all fear.</p>
+          <p class="punjabi-txt">ਸਾਨੂੰ ਪਰਮਾਤਮਾ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਣਾ ਚਾਹੀਦਾ ਹੈ। ਸਾਨੂੰ ਇਹ ਵਿਸ਼ਵਾਸ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਪਰਮਾਤਮਾ ਹਮੇਸ਼ਾ ਸਾਡੇ ਨਾਲ ਹੈ ਅਤੇ ਸਾਡੀ ਚਿੰਤਾ ਕਰਦਾ ਹੈ। ਅਜਿਹਾ ਵਿਸ਼ਵਾਸ ਸਾਨੂੰ ਹਰ ਤਰ੍ਹਾਂ ਦੇ ਡਰ ਤੋਂ ਮੁਕਤੀ ਦਿਵਾ ਸਕਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. What was the priceless secret discovered by Mr. Kagawa?</strong></p>
+          <p class="punjabi-txt">ਮਿਸਟਰ ਕਾਗਾਵਾ ਦੁਆਰਾ ਖੋਜਿਆ ਗਿਆ ਅਨਮੋਲ ਰਾਜ਼ ਕੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The priceless secret was that if a person surrenders himself to the grace of God, he can attain peace of mind that can never be destroyed.</p>
+          <p class="punjabi-txt">ਉਹ ਅਨਮੋਲ ਰਾਜ਼ ਇਹ ਸੀ ਕਿ ਜੇਕਰ ਕੋਈ ਵਿਅਕਤੀ ਆਪਣੇ ਆਪ ਨੂੰ ਪਰਮਾਤਮਾ ਦੀ ਕਿਰਪਾ ਵਿੱਚ ਸਮਰਪਿਤ ਕਰ ਦੇਵੇ, ਤਾਂ ਉਹ ਮਨ ਦੀ ਅਜਿਹੀ ਸ਼ਾਂਤੀ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦਾ ਹੈ ਜਿਸਨੂੰ ਕਦੇ ਨਸ਼ਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. Describe, in your own words, how the professor changed the total attitude of the student.</strong></p>
+          <p class="punjabi-txt">ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਵਰਣਨ ਕਰੋ ਕਿ ਪ੍ਰੋਫੈਸਰ ਨੇ ਵਿਦਿਆਰਥੀ ਦੇ ਪੂਰੇ ਰਵੱਈਏ ਨੂੰ ਕਿਵੇਂ ਬਦਲ ਦਿੱਤਾ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The student was totally unsuccessful in his studies. His professor told the class that an average man fails because he does not learn to control and consolidate his powers. The professor gave the example of the burning glass. The student realized the cause of his own failures, and thus his attitude towards life changed totally.</p>
+          <p class="punjabi-txt">ਵਿਦਿਆਰਥੀ ਆਪਣੀ ਪੜ੍ਹਾਈ ਵਿੱਚ ਪੂਰੀ ਤਰ੍ਹਾਂ ਅਸਫਲ ਸੀ। ਉਸਦੇ ਪ੍ਰੋਫੈਸਰ ਨੇ ਕਲਾਸ ਨੂੰ ਦੱਸਿਆ ਕਿ ਇੱਕ ਆਮ ਮਨੁੱਖ ਇਸ ਲਈ ਅਸਫਲ ਹੁੰਦਾ ਹੈ ਕਿਉਂਕਿ ਉਹ ਆਪਣੀਆਂ ਸ਼ਕਤੀਆਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਅਤੇ ਕੇਂਦਰਿਤ ਕਰਨਾ ਨਹੀਂ ਸਿੱਖਦਾ। ਪ੍ਰੋਫੈਸਰ ਨੇ ਬਲਣ ਵਾਲੇ ਕੱਚ ਦੀ ਉਦਾਹਰਨ ਦਿੱਤੀ। ਵਿਦਿਆਰਥੀ ਨੂੰ ਆਪਣੀਆਂ ਅਸਫਲਤਾਵਾਂ ਦਾ ਕਾਰਨ ਸਮਝ ਆ ਗਿਆ ਅਤੇ ਇਸ ਤਰ੍ਹਾਂ ਜੀਵਨ ਪ੍ਰਤੀ ਉਸਦਾ ਰਵੱਈਆ ਪੂਰੀ ਤਰ੍ਹਾਂ ਬਦਲ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Write a small paragraph on 'The Proper use of Human Energy.'</strong></p>
+          <p class="punjabi-txt">‘ਮਨੁੱਖੀ ਊਰਜਾ ਦੀ ਸਹੀ ਵਰਤੋਂ’ ਵਿਸ਼ੇ ਉੱਤੇ ਇੱਕ ਛੋਟਾ ਪੈਰਾ ਲਿਖੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Human energy is no less powerful than atomic energy. It can work miracles if it is used in a proper way. The author says an average man fails because he fails to control his powers. He uses only twenty per cent of his mental power. The rest of it remains unused. Weak personalities can become strong with the proper use of human energy.</p>
+          <p class="punjabi-txt">ਮਨੁੱਖੀ ਊਰਜਾ ਪਰਮਾਣੂ ਊਰਜਾ ਨਾਲੋਂ ਘੱਟ ਸ਼ਕਤੀਸ਼ਾਲੀ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਇਸਦੀ ਸਹੀ ਢੰਗ ਨਾਲ ਵਰਤੋਂ ਕੀਤੀ ਜਾਵੇ ਤਾਂ ਇਹ ਚਮਤਕਾਰ ਕਰ ਸਕਦੀ ਹੈ। ਲੇਖਕ ਕਹਿੰਦਾ ਹੈ ਕਿ ਇੱਕ ਆਮ ਮਨੁੱਖ ਇਸ ਲਈ ਅਸਫਲ ਹੁੰਦਾ ਹੈ ਕਿਉਂਕਿ ਉਹ ਆਪਣੀਆਂ ਸ਼ਕਤੀਆਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਨਹੀਂ ਕਰਦਾ। ਉਹ ਆਪਣੀ ਮਾਨਸਿਕ ਸ਼ਕਤੀ ਦਾ ਕੇਵਲ ਵੀਹ ਪ੍ਰਤੀਸ਼ਤ ਹੀ ਵਰਤਦਾ ਹੈ। ਬਾਕੀ ਸ਼ਕਤੀ ਅਣਵਰਤੀ ਰਹਿੰਦੀ ਹੈ। ਮਨੁੱਖੀ ਊਰਜਾ ਦੀ ਸਹੀ ਵਰਤੋਂ ਨਾਲ ਕਮਜ਼ੋਰ ਸ਼ਖ਼ਸੀਅਤਾਂ ਮਜ਼ਬੂਤ ਬਣ ਸਕਦੀਆਂ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Relate the incident of North Woods in your own words.</strong></p>
+          <p class="punjabi-txt">ਨਾਰਥ ਵੁੱਡਜ਼ ਦੀ ਘਟਨਾ ਨੂੰ ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਬਿਆਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Once the author was staying in a lonely cabin in the North Woods. It was a dark night. He heard some noises outside the cabin. He thought there were gangsters with machine guns and pistols. He took courage and opened the door, he saw a small chipmunk. Thus, he realized that his fear was only the result of his imagination.</p>
+          <p class="punjabi-txt">ਇੱਕ ਵਾਰ ਲੇਖਕ North Woods ਵਿੱਚ ਇੱਕ ਸੁੰਨਸਾਨ ਝੌਂਪੜੀ ਵਿੱਚ ਰਹਿ ਰਿਹਾ ਸੀ। ਇਹ ਇੱਕ ਹਨੇਰੀ ਰਾਤ ਸੀ। ਉਸਨੇ ਝੌਂਪੜੀ ਦੇ ਬਾਹਰ ਕੁਝ ਆਵਾਜ਼ਾਂ ਸੁਣੀਆਂ। ਉਸਨੂੰ ਲੱਗਿਆ ਕਿ ਬਾਹਰ ਮਸ਼ੀਨ ਗਨਾਂ ਅਤੇ ਪਿਸਤੌਲਾਂ ਵਾਲੇ ਗੁੰਡੇ ਹਨ। ਉਸਨੇ ਹਿੰਮਤ ਕੀਤੀ ਅਤੇ ਦਰਵਾਜ਼ਾ ਖੋਲ੍ਹਿਆ। ਉਸਨੇ ਇੱਕ ਛੋਟੀ ਜਿਹੀ ਚਿਪਮੰਕ ਦੇਖੀ। ਇਸ ਤਰ੍ਹਾਂ ਉਸਨੂੰ ਅਹਿਸਾਸ ਹੋਇਆ ਕਿ ਉਸਦਾ ਡਰ ਸਿਰਫ਼ ਉਸਦੀ ਕਲਪਨਾ ਦਾ ਨਤੀਜਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Write, in brief, the message given by Mr. Kagawa.</strong></p>
+          <p class="punjabi-txt">ਮਿਸਟਰ ਕਾਗਾਵਾ ਦੁਆਰਾ ਦਿੱਤਾ ਗਿਆ ਸੰਦੇਸ਼ ਸੰਖੇਪ ਵਿੱਚ ਲਿਖੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Kagawa was a Japanese scholar. His message is that true happiness and peace come from total faith in God. He believed that when you surrender yourself completely to God’s love, your mind becomes quiet and calm. Such peace cannot be destroyed by difficulties.</p>
+          <p class="punjabi-txt">ਕਾਗਾਵਾ ਇੱਕ ਜਾਪਾਨੀ ਵਿਦਵਾਨ ਸੀ। ਉਸਦਾ ਸੰਦੇਸ਼ ਇਹ ਹੈ ਕਿ ਸੱਚੀ ਖੁਸ਼ੀ ਅਤੇ ਸ਼ਾਂਤੀ ਪਰਮਾਤਮਾ ਵਿੱਚ ਪੂਰਨ ਵਿਸ਼ਵਾਸ ਤੋਂ ਮਿਲਦੀ ਹੈ। ਉਸਦਾ ਵਿਸ਼ਵਾਸ ਸੀ ਕਿ ਜਦੋਂ ਅਸੀਂ ਆਪਣੇ ਆਪ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪਰਮਾਤਮਾ ਦੇ ਪਿਆਰ ਅੱਗੇ ਸਮਰਪਿਤ ਕਰ ਦਿੰਦੇ ਹਾਂ, ਤਾਂ ਸਾਡਾ ਮਨ ਸ਼ਾਂਤ ਅਤੇ ਸਥਿਰ ਹੋ ਜਾਂਦਾ ਹੈ। ਅਜਿਹੀ ਸ਼ਾਂਤੀ ਨੂੰ ਮੁਸ਼ਕਲਾਂ ਨਸ਼ਟ ਨਹੀਂ ਕਰ ਸਕਦੀਆਂ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Which illustration was used by the professor of Psychology?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Burning glass / illustration of a burning glass.</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Who declared to give a sermon against fear?</p>
+          <p>i) professor of Psychology &nbsp;&nbsp; ii) Gilbert Chesterton &nbsp;&nbsp; iii) Author &nbsp;&nbsp; iv) Kagawa</p>
+          <p class="ans-txt"><strong>Ans:</strong> ii) Gilbert Chesterton</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. _______ values are needed in the world today.</p>
+          <p class="ans-txt"><strong>Ans:</strong> Moral</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. The author found an elephant when he flung open the door. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. We should have faith that _________ is always with us.</p>
+          <p>i) God &nbsp;&nbsp; ii) somebody &nbsp;&nbsp; iii) everyman &nbsp;&nbsp; iv) nobody</p>
+          <p class="ans-txt"><strong>Ans:</strong> i) God</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. ________ in God gives us real peace of mind.</p>
+          <p>i) Fear &nbsp;&nbsp; ii) Hatred &nbsp;&nbsp; iii) Faith &nbsp;&nbsp; iv) Anger</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) Faith</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. He never lost his calm.</p>
+          <p class="ans-txt">ਉਸਨੇ ਕਦੇ ਵੀ ਆਪਣਾ ਸੰਜਮ ਨਹੀਂ ਗੁਆਇਆ। / ਉਸਨੇ ਕਦੇ ਵੀ ਆਪਣੀ ਸ਼ਾਂਤੀ ਨਹੀਂ ਗੁਆਈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. I didn't want to die.</p>
+          <p class="ans-txt">ਮੈਂ ਮਰਨਾ ਨਹੀਂ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Fear is one of man's most common enemies.</p>
+          <p class="ans-txt">ਡਰ ਮਨੁੱਖ ਦੇ ਸਭ ਤੋਂ ਆਮ ਦੁਸ਼ਮਣਾਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. You are greater than you think.</p>
+          <p class="ans-txt">ਤੁਸੀਂ ਉਸ ਤੋਂ ਜਿਆਦਾ ਮਹਾਨ ਹੋ ਜਿੰਨਾ ਤੁਸੀਂ ਸੋਚਦੇ ਹੋ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. I wanted to get out of there.</p>
+          <p class="ans-txt">ਮੈਂ ਉੱਥੋਂ ਬਾਹਰ ਨਿਕਲਣਾ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Then you will have total peace of mind.</p>
+          <p class="ans-txt">ਫਿਰ ਤੁਹਾਨੂੰ ਮਨ ਦੀ ਪੂਰੀ ਸ਼ਾਂਤੀ ਮਿਲੇਗੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. You must do it yourself.</p>
+          <p class="ans-txt">ਤੁਹਾਨੂੰ ਇਹ ਖੁਦ ਹੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. A fear is not unlike a ghost.</p>
+          <p class="ans-txt">ਡਰ ਭੂਤ ਤੋਂ ਵੱਖਰਾ ਨਹੀਂ ਹੁੰਦਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. God watches over you and cares for you.</p>
+          <p class="ans-txt">ਪਰਮਾਤਮਾ ਤੁਹਾਡੀ ਰੱਖਿਆ ਕਰਦਾ ਹੈ ਅਤੇ ਤੁਹਾਡੀ ਦੇਖਭਾਲ ਕਰਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. This is a problem common to us all.</p>
+          <p class="ans-txt">ਇਹ ਸਾਡੇ ਸਾਰਿਆਂ ਦੀ ਸਾਂਝੀ ਸਮੱਸਿਆ ਹੈ।</p>
+        </div>
+      `,
+      gift_for_christmas: `
+        <h2>Class 10th - Main Course Book - Chapter 4: A Gift for Christmas</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Why was Della crying?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਰੋ ਕਿਉਂ ਰਹੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della was crying because she did not have enough money to buy a Christmas present for her husband.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਰੋ ਰਹੀ ਸੀ ਕਿਉਂਕਿ ਉਸ ਕੋਲ ਆਪਣੇ ਪਤੀ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਲਈ ਕਾਫ਼ੀ ਪੈਸੇ ਨਹੀਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Describe the poverty of Della’s house.</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਦੇ ਘਰ ਦੀ ਗਰੀਬੀ ਦਾ ਵਰਣਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della and Jim lived in a small and poorly furnished flat. It had a dirty and old couch.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਅਤੇ ਜਿਮ ਇੱਕ ਛੋਟੇ ਅਤੇ ਘੱਟ ਸਹੂਲਤਾਂ ਵਾਲੇ ਫਲੈਟ ਵਿੱਚ ਰਹਿੰਦੇ ਸਨ। ਇਸ ਵਿੱਚ ਇੱਕ ਗੰਦਾ ਅਤੇ ਪੁਰਾਣਾ ਸੋਫ਼ਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What type of present had Della planned for Jim?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਜਿਮ ਲਈ ਕਿਸ ਤਰ੍ਹਾਂ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਦੀ ਯੋਜਨਾ ਬਣਾਈ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della planned to buy a beautiful and valuable present for Jim. She wanted the gift to be fine and rare, something Jim could feel proud of.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਜਿਮ ਲਈ ਇੱਕ ਸੁੰਦਰ ਅਤੇ ਕੀਮਤੀ ਤੋਹਫ਼ਾ ਖਰੀਦਣਾ ਚਾਹੁੰਦੀ ਸੀ। ਉਹ ਅਜਿਹਾ ਵਧੀਆ ਅਤੇ ਦੁਰਲੱਭ ਤੋਹਫ਼ਾ ਚਾਹੁੰਦੀ ਸੀ ਜਿਸ ’ਤੇ ਜਿਮ ਮਾਣ ਕਰ ਸਕੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. What were the two prized possessions of Jim?</strong></p>
+          <p class="punjabi-txt">ਜਿਮ ਦੀਆਂ ਦੋ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਕਿਹੜੀਆਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Jim’s two prized possessions were his gold watch and Della’s beautiful long hair.</p>
+          <p class="punjabi-txt">ਜਿਮ ਦੀਆਂ ਦੋ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਉਸਦੀ ਸੋਨੇ ਦੀ ਘੜੀ ਅਤੇ ਡੈਲਾ ਦੇ ਸੁੰਦਰ ਲੰਬੇ ਵਾਲ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Describe the present Della bought for Jim.</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਜਿਮ ਲਈ ਖਰੀਦੇ ਤੋਹਫ਼ੇ ਦਾ ਵਰਣਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della bought a beautiful platinum chain for Jim’s gold watch. It was simple but well-made. It was a suitable present for Jim.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਜਿਮ ਦੀ ਸੋਨੇ ਦੀ ਘੜੀ ਲਈ ਇੱਕ ਸੁੰਦਰ ਪਲੈਟੀਨਮ ਦੀ ਚੇਨ ਖਰੀਦੀ। ਇਹ ਸਾਦੀ ਪਰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਬਣੀ ਹੋਈ ਸੀ। ਇਹ ਜਿਮ ਲਈ ਇੱਕ ਢੁਕਵਾਂ ਤੋਹਫ਼ਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. How did Della manage to buy the gift?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਲਈ ਪੈਸਿਆਂ ਦਾ ਪ੍ਰਬੰਧ ਕਿਵੇਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della sold her beautiful long hair for twenty dollars and used the money to buy the gift for Jim.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਆਪਣੇ ਸੁੰਦਰ ਲੰਬੇ ਵਾਲ ਵੀਹ ਡਾਲਰ ਵਿੱਚ ਵੇਚ ਦਿੱਤੇ ਅਤੇ ਉਨ੍ਹਾਂ ਪੈਸਿਆਂ ਨਾਲ ਜਿਮ ਲਈ ਤੋਹਫ਼ਾ ਖਰੀਦਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. What did Della think when she looked at herself in the mirror?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਡੈਲਾ ਨੇ ਸ਼ੀਸ਼ੇ ਵਿੱਚ ਆਪਣੇ ਆਪ ਨੂੰ ਦੇਖਿਆ ਤਾਂ ਉਸਨੇ ਕੀ ਸੋਚਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> When Della looked at herself in the mirror, she became very nervous. She now looked like a schoolboy. She thought that Jim would be angry and would not love her as before.</p>
+          <p class="punjabi-txt">ਜਦੋਂ ਡੈਲਾ ਨੇ ਸ਼ੀਸ਼ੇ ਵਿੱਚ ਆਪਣੇ ਆਪ ਨੂੰ ਦੇਖਿਆ ਤਾਂ ਉਹ ਬਹੁਤ ਘਬਰਾ ਗਈ। ਹੁਣ ਉਹ ਇੱਕ ਸਕੂਲ ਦੇ ਮੁੰਡੇ ਵਰਗੀ ਲੱਗ ਰਹੀ ਸੀ। ਉਸਨੇ ਸੋਚਿਆ ਕਿ ਜਿਮ ਗੁੱਸੇ ਹੋਵੇਗਾ ਅਤੇ ਪਹਿਲਾਂ ਵਾਂਗ ਉਸਨੂੰ ਪਿਆਰ ਨਹੀਂ ਕਰੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. What was Jim’s reaction on seeing Della’s hair gone?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਦੇ ਵਾਲ ਕੱਟੇ ਹੋਏ ਦੇਖ ਕੇ ਜਿਮ ਦੀ ਕੀ ਪ੍ਰਤੀਕਿਰਿਆ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> On seeing Della’s hair gone, there was a strange expression in Jim’s eyes. It was not an expression of anger or surprise. He simply gazed at her face.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਦੇ ਵਾਲ ਕੱਟੇ ਹੋਏ ਦੇਖ ਕੇ ਜਿਮ ਦੀਆਂ ਅੱਖਾਂ ਵਿੱਚ ਇੱਕ ਅਜੀਬ ਜਿਹਾ ਹਾਵ-ਭਾਵ ਸੀ। ਇਹ ਨਾ ਤਾਂ ਗੁੱਸੇ ਦਾ ਸੀ ਅਤੇ ਨਾ ਹੀ ਹੈਰਾਨੀ ਦਾ। ਉਹ ਸਿਰਫ਼ ਉਸਦੇ ਚਿਹਰੇ ਵੱਲ ਦੇਖਦਾ ਰਿਹਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. What explanation did Della give to Jim for getting her hair cut?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਆਪਣੇ ਵਾਲ ਕਟਵਾਉਣ ਬਾਰੇ ਜਿਮ ਨੂੰ ਕੀ ਸਮਝਾਇਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della explained that she had sold her hair because she wanted to buy a special Christmas present for him, but she did not have enough money.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਨੇ ਸਮਝਾਇਆ ਕਿ ਉਸਨੇ ਆਪਣੇ ਵਾਲ ਇਸ ਲਈ ਵੇਚੇ ਸਨ ਕਿਉਂਕਿ ਉਹ ਜਿਮ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਇੱਕ ਖਾਸ ਤੋਹਫ਼ਾ ਖਰੀਦਣਾ ਚਾਹੁੰਦੀ ਸੀ, ਪਰ ਉਸ ਕੋਲ ਕਾਫ਼ੀ ਪੈਸੇ ਨਹੀਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. What was in the package that Jim had brought for Della?</strong></p>
+          <p class="punjabi-txt">ਜਿਮ ਡੈਲਾ ਲਈ ਜੋ ਪੈਕੇਟ ਲੈ ਕੇ ਆਇਆ ਸੀ, ਉਸ ਵਿੱਚ ਕੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> There was a set of combs in the package that Jim had brought for Della. Della had seen them in a shop window and liked them very much.</p>
+          <p class="punjabi-txt">ਜਿਮ ਡੈਲਾ ਲਈ ਜੋ ਪੈਕੇਟ ਲੈ ਕੇ ਆਇਆ ਸੀ, ਉਸ ਵਿੱਚ ਕੰਘੀਆਂ ਦਾ ਇੱਕ ਸੈੱਟ ਸੀ। ਡੈਲਾ ਨੇ ਉਹ ਕੰਘੀਆਂ ਇੱਕ ਦੁਕਾਨ ਦੀ ਖਿੜਕੀ ਵਿੱਚ ਦੇਖੀਆਂ ਸਨ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਬਹੁਤ ਪਸੰਦ ਕੀਤਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. How had Jim managed to buy the present for Della?</strong></p>
+          <p class="punjabi-txt">ਜਿਮ ਨੇ ਡੈਲਾ ਲਈ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਲਈ ਪੈਸਿਆਂ ਦਾ ਪ੍ਰਬੰਧ ਕਿਵੇਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Jim sold his beautiful gold watch and managed to buy the present for Della.</p>
+          <p class="punjabi-txt">ਜਿਮ ਨੇ ਆਪਣੀ ਸੁੰਦਰ ਸੋਨੇ ਦੀ ਘੜੀ ਵੇਚ ਦਿੱਤੀ ਅਤੇ ਡੈਲਾ ਲਈ ਤੋਹਫ਼ਾ ਖਰੀਦਿਆ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. Expenses had been greater than she had calculated. Why?</strong></p>
+          <p class="punjabi-txt">ਖਰਚੇ ਉਸਦੀ ਗਿਣਤੀ ਨਾਲੋਂ ਵੱਧ ਕਿਉਂ ਹੋ ਗਏ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Jim earned only twenty dollars a week. Out of it, eight dollars were spent on house rent. Only twelve dollars were left for the family to live on. Della wanted to buy a Christmas gift for her husband. But after saving for several months, she could save only one dollar and eighty-seven cents. So, expenses had been greater than she had calculated.</p>
+          <p class="punjabi-txt">ਜਿਮ ਹਫ਼ਤੇ ਵਿੱਚ ਸਿਰਫ਼ ਵੀਹ ਡਾਲਰ ਕਮਾਉਂਦਾ ਸੀ। ਇਸ ਵਿੱਚੋਂ ਅੱਠ ਡਾਲਰ ਘਰ ਦੇ ਕਿਰਾਏ ’ਤੇ ਖਰਚ ਹੋ ਜਾਂਦੇ ਸਨ। ਪਰਿਵਾਰ ਕੋਲ ਗੁਜ਼ਾਰੇ ਲਈ ਸਿਰਫ਼ ਬਾਰਾਂ ਡਾਲਰ ਬਚਦੇ ਸਨ। ਡੈਲਾ ਆਪਣੇ ਪਤੀ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣਾ ਚਾਹੁੰਦੀ ਸੀ। ਪਰ ਕਈ ਮਹੀਨੇ ਬਚਤ ਕਰਨ ਤੋਂ ਬਾਅਦ ਵੀ ਉਹ ਸਿਰਫ਼ ਇੱਕ ਡਾਲਰ ਅਤੇ ਸਤਾਸੀ ਸੈਂਟ ਹੀ ਬਚਾ ਸਕੀ। ਇਸ ਲਈ ਖਰਚੇ ਉਸਦੀ ਗਿਣਤੀ ਨਾਲੋਂ ਵੱਧ ਹੋ ਗਏ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Describe the incident of Della’s selling her hair in your own words.</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਵੱਲੋਂ ਆਪਣੇ ਵਾਲ ਵੇਚਣ ਦੀ ਘਟਨਾ ਨੂੰ ਆਪਣੇ ਸ਼ਬਦਾਂ ਵਿੱਚ ਬਿਆਨ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della wanted to buy a beautiful Christmas gift for Jim, but she had very little money. She went to a hairdresser named Madame Sofronie and sold her long, beautiful hair for twenty dollars. With this money, she bought a beautiful gift for Jim.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਜਿਮ ਲਈ ਇੱਕ ਸੁੰਦਰ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣਾ ਚਾਹੁੰਦੀ ਸੀ, ਪਰ ਉਸ ਕੋਲ ਬਹੁਤ ਘੱਟ ਪੈਸੇ ਸਨ। ਉਹ ਮੈਡਮ ਸੋਫਰੋਨੀ ਨਾਮ ਦੀ ਇੱਕ ਵਾਲਾਂ ਦੀ ਵਪਾਰੀ ਕੋਲ ਗਈ ਅਤੇ ਆਪਣੇ ਲੰਬੇ, ਸੁੰਦਰ ਵਾਲ ਵੀਹ ਡਾਲਰ ਵਿੱਚ ਵੇਚ ਦਿੱਤੇ। ਇਨ੍ਹਾਂ ਪੈਸਿਆਂ ਨਾਲ ਉਸਨੇ ਜਿਮ ਲਈ ਇੱਕ ਸੁੰਦਰ ਤੋਹਫ਼ਾ ਖਰੀਦਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Why was Della pleased with her selection of the present for Jim?</strong></p>
+          <p class="punjabi-txt">ਡੈਲਾ ਜਿਮ ਲਈ ਚੁਣੇ ਹੋਏ ਤੋਹਫ਼ੇ ਤੋਂ ਖੁਸ਼ ਕਿਉਂ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Della was happy with the gift she chose for Jim because the platinum chain was beautiful, simple and well-made. She thought it would look nice with Jim’s gold watch. She had searched many shops for the right gift. She was sure that Jim would like it very much.</p>
+          <p class="punjabi-txt">ਡੈਲਾ ਆਪਣੇ ਵੱਲੋਂ ਚੁਣੇ ਤੋਹਫ਼ੇ ਤੋਂ ਖੁਸ਼ ਸੀ ਕਿਉਂਕਿ ਪਲੈਟੀਨਮ ਦੀ ਚੇਨ ਸੁੰਦਰ, ਸਾਦੀ ਅਤੇ ਚੰਗੀ ਤਰ੍ਹਾਂ ਬਣੀ ਹੋਈ ਸੀ। ਉਸਨੇ ਸੋਚਿਆ ਕਿ ਇਹ ਜਿਮ ਦੀ ਸੋਨੇ ਦੀ ਘੜੀ ਨਾਲ ਬਹੁਤ ਸੁੰਦਰ ਲੱਗੇਗੀ। ਉਸਨੇ ਸਹੀ ਤੋਹਫ਼ੇ ਲਈ ਕਈ ਦੁਕਾਨਾਂ ਦੇਖੀਆਂ ਸਨ। ਉਸਨੂੰ ਪੂਰਾ ਵਿਸ਼ਵਾਸ ਸੀ ਕਿ ਜਿਮ ਨੂੰ ਇਹ ਬਹੁਤ ਪਸੰਦ ਆਵੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Why does the story writer call Jim ‘a poor fellow’?</strong></p>
+          <p class="punjabi-txt">ਕਹਾਣੀਕਾਰ ਜਿਮ ਨੂੰ ‘ਇੱਕ ਗਰੀਬ ਵਿਅਕਤੀ’ ਕਿਉਂ ਕਹਿੰਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Jim was only twenty-two years old. His income was very small. He earned only twenty dollars a week. The rent of the house was eight dollars a week. Only twelve dollars were left for the family to live on. The house was in poor condition. So, the story writer calls Jim ‘a poor fellow’.</p>
+          <p class="punjabi-txt">ਜਿਮ ਦੀ ਉਮਰ ਸਿਰਫ਼ ਬਾਈ ਸਾਲ ਸੀ। ਉਸਦੀ ਆਮਦਨ ਬਹੁਤ ਘੱਟ ਸੀ। ਉਹ ਹਫ਼ਤੇ ਵਿੱਚ ਸਿਰਫ਼ ਵੀਹ ਡਾਲਰ ਕਮਾਉਂਦਾ ਸੀ। ਘਰ ਦਾ ਕਿਰਾਇਆ ਹਫ਼ਤੇ ਵਿੱਚ ਅੱਠ ਡਾਲਰ ਸੀ। ਪਰਿਵਾਰ ਦੇ ਗੁਜ਼ਾਰੇ ਲਈ ਸਿਰਫ਼ ਬਾਰਾਂ ਡਾਲਰ ਬਚਦੇ ਸਨ। ਘਰ ਦੀ ਹਾਲਤ ਵੀ ਮਾੜੀ ਸੀ। ਇਸ ਲਈ ਕਹਾਣੀਕਾਰ ਜਿਮ ਨੂੰ ‘ਗਰੀਬ ਵਿਅਕਤੀ’ ਕਹਿੰਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. What do you think about the expression in Jim’s eyes? Was it shock, surprise or anger? Why?</strong></p>
+          <p class="punjabi-txt">ਜਿਮ ਦੀਆਂ ਅੱਖਾਂ ਵਿੱਚ ਹਾਵ-ਭਾਵ ਬਾਰੇ ਤੁਸੀਂ ਕੀ ਸੋਚਦੇ ਹੋ? ਕੀ ਇਹ ਸਦਮਾ, ਹੈਰਾਨੀ ਜਾਂ ਗੁੱਸਾ ਸੀ? ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> When Jim came home, he simply looked at Della with a strange expression on his face. It was not shock, surprise or anger, but helplessness. Della had sold her hair to buy a Christmas gift for him. His gift of a costly pair of combs for Della was now useless. This made him feel helpless.</p>
+          <p class="punjabi-txt">ਜਦੋਂ ਜਿਮ ਘਰ ਆਇਆ, ਤਾਂ ਉਸਨੇ ਡੈਲਾ ਵੱਲ ਇੱਕ ਅਜੀਬ ਹਾਵ-ਭਾਵ ਨਾਲ ਦੇਖਿਆ। ਇਹ ਨਾ ਤਾਂ ਸਦਮਾ ਸੀ, ਨਾ ਹੈਰਾਨੀ ਅਤੇ ਨਾ ਹੀ ਗੁੱਸਾ, ਸਗੋਂ ਬੇਬਸੀ ਸੀ। ਡੈਲਾ ਨੇ ਉਸ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਲਈ ਆਪਣੇ ਵਾਲ ਵੇਚ ਦਿੱਤੇ ਸਨ। ਡੈਲਾ ਲਈ ਉਸ ਵੱਲੋਂ ਲਿਆਂਦੀਆਂ ਮਹਿੰਗੀਆਂ ਕੰਘੀਆਂ ਹੁਣ ਬੇਕਾਰ ਸਨ। ਇਸ ਕਾਰਨ ਉਸਨੂੰ ਬੇਬਸੀ ਮਹਿਸੂਸ ਹੋਈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. Both of them gave each other the gift of rare love. How? Explain.</strong></p>
+          <p class="punjabi-txt">ਦੋਵਾਂ ਨੇ ਇੱਕ-ਦੂਜੇ ਨੂੰ ਦੁਰਲੱਭ ਪਿਆਰ ਦਾ ਤੋਹਫ਼ਾ ਕਿਵੇਂ ਦਿੱਤਾ? ਸਮਝਾਓ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Jim’s gold watch and Della’s long hair were the two most precious things in their house. Della sold her hair to buy a Christmas gift for Jim. Jim sold his watch to buy a Christmas gift for Della. Though their gifts became useless, they were still gifts of rare and true love.</p>
+          <p class="punjabi-txt">ਜਿਮ ਦੀ ਸੋਨੇ ਦੀ ਘੜੀ ਅਤੇ ਡੈਲਾ ਦੇ ਲੰਬੇ ਵਾਲ ਉਨ੍ਹਾਂ ਦੇ ਘਰ ਦੀਆਂ ਦੋ ਸਭ ਤੋਂ ਕੀਮਤੀ ਚੀਜ਼ਾਂ ਸਨ। ਡੈਲਾ ਨੇ ਜਿਮ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਵਾਸਤੇ ਆਪਣੇ ਵਾਲ ਵੇਚ ਦਿੱਤੇ। ਜਿਮ ਨੇ ਡੈਲਾ ਲਈ ਕ੍ਰਿਸਮਸ ਦਾ ਤੋਹਫ਼ਾ ਖਰੀਦਣ ਵਾਸਤੇ ਆਪਣੀ ਘੜੀ ਵੇਚ ਦਿੱਤੀ। ਭਾਵੇਂ ਉਨ੍ਹਾਂ ਦੇ ਤੋਹਫ਼ੇ ਬੇਕਾਰ ਹੋ ਗਏ, ਫਿਰ ਵੀ ਉਹ ਸੱਚੇ ਅਤੇ ਦੁਰਲੱਭ ਪਿਆਰ ਦੇ ਤੋਹਫ਼ੇ ਸਨ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. The signs of richness were everywhere in their house. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. What did Della buy for Jim as a Christmas gift?</p>
+          <p>i) jeans &nbsp;&nbsp; ii) set of combs &nbsp;&nbsp; iii) watch &nbsp;&nbsp; iv) watch-chain</p>
+          <p class="ans-txt"><strong>Ans:</strong> iv) watch-chain</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. The proud possession of Jim was his _____________.</p>
+          <p>i) salary &nbsp;&nbsp; ii) Della &nbsp;&nbsp; iii) gold watch &nbsp;&nbsp; iv) flat</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) gold watch</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Who did not have enough money to buy a Christmas present?</p>
+          <p>i) Jim &nbsp;&nbsp; ii) Della &nbsp;&nbsp; iii) Both of them &nbsp;&nbsp; iv) none of them</p>
+          <p class="ans-txt"><strong>Ans:</strong> iii) Both of them</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Della sold her hair for _____________ dollars.</p>
+          <p class="ans-txt"><strong>Ans:</strong> twenty</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. What did Jim buy for Della as a Christmas gift?</p>
+          <p>i) jeans &nbsp;&nbsp; ii) set of combs &nbsp;&nbsp; iii) watch &nbsp;&nbsp; iv) watch-chain</p>
+          <p class="ans-txt"><strong>Ans:</strong> ii) set of combs</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. Her eyes were shining brilliantly.</p>
+          <p class="ans-txt">ਉਸ ਦੀਆਂ ਅੱਖਾਂ ਤੇਜੀ ਨਾਲ ਚਮਕ ਰਹੀਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Tears appeared in her eyes.</p>
+          <p class="ans-txt">ਉਸਦੀਆਂ ਅੱਖਾਂ ਵਿੱਚ ਅੱਥਰੂ ਆ ਗਏ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Della let fall her beautiful hair.</p>
+          <p class="ans-txt">ਡੈਲਾ ਨੇ ਆਪਣੇ ਖੂਬਸੂਰਤ ਵਾਲ ਡਿੱਗਣ ਦਿੱਤੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. I sold the watch to get the money to buy your combs.</p>
+          <p class="ans-txt">ਮੈਂ ਤੁਹਾਡੀਆਂ ਕੰਘੀਆਂ ਖਰੀਦਣ ਲਈ ਪੈਸੇ ਪ੍ਰਾਪਤ ਕਰਨ ਵਾਸਤੇ ਘੜੀ ਵੇਚ ਦਿੱਤੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Will you buy my hair?</p>
+          <p class="ans-txt">ਕੀ ਤੁਸੀ ਮੇਰੇ ਵਾਲ ਖਰੀਦੋਗੇ?</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Della finished crying.</p>
+          <p class="ans-txt">ਡੈਲਾ ਨੇ ਰੋਣਾ ਬੰਦ ਕੀਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. It was a platinum watch-chain.</p>
+          <p class="ans-txt">ਇਹ ਪਲੈਟੀਨਮ ਦੀ ਘੜੀ ਦੀ ਚੇਨ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. Jim was never late.</p>
+          <p class="ans-txt">ਜਿਮ ਕਦੇ ਵੀ ਦੇਰ ਨਹੀਂ ਕਰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. She found it at last.</p>
+          <p class="ans-txt">ਉਸਨੂੰ ਅਖੀਰ ਵਿੱਚ ਉਹ ਮਿਲ ਹੀ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. She stopped at a shop.</p>
+          <p class="ans-txt">ਉਹ ਇੱਕ ਦੁਕਾਨ ਤੇ ਰੁਕੀ।</p>
+        </div>
+      `,
+      ancient_indian_thought: `
+        <h2>Class 10th - Main Course Book - Chapter 5: Some Glimpses of Ancient Indian Thought and Practices</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. What caused desperation to the gods?</strong></p>
+          <p class="punjabi-txt">ਦੇਵਤਿਆਂ ਦੀ ਨਿਰਾਸ਼ਾ ਦਾ ਕੀ ਕਾਰਨ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The gods became desperate because the demons had become very powerful. The gods were unable to defeat the demons, which led to their desperation.</p>
+          <p class="punjabi-txt">ਦੇਵਤੇ ਇਸ ਲਈ ਨਿਰਾਸ਼ ਹੋ ਗਏ ਕਿਉਂਕਿ ਦੈਂਤ ਬਹੁਤ ਸ਼ਕਤੀਸ਼ਾਲੀ ਹੋ ਗਏ ਸਨ। ਦੇਵਤੇ ਦੈਂਤਾਂ ਨੂੰ ਹਰਾਉਣ ਵਿੱਚ ਅਸਮਰੱਥ ਸਨ, ਜਿਸ ਕਾਰਨ ਉਹ ਨਿਰਾਸ਼ ਹੋ ਗਏ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Who did the gods go to in desperation?</strong></p>
+          <p class="punjabi-txt">ਨਿਰਾਸ਼ਾ ਵਿੱਚ ਦੇਵਤੇ ਕਿਸ ਕੋਲ ਗਏ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The gods went to Lord Vishnu in desperation to seek a solution to defeat the demons.</p>
+          <p class="punjabi-txt">ਦੇਵਤੇ ਦੈਂਤਾਂ ਨੂੰ ਹਰਾਉਣ ਦਾ ਹੱਲ ਲੱਭਣ ਲਈ ਨਿਰਾਸ਼ਾ ਵਿੱਚ ਭਗਵਾਨ ਵਿਸ਼ਨੂੰ ਕੋਲ ਗਏ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What was Lord Vishnu’s advice to the gods?</strong></p>
+          <p class="punjabi-txt">ਭਗਵਾਨ ਵਿਸ਼ਨੂੰ ਦੀ ਦੇਵਤਿਆਂ ਨੂੰ ਕੀ ਸਲਾਹ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Lord Vishnu advised the gods to make a mighty sword from the bones of a holy saint.</p>
+          <p class="punjabi-txt">ਭਗਵਾਨ ਵਿਸ਼ਨੂੰ ਨੇ ਦੇਵਤਿਆਂ ਨੂੰ ਇੱਕ ਪਵਿੱਤਰ ਸੰਤ ਦੀਆਂ ਹੱਡੀਆਂ ਤੋਂ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਤਲਵਾਰ ਬਣਾਉਣ ਦੀ ਸਲਾਹ ਦਿੱਤੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. What was the sacrifice of Saint Dadhichi?</strong></p>
+          <p class="punjabi-txt">ਸੰਤ ਦਧੀਚੀ ਦਾ ਕੀ ਬਲੀਦਾਨ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Saint Dadhichi sacrificed his life so that the gods could use his sacred bones to make a mighty sword to defeat the demons.</p>
+          <p class="punjabi-txt">ਸੰਤ ਦਧੀਚੀ ਨੇ ਆਪਣੀ ਜਾਨ ਦੀ ਕੁਰਬਾਨੀ ਦੇ ਦਿੱਤੀ ਤਾਂ ਜੋ ਦੇਵਤੇ ਉਨ੍ਹਾਂ ਦੀਆਂ ਪਵਿੱਤਰ ਹੱਡੀਆਂ ਦੀ ਵਰਤੋਂ ਦੈਂਤਾਂ ਨੂੰ ਹਰਾਉਣ ਲਈ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਤਲਵਾਰ ਬਣਾਉਣ ਲਈ ਕਰ ਸਕਣ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. What is the real spirit behind the yajnas performed in our homes?</strong></p>
+          <p class="punjabi-txt">ਸਾਡੇ ਘਰਾਂ ਵਿੱਚ ਕੀਤੇ ਜਾਣ ਵਾਲੇ ਯੱਗਾਂ ਦੇ ਪਿੱਛੇ ਅਸਲ ਭਾਵਨਾ ਕੀ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The real spirit behind yajnas is selflessness, sacrifice, purification of the environment, and contributing to the welfare of all living beings.</p>
+          <p class="punjabi-txt">ਯੱਗਾਂ ਦੇ ਪਿੱਛੇ ਅਸਲ ਭਾਵਨਾ ਨਿਸਵਾਰਥਤਾ, ਤਿਆਗ, ਵਾਤਾਵਰਣ ਦੀ ਸ਼ੁੱਧੀ ਅਤੇ ਸਾਰੇ ਜੀਵਾਂ ਦੇ ਭਲੇ ਵਿੱਚ ਯੋਗਦਾਨ ਪਾਉਣਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. What does the tradition of feeding birds and animals prove?</strong></p>
+          <p class="punjabi-txt">ਪੰਛੀਆਂ ਅਤੇ ਜਾਨਵਰਾਂ ਨੂੰ ਭੋਜਨ ਖਵਾਉਣ ਦੀ ਪਰੰਪਰਾ ਕੀ ਸਾਬਤ ਕਰਦੀ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> It proves that Indians believe in the unity of life in all forms.</p>
+          <p class="punjabi-txt">ਇਹ ਸਾਬਤ ਕਰਦਾ ਹੈ ਕਿ ਭਾਰਤੀ ਸਾਰੇ ਰੂਪਾਂ ਵਿੱਚ ਜੀਵਨ ਦੀ ਏਕਤਾ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਦੇ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. Why did some scholars laugh at Ashtavakra?</strong></p>
+          <p class="punjabi-txt">ਕੁਝ ਵਿਦਵਾਨ ਅਸ਼ਟਾਵਕਰ 'ਤੇ ਕਿਉਂ ਹੱਸੇ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Some scholars laughed at Ashtavakra because he had a deformed body. They judged him by his physical appearance instead of his knowledge.</p>
+          <p class="punjabi-txt">ਕੁਝ ਵਿਦਵਾਨ ਅਸ਼ਟਾਵਕਰ 'ਤੇ ਹੱਸੇ ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਦਾ ਸਰੀਰ ਅੰਗਹੀਣ/ਵਿਗੜਿਆ ਹੋਇਆ ਸੀ। ਉਨ੍ਹਾਂ ਨੇ ਉਸਦੇ ਗਿਆਨ ਦੀ ਬਜਾਏ ਉਸਦੀ ਸਰੀਰਕ ਬਣਤਰ ਤੋਂ ਉਸਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਇਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. How did Ashtavakra react when some scholars laughed at him?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਕੁਝ ਵਿਦਵਾਨਾਂ ਨੇ ਅਸ਼ਟਾਵਕਰ ਦਾ ਮਜ਼ਾਕ ਉਡਾਇਆ ਤਾਂ ਉਨ੍ਹਾਂ ਨੇ ਕੀ ਪ੍ਰਤੀਕਿਰਿਆ ਦਿੱਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He became very angry and called them skinners because they judged a person by skin and physical appearance rather than wisdom.</p>
+          <p class="punjabi-txt">ਉਹ ਬਹੁਤ ਗੁੱਸੇ ਹੋ ਗਏ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ 'ਚਮੜੇ ਦੇ ਪਾਰਖੂ' (ਚਮਾਰ) ਕਿਹਾ ਕਿਉਂਕਿ ਉਹ ਬੁੱਧੀ ਦੀ ਬਜਾਏ ਚਮੜੀ/ਸਰੀਰਕ ਦਿੱਖ ਦੁਆਰਾ ਵਿਅਕਤੀ ਦਾ ਅੰਦਾਜ਼ਾ ਲਗਾਉਂਦੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. What did Vivekananda say to the lady who laughed at his simple dress?</strong></p>
+          <p class="punjabi-txt">ਵਿਵੇਕਾਨੰਦ ਨੇ ਉਸ ਔਰਤ ਨੂੰ ਕੀ ਕਿਹਾ ਜੋ ਉਨ੍ਹਾਂ ਦੇ ਸਾਦੇ ਪਹਿਰਾਵੇ 'ਤੇ ਹੱਸੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Swami Vivekananda replied that in her country a tailor makes a man, but in his country, character makes a man.</p>
+          <p class="punjabi-txt">ਸਵਾਮੀ ਵਿਵੇਕਾਨੰਦ ਨੇ ਜਵਾਬ ਦਿੱਤਾ ਕਿ ਉਸਦੇ ਦੇਸ਼ ਵਿੱਚ ਇੱਕ ਦਰਜ਼ੀ ਇਨਸਾਨ ਬਣਾਉਂਦਾ ਹੈ, ਪਰ ਉਨ੍ਹਾਂ ਦੇ ਦੇਸ਼ ਵਿੱਚ ਚਰਿੱਤਰ ਇਨਸਾਨ ਬਣਾਉਂਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. What was the status of women in ancient India?</strong></p>
+          <p class="punjabi-txt">ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਸਥਿਤੀ ਕੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Women held a high and respected position in ancient India. They were worshipped as goddesses.</p>
+          <p class="punjabi-txt">ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਵਿੱਚ ਔਰਤਾਂ ਦਾ ਉੱਚਾ ਅਤੇ ਆਦਰਯੋਗ ਸਥਾਨ ਸੀ। ਉਨ੍ਹਾਂ ਦੀ ਦੇਵੀ ਵਜੋਂ ਪੂਜਾ ਕੀਤੀ ਜਾਂਦੀ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. Why did Shivaji bow his head before the woman who was brought to him as a gift?</strong></p>
+          <p class="punjabi-txt">ਸ਼ਿਵਾਜੀ ਨੇ ਉਸ ਔਰਤ ਅੱਗੇ ਆਪਣਾ ਸਿਰ ਕਿਉਂ ਝੁਕਾਇਆ ਜੋ ਉਨ੍ਹਾਂ ਲਈ ਤੋਹਫ਼ੇ ਵਜੋਂ ਲਿਆਂਦੀ ਗਈ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Shivaji had great respect for every woman. He hated the idea of accepting a woman as a gift. That was why he called that woman mother and bowed his head before her.</p>
+          <p class="punjabi-txt">ਸ਼ਿਵਾਜੀ ਹਰ ਔਰਤ ਦਾ ਬਹੁਤ ਸਤਿਕਾਰ ਕਰਦੇ ਸਨ। ਉਹ ਔਰਤ ਨੂੰ ਤੋਹਫ਼ੇ ਵਜੋਂ ਪ੍ਰਵਾਨ ਕਰਨ ਦੇ ਵਿਚਾਰ ਤੋਂ ਨਫ਼ਰਤ ਕਰਦੇ ਸਨ। ਇਸੇ ਲਈ ਉਨ੍ਹਾਂ ਨੇ ਉਸ ਔਰਤ ਨੂੰ ਮਾਂ ਕਿਹਾ ਅਤੇ ਉਸ ਅੱਗੇ ਸਿਰ ਝੁਕਾਇਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. Why, according to you, were the wars fought in the Mahabharata and Ramayana sacred?</strong></p>
+          <p class="punjabi-txt">ਤੁਹਾਡੇ ਅਨੁਸਾਰ ਮਹਾਭਾਰਤ ਅਤੇ ਰਾਮਾਇਣ ਵਿੱਚ ਲੜੀਆਂ ਗਈਆਂ ਜੰਗਾਂ ਪਵਿੱਤਰ ਕਿਉਂ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> They were sacred because they were not fought for personal gain or territory. The wars were fought to restore the honour and dignity of every woman.</p>
+          <p class="punjabi-txt">ਉਹ ਪਵਿੱਤਰ ਸਨ ਕਿਉਂਕਿ ਉਹ ਨਿੱਜੀ ਲਾਭ ਜਾਂ ਜ਼ਮੀਨ ਲਈ ਨਹੀਂ ਲੜੀਆਂ ਗਈਆਂ ਸਨ। ਇਹ ਜੰਗਾਂ ਹਰ ਔਰਤ ਦੇ ਸਨਮਾਨ ਅਤੇ ਗੌਰਵ ਨੂੰ ਬਹਾਲ ਕਰਨ ਲਈ ਲੜੀਆਂ ਗਈਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. What does Lord Rama’s meeting with a Bheel woman and eating the tasted berries show?</strong></p>
+          <p class="punjabi-txt">ਭਗਵਾਨ ਰਾਮ ਦਾ ਭੀਲ ਔਰਤ ਨੂੰ ਮਿਲਣਾ ਅਤੇ ਜੂਠੇ ਬੇਰ ਖਾਣਾ ਕੀ ਦਰਸਾਉਂਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Lord Rama’s meeting with a Bheel woman and eating the tasted berries shows that there was no discrimination on the basis of caste, creed, or profession.</p>
+          <p class="punjabi-txt">ਭਗਵਾਨ ਰਾਮ ਦਾ ਭੀਲ ਔਰਤ ਨੂੰ ਮਿਲਣਾ ਅਤੇ ਜੂਠੇ ਬੇਰ ਖਾਣਾ ਇਹ ਦਰਸਾਉਂਦਾ ਹੈ ਕਿ ਜਾਤ, ਧਰਮ ਜਾਂ ਕਿੱਤੇ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਵਿਤਕਰਾ ਨਹੀਂ ਸੀ।</p>
+        </div>
+
+        <h3>Long Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. Why, according to the author, should those people be ashamed of themselves who believe in female foeticide?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਦੇ ਅਨੁਸਾਰ, ਉਨ੍ਹਾਂ ਲੋਕਾਂ ਨੂੰ ਆਪਣੇ ਆਪ 'ਤੇ ਸ਼ਰਮ ਆਉਣੀ ਚਾਹੀਦੀ ਹੈ ਜੋ ਭ੍ਰੂਣ ਹੱਤਿਆ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਦੇ ਹਨ, ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> People who believe in female foeticide should be ashamed because ancient Indian culture respected women highly. No auspicious ceremony was considered complete without their participation. The wars fought in the Mahabharata and the Ramayana were fought to restore the honour and dignity of every woman. Female foeticide is, therefore, against the noble traditions and values of Indian culture.</p>
+          <p class="punjabi-txt">ਕੰਨਿਆ ਭ੍ਰੂਣ ਹੱਤਿਆ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਣ ਵਾਲੇ ਲੋਕਾਂ ਨੂੰ ਸ਼ਰਮਸਾਰ ਹੋਣਾ ਚਾਹੀਦੀ ਹੈ ਕਿਉਂਕਿ ਪ੍ਰਾਚੀਨ ਭਾਰਤੀ ਸੱਭਿਆਚਾਰ ਔਰਤਾਂ ਦਾ ਬਹੁਤ ਸਤਿਕਾਰ ਕਰਦਾ ਸੀ। ਉਨ੍ਹਾਂ ਦੀ ਭਾਗੀਦਾਰੀ ਤੋਂ ਬਿਨਾਂ ਕੋਈ ਵੀ ਸ਼ੁਭ ਕਾਰਜ ਪੂਰਾ ਨਹੀਂ ਮੰਨਿਆ ਜਾਂਦਾ ਸੀ। ਮਹਾਭਾਰਤ ਅਤੇ ਰਾਮਾਇਣ ਵਿੱਚ ਲੜੀਆਂ ਗਈਆਂ ਜੰਗਾਂ ਹਰ ਔਰਤ ਦੇ ਸਨਮਾਨ ਅਤੇ ਗੌਰਵ ਨੂੰ ਬਹਾਲ ਕਰਨ ਲਈ ਲੜੀਆਂ ਗਈਆਂ ਸਨ। ਇਸ ਲਈ ਕੰਨਿਆ ਭ੍ਰੂਣ ਹੱਤਿਆ ਭਾਰਤੀ ਸੱਭਿਆਚਾਰ ਦੀਆਂ ਮਹਾਨ ਪਰੰਪਰਾਵਾਂ ਅਤੇ ਕਦਰਾਂ-ਕੀਮਤਾਂ ਦੇ ਵਿਰੁੱਧ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. How does the author support the idea of the victory of the good over the evil?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਬੁਰਾਈ ਉੱਤੇ ਅੱਛਾਈ ਦੀ ਜਿੱਤ ਦੇ ਵਿਚਾਰ ਦਾ ਸਮਰਥਨ ਕਿਵੇਂ ਕਰਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author gives examples from Indian mythology and history to show that good ultimately triumphs over evil. Through the victory of the gods over demons and Lord Rama’s victory over Ravana, the author conveys the idea of the victory of good over evil.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਭਾਰਤੀ ਪੌਰਾਣਿਕ ਕਥਾਵਾਂ ਅਤੇ ਇਤਿਹਾਸ ਤੋਂ ਉਦਾਹਰਣਾਂ ਦਿੰਦਾ ਹੈ ਤਾਂ ਜੋ ਇਹ ਦਿਖਾਇਆ ਜਾ ਸਕੇ ਕਿ ਬੁਰਾਈ ਉੱਤੇ ਹਮੇਸ਼ਾ ਅੱਛਾਈ ਦੀ ਜਿੱਤ ਹੁੰਦੀ ਹੈ। ਦੈਂਤਾਂ 'ਤੇ ਦੇਵਤਿਆਂ ਦੀ ਜਿੱਤ ਅਤੇ ਰਾਵਣ 'ਤੇ ਭਗਵਾਨ ਰਾਮ ਦੀ ਜਿੱਤ ਦੁਆਰਾ, ਲੇਖਕ ਬੁਰਾਈ 'ਤੇ ਅੱਛਾਈ ਦੀ ਜਿੱਤ ਦਾ ਸੰਦੇਸ਼ ਦਿੰਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What is the basic difference between the position of women in society in the ancient times and now?</strong></p>
+          <p class="punjabi-txt">ਪ੍ਰਾਚੀਨ ਸਮੇਂ ਅਤੇ ਹੁਣ ਸਮਾਜ ਵਿੱਚ ਔਰਤਾਂ ਦੀ ਸਥਿਤੀ ਵਿੱਚ ਕੀ ਮੁੱਖ ਅੰਤਰ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> In ancient India, women were respected, educated, and given an important place in society. No auspicious ceremony was considered complete without their participation. In modern times, although women have gained many rights and opportunities, discrimination and practices like female foeticide and dowry killings still exist in some places.</p>
+          <p class="punjabi-txt">ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਵਿੱਚ ਔਰਤਾਂ ਦਾ ਸਤਿਕਾਰ ਕੀਤਾ ਜਾਂਦਾ ਸੀ, ਉਨ੍ਹਾਂ ਨੂੰ ਸਿੱਖਿਅਤ ਕੀਤਾ ਜਾਂਦਾ ਸੀ ਅਤੇ ਸਮਾਜ ਵਿੱਚ ਮਹੱਤਵਪੂਰਨ ਸਥਾਨ ਦਿੱਤਾ ਜਾਂਦਾ ਸੀ। ਉਨ੍ਹਾਂ ਦੀ ਭਾਗੀਦਾਰੀ ਤੋਂ ਬਿਨਾਂ ਕੋਈ ਵੀ ਸ਼ੁਭ ਕਾਰਜ ਪੂਰਾ ਨਹੀਂ ਮੰਨਿਆ ਜਾਂਦਾ ਸੀ। ਆਧੁਨਿਕ ਸਮੇਂ ਵਿੱਚ, ਹਾਲਾਂਕਿ ਔਰਤਾਂ ਨੇ ਬਹੁਤ ਸਾਰੇ ਅਧਿਕਾਰ ਅਤੇ ਅਵਸਰ ਪ੍ਰਾਪਤ ਕੀਤੇ ਹਨ, ਪਰ ਕੁੱਝ ਥਾਵਾਂ 'ਤੇ ਵਿਤਕਰਾ, ਕੰਨਿਆ ਭ੍ਰੂਣ ਹੱਤਿਆ ਅਤੇ ਦਾਜ ਲਈ ਹੱਤਿਆ ਵਰਗੀਆਂ ਬੁਰਾਈਆਂ ਅਜੇ ਵੀ ਮੌਜੂਦ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. What does the practice of ‘langar’ stand for? Explain.</strong></p>
+          <p class="punjabi-txt">'ਲੰਗਰ' ਦੀ ਪ੍ਰਥਾ ਕਿਸ ਚੀਜ਼ ਦਾ ਪ੍ਰਤੀਕ ਹੈ? ਵਿਆਖਿਆ ਕਰੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> The practice of langar stands for equality, brotherhood, and selfless service. People of every caste, religion, and social status sit together and share food. It teaches us that all human beings are equal and should be treated with love and respect.</p>
+          <p class="punjabi-txt">ਲੰਗਰ ਦੀ ਪ੍ਰਥਾ ਬਰਾਬਰੀ, ਭਾਈਚਾਰੇ ਅਤੇ ਨਿਸਵਾਰਥ ਸੇਵਾ ਦਾ ਪ੍ਰਤੀਕ ਹੈ। ਹਰ ਜਾਤ, ਧਰਮ ਅਤੇ ਸਮਾਜਿਕ ਪੱਧਰ ਦੇ ਲੋਕ ਇਕੱਠੇ ਬੈਠ ਕੇ ਭੋਜਨ ਛਕਦੇ ਹਨ। ਇਹ ਸਾਨੂੰ ਸਿਖਾਉਂਦਾ ਹੈ ਕਿ ਸਾਰੇ ਮਨੁੱਖ ਬਰਾਬਰ ਹਨ ਅਤੇ ਸਾਰਿਆਂ ਨਾਲ ਪਿਆਰ ਅਤੇ ਸਤਿਕਾਰ ਨਾਲ ਵਿਵਹਾਰ ਕੀਤਾ ਜਾਣਾ ਚਾਹੀਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Give an example to prove that in ancient India, there was no discrimination on the basis of caste.</strong></p>
+          <p class="punjabi-txt">ਇਹ ਸਾਬਤ ਕਰਨ ਲਈ ਇੱਕ ਉਦਾਹਰਣ ਦਿਓ ਕਿ ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਵਿੱਚ ਜਾਤ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਵਿਤਕਰਾ ਨਹੀਂ ਸੀ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Lord Rama’s meeting with the Bheel woman is an example of equality. He accepted and ate the berries offered by her without considering her caste or social status. This proves that in ancient India there was no discrimination on the basis of caste.</p>
+          <p class="punjabi-txt">ਭਗਵਾਨ ਰਾਮ ਦਾ ਭੀਲ ਔਰਤ ਨੂੰ ਮਿਲਣਾ ਬਰਾਬਰੀ ਦੀ ਇੱਕ ਉਦਾਹਰਣ ਹੈ। ਉਨ੍ਹਾਂ ਨੇ ਉਸਦੀ ਜਾਤ ਜਾਂ ਸਮਾਜਿਕ ਰੁਤਬੇ ਦੀ ਪ੍ਰਵਾਹ ਕੀਤੇ ਬਿਨਾਂ ਉਸ ਦੁਆਰਾ ਦਿੱਤੇ ਬੇਰਾਂ ਨੂੰ ਸਵੀਕਾਰ ਕੀਤਾ ਅਤੇ ਖਾਧਾ। ਇਹ ਸਾਬਤ ਕਰਦਾ ਹੈ ਕਿ ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਵਿੱਚ ਜਾਤ ਦੇ ਆਧਾਰ 'ਤੇ ਕੋਈ ਵਿਤਕਰਾ ਨਹੀਂ ਸੀ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Some scholars laughed at Ashtavakra’s ________.</p>
+          <p>(i) joke &nbsp;&nbsp; (ii) friend &nbsp;&nbsp; (iii) luck &nbsp;&nbsp; (iv) deformed body</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iv) deformed body</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. In ancient India, the woman was always considered a goddess. (True /False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. The gods went to Lord Vishnu in desperation. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Who was losing in the battle between the gods and the demons?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The gods</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. What did Saint Dadhichi advise the gods to make?</p>
+          <p>(i) An arrow &nbsp;&nbsp; (ii) A sword &nbsp;&nbsp; (iii) Bones &nbsp;&nbsp; (iv) None of these.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iv) None of these.</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Shivaji bowed his head before the _________.</p>
+          <p>(i) man &nbsp;&nbsp; (ii) woman &nbsp;&nbsp; (iii) teacher &nbsp;&nbsp; (iv) king</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) woman</p>
+        </div>
+
+        <h3>Translation English to Punjabi</h3>
+
+        <div class="qa-block">
+          <p>1. The gods approached the sage Dadhichi.</p>
+          <p class="ans-txt">ਦੇਵਤੇ ਰਿਸ਼ੀ ਦਧੀਚੀ ਕੋਲ ਪਹੁੰਚੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Dadhichi took no time in laying down his life.</p>
+          <p class="ans-txt">ਦਧੀਚੀ ਨੇ ਆਪਣੀ ਜਾਨ ਦੀ ਕੁਰਬਾਨੀ ਦੇਣ ਵਿੱਚ ਜ਼ਰਾ ਵੀ ਸਮਾਂ ਨਹੀਂ ਲਗਾਇਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Eat only after you've shared your meal with others.</p>
+          <p class="ans-txt">ਆਪਣਾ ਭੋਜਨ ਦੂਜਿਆਂ ਨਾਲ ਵੰਡ ਕੇ ਖਾਣ ਤੋਂ ਬਾਅਦ ਹੀ ਖਾਓ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. A well-known sage named Ashtavakra was also invited to this meeting.</p>
+          <p class="ans-txt">ਅਸ਼ਟਾਵਕਰ ਨਾਂ ਦੇ ਇੱਕ ਮਸ਼ਹੂਰ ਰਿਸ਼ੀ ਨੂੰ ਵੀ ਇਸ ਸਭਾ ਵਿੱਚ ਸੱਦਾ ਦਿੱਤਾ ਗਿਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. The entire universe is one family.</p>
+          <p class="ans-txt">ਪੂਰਾ ਬ੍ਰਹਿਮੰਡ ਇੱਕ ਪਰਿਵਾਰ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. This does not belong to me.</p>
+          <p class="ans-txt">ਇਹ ਮੇਰਾ ਨਹੀਂ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. They chose to be bricked alive.</p>
+          <p class="ans-txt">ਉਹਨਾਂ ਨੇ ਜਿਊਂਦੇ ਜੀਅ ਨੀਹਾਂ ਵਿੱਚ ਚਿਣੇ ਜਾਣਾ ਚੁਣਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>8. The history of this great land is full of examples.</p>
+          <p class="ans-txt">ਇਸ ਮਹਾਨ ਧਰਤੀ ਦਾ ਇਤਿਹਾਸ ਉਦਾਹਰਨਾਂ ਨਾਲ ਭਰਿਆ ਪਿਆ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>9. The people of this country believe in the unity of life.</p>
+          <p class="ans-txt">ਇਸ ਦੇਸ਼ ਦੇ ਲੋਕ ਜੀਵਨ ਦੀ ਏਕਤਾ ਵਿੱਚ ਵਿਸ਼ਵਾਸ ਰੱਖਦੇ ਹਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p>10. King Janak of Maithil called a meeting of the scholars.</p>
+          <p class="ans-txt">ਮੈਥਿਲ ਦੇ ਰਾਜਾ ਜਨਕ ਨੇ ਵਿਦਵਾਨਾਂ ਦੀ ਇੱਕ ਸਭਾ ਬੁਲਾਈ।</p>
+        </div>
+      `,
+      half_rupee_worth: `
+        <h2>Class 10th - Supplementary Reader - Chapter 2: Half a Rupee Worth</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. How did Subbiah manage to get rice during the drought?</strong></p>
+          <p class="punjabi-txt">ਸੋਕਾ ਪੈਣ ਸਮੇਂ ਸੁੱਬਈਆ ਨੇ ਚੌਲਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਿਵੇਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> During the drought, Subbiah searched the countryside and collected enough rice to fill at least two baskets. He sold this rice in his shop.</p>
+          <p class="punjabi-txt">ਸੋਕੇ ਦੇ ਸਮੇਂ ਸੁੱਬਈਆ ਨੇ ਪਿੰਡਾਂ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਦੇ ਇਲਾਕੇ ਵਿੱਚ ਚੌਲ ਲੱਭੇ ਅਤੇ ਘੱਟੋ-ਘੱਟ ਦੋ ਟੋਕਰੀਆਂ ਭਰਨ ਜਿੰਨੇ ਚੌਲ ਇਕੱਠੇ ਕੀਤੇ। ਉਸ ਨੇ ਇਹ ਚੌਲ ਆਪਣੀ ਦੁਕਾਨ ਵਿੱਚ ਵੇਚੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. “Those were the days when Subbiah loathed the rice bags.” Which were those days? Why did he dislike the rice then?</strong></p>
+          <p class="punjabi-txt">“ਉਹ ਉਹ ਦਿਨ ਸਨ ਜਦੋਂ ਸੁੱਬਈਆ ਨੂੰ ਚੌਲਾਂ ਦੀਆਂ ਬੋਰੀਆਂ ਤੋਂ ਨਫ਼ਰਤ ਸੀ।” ਉਹ ਕਿਹੜੇ ਦਿਨ ਸਨ? ਉਸ ਸਮੇਂ ਉਹ ਚੌਲਾਂ ਨੂੰ ਕਿਉਂ ਨਾਪਸੰਦ ਕਰਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Those were the days when Subbiah was working under his father. He disliked the rice bags because he wanted to enjoy the crowded streets, go to cinemas, watch football matches and attend wrestling tournaments instead of staying in the shop.</p>
+          <p class="punjabi-txt">ਉਹ ਉਹ ਦਿਨ ਸਨ ਜਦੋਂ ਸੁੱਬਈਆ ਆਪਣੇ ਪਿਤਾ ਦੇ ਅਧੀਨ ਕੰਮ ਕਰਦਾ ਸੀ। ਉਸ ਨੂੰ ਚੌਲਾਂ ਦੀਆਂ ਬੋਰੀਆਂ ਨਾਪਸੰਦ ਸਨ ਕਿਉਂਕਿ ਉਹ ਦੁਕਾਨ ਵਿੱਚ ਰਹਿਣ ਦੀ ਬਜਾਏ ਭੀੜ ਵਾਲੀਆਂ ਗਲੀਆਂ ਵਿੱਚ ਘੁੰਮਣਾ, ਸਿਨੇਮਾ ਦੇਖਣਾ, ਫੁੱਟਬਾਲ ਦੇ ਮੈਚ ਦੇਖਣਾ ਅਤੇ ਕੁਸ਼ਤੀ ਦੇ ਮੁਕਾਬਲੇ ਦੇਖਣਾ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. “Rice was in his blood” means:</strong></p>
+          <p>(a) he ate nothing but rice<br>(b) he liked the smell of rice<br>(c) he knew all about rice</p>
+          <p class="punjabi-txt">“Rice was in his blood” ਦਾ ਕੀ ਅਰਥ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> (c) He knew all about rice.</p>
+          <p class="punjabi-txt">(c) ਉਹ ਚੌਲਾਂ ਬਾਰੇ ਸਭ ਕੁਝ ਜਾਣਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. How did Subbiah’s profits increase during the war? Did he follow the rules laid down by the government? How did he tackle the officers?</strong></p>
+          <p class="punjabi-txt">ਜੰਗ ਦੇ ਦੌਰਾਨ ਸੁੱਬਈਆ ਦੇ ਮੁਨਾਫ਼ੇ ਵਿੱਚ ਕਿਵੇਂ ਵਾਧਾ ਹੋਇਆ? ਕੀ ਉਸਨੇ ਸਰਕਾਰ ਵੱਲੋਂ ਬਣਾਏ ਗਏ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਕੀਤੀ? ਉਸਨੇ ਅਫ਼ਸਰਾਂ ਨਾਲ ਕਿਵੇਂ ਨਜਿੱਠਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> During the war, there was a scarcity of rice. Subbiah sold his stock at a very high rate and made big profit. He followed the rules only on paper, not in practice. He bribed the officers who came to check his stock and accounts.</p>
+          <p class="punjabi-txt">ਯੁੱਧ ਦੌਰਾਨ, ਚੌਲਾਂ ਦੀ ਘਾਟ ਹੋ ਗਈ ਸੀ। ਸੁਬੱਈਆ ਨੇ ਆਪਣਾ ਸਟਾਕ ਬਹੁਤ ਉੱਚੀ ਕੀਮਤ 'ਤੇ ਵੇਚਿਆ ਅਤੇ ਵੱਡਾ ਮੁਨਾਫ਼ਾ ਕਮਾਇਆ। ਉਹ ਨਿਯਮਾਂ ਦੀ ਪਾਲਣਾ ਸਿਰਫ਼ ਕਾਗਜ਼ਾਂ 'ਤੇ ਹੀ ਕਰਦਾ ਸੀ, ਅਸਲ ਵਿੱਚ ਨਹੀਂ। ਉਹ ਆਪਣੇ ਸਟਾਕ ਅਤੇ ਖਾਤਿਆਂ ਦੀ ਜਾਂਚ ਕਰਨ ਆਏ ਅਧਿਕਾਰੀਆਂ ਨੂੰ ਰਿਸ਼ਵਤ ਦਿੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Besides selling rice, what else did Subbiah do to earn more?</strong></p>
+          <p class="punjabi-txt">ਚੌਲ ਵੇਚਣ ਤੋਂ ਇਲਾਵਾ ਸੁੱਬਈਆ ਨੇ ਹੋਰ ਪੈਸੇ ਕਮਾਉਣ ਲਈ ਕੀ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Besides selling rice, Subbiah lent money to people at very high rates of interest. If they could not repay the loans, he took over their houses. Thus, he earned more and more money.</p>
+          <p class="punjabi-txt">ਚੌਲ ਵੇਚਣ ਤੋਂ ਇਲਾਵਾ ਸੁੱਬਈਆ ਲੋਕਾਂ ਨੂੰ ਬਹੁਤ ਉੱਚੀ ਵਿਆਜ ਦਰ ’ਤੇ ਪੈਸੇ ਉਧਾਰ ਦਿੰਦਾ ਸੀ। ਜੇ ਉਹ ਕਰਜ਼ਾ ਵਾਪਸ ਨਾ ਕਰ ਸਕਦੇ, ਤਾਂ ਉਹ ਉਨ੍ਹਾਂ ਦੇ ਘਰ ਆਪਣੇ ਕਬਜ਼ੇ ਵਿੱਚ ਲੈ ਲੈਂਦਾ ਸੀ। ਇਸ ਤਰ੍ਹਾਂ ਉਹ ਵੱਧ ਤੋਂ ਵੱਧ ਪੈਸਾ ਕਮਾਉਂਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. Who came to buy rice one evening when Subbiah was about to go home? Did he give rice to him? What did he say?</strong></p>
+          <p class="punjabi-txt">ਇੱਕ ਸ਼ਾਮ ਜਦੋਂ ਸੁੱਬਈਆ ਘਰ ਜਾਣ ਵਾਲਾ ਸੀ ਤਾਂ ਚੌਲ ਖਰੀਦਣ ਲਈ ਕੌਣ ਆਇਆ? ਕੀ ਉਸ ਨੇ ਉਸ ਨੂੰ ਚੌਲ ਦਿੱਤੇ? ਉਸ ਨੇ ਕੀ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> A poor man came to buy rice. He had two children and an old mother at home. Subbiah agreed to give him rice, but he asked him to wait. He said that he would get the rice for him.</p>
+          <p class="punjabi-txt">ਇੱਕ ਗਰੀਬ ਆਦਮੀ ਚੌਲ ਖਰੀਦਣ ਲਈ ਆਇਆ। ਉਸ ਦੇ ਘਰ ਦੋ ਬੱਚੇ ਅਤੇ ਇੱਕ ਬੁੱਢੀ ਮਾਂ ਸੀ। ਸੁੱਬਈਆ ਉਸ ਨੂੰ ਚੌਲ ਦੇਣ ਲਈ ਰਾਜ਼ੀ ਹੋ ਗਿਆ, ਪਰ ਉਸ ਨੇ ਉਸ ਨੂੰ ਉਡੀਕ ਕਰਨ ਲਈ ਕਿਹਾ। ਉਸ ਨੇ ਕਿਹਾ ਕਿ ਉਹ ਉਸ ਲਈ ਚੌਲ ਲੈ ਕੇ ਆਵੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. How much rice did Subbiah agree to sell to him and for how much?</strong></p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਉਸ ਨੂੰ ਕਿੰਨੇ ਚੌਲ ਅਤੇ ਕਿੰਨੇ ਪੈਸਿਆਂ ਵਿੱਚ ਦੇਣ ਲਈ ਰਾਜ਼ੀ ਹੋਇਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Subbiah agreed to sell one seer of rice for half a rupee (eight annas).</p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਅੱਧੇ ਰੁਪਏ (ਅੱਠ ਆਨੇ) ਵਿੱਚ ਇੱਕ ਸੇਰ ਚੌਲ ਦੇਣ ਲਈ ਰਾਜ਼ੀ ਹੋ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. Why did Subbiah ask the man to wait? What reasons did he give?</strong></p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਨੇ ਉਸ ਆਦਮੀ ਨੂੰ ਉਡੀਕ ਕਰਨ ਲਈ ਕਿਉਂ ਕਿਹਾ? ਉਸ ਨੇ ਕੀ ਕਾਰਨ ਦੱਸਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Subbiah did not want anyone to know about his secret godown. So, he asked the man to wait. He said that he would have to go and get the rice from another place.</p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਨਹੀਂ ਚਾਹੁੰਦਾ ਸੀ ਕਿ ਕਿਸੇ ਨੂੰ ਉਸ ਦੇ ਗੁਪਤ ਗੋਦਾਮ ਬਾਰੇ ਪਤਾ ਲੱਗੇ। ਇਸ ਲਈ ਉਸ ਨੇ ਉਸ ਆਦਮੀ ਨੂੰ ਉਡੀਕ ਕਰਨ ਲਈ ਕਿਹਾ। ਉਸ ਨੇ ਕਿਹਾ ਕਿ ਉਸ ਨੂੰ ਕਿਸੇ ਹੋਰ ਥਾਂ ਤੋਂ ਚੌਲ ਲਿਆਉਣੇ ਪੈਣਗੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. Where did Subbiah go to get the rice?</strong></p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਚੌਲ ਲੈਣ ਲਈ ਕਿੱਥੇ ਗਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Subbiah went to his secret godown to get the rice.</p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਚੌਲ ਲੈਣ ਲਈ ਆਪਣੇ ਗੁਪਤ ਗੋਦਾਮ ਵਿੱਚ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. Did the man wait for Subbiah for long? How do you know?</strong></p>
+          <p class="punjabi-txt">ਕੀ ਉਸ ਆਦਮੀ ਨੇ ਸੁੱਬਈਆ ਦੀ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਉਡੀਕ ਕੀਤੀ? ਤੁਹਾਨੂੰ ਇਹ ਕਿਵੇਂ ਪਤਾ ਲੱਗਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Yes, the man waited for a long time. He stood at the street corner for three hours until the night became very dark.</p>
+          <p class="punjabi-txt">ਹਾਂ, ਉਸ ਆਦਮੀ ਨੇ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਉਡੀਕ ਕੀਤੀ। ਉਹ ਤਿੰਨ ਘੰਟੇ ਤੱਕ ਗਲੀ ਦੇ ਮੋੜ ’ਤੇ ਖੜ੍ਹਾ ਰਿਹਾ, ਜਦੋਂ ਤੱਕ ਰਾਤ ਬਹੁਤ ਹਨੇਰੀ ਨਹੀਂ ਹੋ ਗਈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. Where did the man go then? Where was he taken and by whom?</strong></p>
+          <p class="punjabi-txt">ਫਿਰ ਉਹ ਆਦਮੀ ਕਿੱਥੇ ਗਿਆ? ਉਸ ਨੂੰ ਕਿੱਥੇ ਅਤੇ ਕਿਸ ਵੱਲੋਂ ਲਿਜਾਇਆ ਗਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The man went to Subbiah’s house to ask about him. He was then taken to Subbiah’s secret godown by Subbiah’s wife.</p>
+          <p class="punjabi-txt">ਉਹ ਆਦਮੀ ਸੁੱਬਈਆ ਬਾਰੇ ਪੁੱਛਣ ਲਈ ਉਸ ਦੇ ਘਰ ਗਿਆ। ਫਿਰ ਸੁੱਬਈਆ ਦੀ ਪਤਨੀ ਉਸ ਨੂੰ ਸੁੱਬਈਆ ਦੇ ਗੁਪਤ ਗੋਦਾਮ ਵਿੱਚ ਲੈ ਗਈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. How did Subbiah die?</strong></p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਦੀ ਮੌਤ ਕਿਵੇਂ ਹੋਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Subbiah went to his secret godown to get rice. While he was trying to take out the rice in the dark, a heavy pile of rice bags fell on him. He was buried under the bags and died.</p>
+          <p class="punjabi-txt">ਸੁੱਬਈਆ ਚੌਲ ਲੈਣ ਲਈ ਆਪਣੇ ਗੁਪਤ ਗੋਦਾਮ ਵਿੱਚ ਗਿਆ। ਜਦੋਂ ਉਹ ਹਨੇਰੇ ਵਿੱਚ ਚੌਲ ਕੱਢਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਸੀ, ਤਾਂ ਚੌਲਾਂ ਦੀਆਂ ਭਾਰੀਆਂ ਬੋਰੀਆਂ ਦਾ ਢੇਰ ਉਸ ਦੇ ਉੱਪਰ ਡਿੱਗ ਪਿਆ। ਉਹ ਬੋਰੀਆਂ ਹੇਠਾਂ ਦੱਬ ਗਿਆ ਅਤੇ ਉਸ ਦੀ ਮੌਤ ਹੋ ਗਈ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Subbiah was a rice merchant. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Subbiah had …………….. children.</p>
+          <p>(i) two &nbsp;&nbsp; (ii) three &nbsp;&nbsp; (iii) four &nbsp;&nbsp; (iv) five</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iv) five</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Where did Subbiah’s wife take the man?</p>
+          <p class="ans-txt"><strong>Ans:</strong> She took the man to the secret godown.</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Subbiah died in a road accident. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Subbiah’s profit ………… during the war.</p>
+          <p>(i) increased &nbsp;&nbsp; (ii) decreased &nbsp;&nbsp; (iii) went down &nbsp;&nbsp; (iv) did not change</p>
+          <p class="ans-txt"><strong>Ans:</strong> (i) increased</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Subbiah was buried under the bags and died. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+      `,
+      bed_number_29: `
+        <h2>Class 10th - Supplementary Reader - Chapter 1: Bed Number-29</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. How did the author of Bed Number-29 lose his eyesight?</strong></p>
+          <p class="punjabi-txt">Bed Number-29 ਦੇ ਲੇਖਕ ਦੀ ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਕਿਵੇਂ ਚਲੀ ਗਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author lost his eyesight in a road accident.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਦੀਆਂ ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਇੱਕ ਸੜਕ ਹਾਦਸੇ ਵਿੱਚ ਚਲੀ ਗਈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. What did the author of Bed Number-29 do before he lost his eyesight?</strong></p>
+          <p class="punjabi-txt">ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਗੁਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਲੇਖਕ ਕੀ ਕਰਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Before losing his eyesight, the author was fond of painting. He loved painting beautiful scenes.</p>
+          <p class="punjabi-txt">ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਗੁਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਲੇਖਕ ਨੂੰ ਚਿੱਤਰਕਾਰੀ ਦਾ ਬਹੁਤ ਸ਼ੌਕ ਸੀ। ਉਸਨੂੰ ਸੁੰਦਰ ਦ੍ਰਿਸ਼ਾਂ ਦੀਆਂ ਤਸਵੀਰਾਂ ਬਣਾਉਣਾ ਪਸੰਦ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Who did the author meet in the hospital ward? Why was he there?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਹਸਪਤਾਲ ਦੇ ਵਾਰਡ ਵਿੱਚ ਕਿਸ ਨੂੰ ਮਿਲਿਆ? ਉਹ ਉੱਥੇ ਕਿਉਂ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author met Naeem in the hospital ward. Naeem was there for the treatment of his eyes.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਹਸਪਤਾਲ ਦੇ ਵਾਰਡ ਵਿੱਚ ਨਈਮ ਨੂੰ ਮਿਲਿਆ। ਨਈਮ ਆਪਣੀਆਂ ਅੱਖਾਂ ਦੇ ਇਲਾਜ ਲਈ ਉੱਥੇ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. When did the author regain his confidence and how?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਨੇ ਆਪਣਾ ਆਤਮ-ਵਿਸ਼ਵਾਸ ਕਦੋਂ ਅਤੇ ਕਿਵੇਂ ਮੁੜ ਪ੍ਰਾਪਤ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author regained his confidence when Naeem encouraged him to start painting again and praised his artwork.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਨੇ ਆਪਣਾ ਆਤਮ-ਵਿਸ਼ਵਾਸ ਉਦੋਂ ਮੁੜ ਪ੍ਰਾਪਤ ਕੀਤਾ ਜਦੋਂ ਨਈਮ ਨੇ ਉਸਨੂੰ ਦੁਬਾਰਾ ਚਿੱਤਰਕਾਰੀ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਉਤਸ਼ਾਹਿਤ ਕੀਤਾ ਅਤੇ ਉਸਦੇ ਚਿੱਤਰਾਂ ਦੀ ਪ੍ਰਸ਼ੰਸਾ ਕੀਤੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. What happened when the author's second operation failed? Who consoled him then?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਲੇਖਕ ਦਾ ਦੂਜਾ ਆਪ੍ਰੇਸ਼ਨ ਅਸਫਲ ਹੋ ਗਿਆ ਤਾਂ ਕੀ ਹੋਇਆ? ਉਸਨੂੰ ਕਿਸ ਨੇ ਦਿਲਾਸਾ ਦਿੱਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> When the second operation failed, the author became very sad and lost hope. Naeem consoled him and encouraged him not to lose hope.</p>
+          <p class="punjabi-txt">ਜਦੋਂ ਲੇਖਕ ਦਾ ਦੂਜਾ ਆਪ੍ਰੇਸ਼ਨ ਅਸਫਲ ਹੋ ਗਿਆ ਤਾਂ ਉਹ ਬਹੁਤ ਦੁਖੀ ਹੋ ਗਿਆ ਅਤੇ ਉਸਦੀ ਆਸ ਟੁੱਟ ਗਈ। ਨਈਮ ਨੇ ਉਸਨੂੰ ਦਿਲਾਸਾ ਦਿੱਤਾ ਅਤੇ ਆਸ ਨਾ ਛੱਡਣ ਲਈ ਉਤਸ਼ਾਹਿਤ ਕੀਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. How did the author get the money for the third operation? Who helped him?</strong></p>
+          <p class="punjabi-txt">ਲੇਖਕ ਨੂੰ ਤੀਜੇ ਆਪ੍ਰੇਸ਼ਨ ਲਈ ਪੈਸੇ ਕਿਵੇਂ ਮਿਲੇ? ਉਸਦੀ ਮਦਦ ਕਿਸ ਨੇ ਕੀਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author got the money by selling his paintings. Naeem helped him by finding an art lover who bought his paintings.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਨੂੰ ਆਪਣੇ ਚਿੱਤਰ ਵੇਚ ਕੇ ਪੈਸੇ ਮਿਲੇ। ਨਈਮ ਨੇ ਇੱਕ ਕਲਾ-ਪ੍ਰੇਮੀ ਨੂੰ ਲੱਭ ਕੇ ਉਸਦੀ ਮਦਦ ਕੀਤੀ, ਜਿਸ ਨੇ ਉਸਦੇ ਚਿੱਤਰ ਖਰੀਦ ਲਏ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. Where was Naeem when the author regained his eyesight?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਲੇਖਕ ਦੀਆਂ ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਵਾਪਸ ਆਈ ਤਾਂ ਨਈਮ ਕਿੱਥੇ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Naeem was not in the hospital ward. He had already left the hospital after spending all his money.</p>
+          <p class="punjabi-txt">ਨਈਮ ਹਸਪਤਾਲ ਦੇ ਵਾਰਡ ਵਿੱਚ ਨਹੀਂ ਸੀ। ਉਹ ਆਪਣੇ ਸਾਰੇ ਪੈਸੇ ਖਰਚ ਕਰਨ ਤੋਂ ਬਾਅਦ ਹਸਪਤਾਲ ਛੱਡ ਚੁੱਕਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. Did the author know that Naeem was also blind? Give reasons.</strong></p>
+          <p class="punjabi-txt">ਕੀ ਲੇਖਕ ਨੂੰ ਪਤਾ ਸੀ ਕਿ ਨਈਮ ਵੀ ਅੰਨ੍ਹਾ ਸੀ? ਕਾਰਨ ਦੱਸੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> No, the author did not know that Naeem was also blind. Naeem described the scenes and colours so beautifully that the author thought he could see.</p>
+          <p class="punjabi-txt">ਨਹੀਂ, ਲੇਖਕ ਨੂੰ ਪਤਾ ਨਹੀਂ ਸੀ ਕਿ ਨਈਮ ਵੀ ਅੰਨ੍ਹਾ ਸੀ। ਨਈਮ ਦ੍ਰਿਸ਼ਾਂ ਅਤੇ ਰੰਗਾਂ ਦਾ ਇੰਨੇ ਸੁੰਦਰ ਢੰਗ ਨਾਲ ਵਰਣਨ ਕਰਦਾ ਸੀ ਕਿ ਲੇਖਕ ਨੂੰ ਲੱਗਦਾ ਸੀ ਕਿ ਨਈਮ ਦੇਖ ਸਕਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. Why could Naeem not get his treatment done?</strong></p>
+          <p class="punjabi-txt">ਨਈਮ ਆਪਣਾ ਇਲਾਜ ਕਿਉਂ ਨਹੀਂ ਕਰਵਾ ਸਕਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Naeem could not get his treatment because he had no money. He had spent all his money on the author's operation.</p>
+          <p class="punjabi-txt">ਨਈਮ ਆਪਣਾ ਇਲਾਜ ਨਹੀਂ ਕਰਵਾ ਸਕਿਆ ਕਿਉਂਕਿ ਉਸ ਕੋਲ ਪੈਸੇ ਨਹੀਂ ਸਨ। ਉਸਨੇ ਆਪਣੇ ਸਾਰੇ ਪੈਸੇ ਲੇਖਕ ਦੇ ਆਪ੍ਰੇਸ਼ਨ ਲਈ ਖਰਚ ਕਰ ਦਿੱਤੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. How did the author feel when he learnt that Naeem had left the hospital because he had no money?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਲੇਖਕ ਨੂੰ ਪਤਾ ਲੱਗਾ ਕਿ ਨਈਮ ਕੋਲ ਪੈਸੇ ਨਾ ਹੋਣ ਕਰਕੇ ਉਹ ਹਸਪਤਾਲ ਛੱਡ ਕੇ ਚਲਾ ਗਿਆ ਹੈ, ਤਾਂ ਲੇਖਕ ਨੂੰ ਕਿਵੇਂ ਮਹਿਸੂਸ ਹੋਇਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author felt very sad and cried when he learned about Naeem's sacrifice. Naeem spent all his money to buy the author's paintings so that the author could pay for his eye surgery.</p>
+          <p class="punjabi-txt">ਜਦੋਂ ਲੇਖਕ ਨੂੰ ਨਈਮ ਦੀ ਕੁਰਬਾਨੀ ਬਾਰੇ ਪਤਾ ਲੱਗਾ, ਤਾਂ ਉਹ ਬਹੁਤ ਉਦਾਸ ਹੋ ਗਿਆ ਅਤੇ ਰੋਣ ਲੱਗ ਪਿਆ। ਨਈਮ ਨੇ ਆਪਣੇ ਸਾਰੇ ਪੈਸੇ ਲੇਖਕ ਦੀਆਂ ਪੇਂਟਿੰਗਾਂ ਖਰੀਦਣ ਵਿੱਚ ਖਰਚ ਕਰ ਦਿੱਤੇ ਸਨ ਤਾਂ ਜੋ ਲੇਖਕ ਆਪਣੀਆਂ ਅੱਖਾਂ ਦੇ ਆਪ੍ਰੇਸ਼ਨ ਦਾ ਖਰਚਾ ਚੁੱਕ ਸਕੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. How could Naeem describe different seasons in detail?</strong></p>
+          <p class="punjabi-txt">ਨਈਮ ਵੱਖ-ਵੱਖ ਰੁੱਤਾਂ ਦਾ ਵਿਸਥਾਰ ਨਾਲ ਵਰਣਨ ਕਿਵੇਂ ਕਰ ਸਕਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Naeem could describe the seasons in detail because he was a painter before losing his eyesight. He had painted four pictures of the seasons and remembered them well.</p>
+          <p class="punjabi-txt">ਨਈਮ ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਗੁਆਉਣ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਚਿੱਤਰਕਾਰ ਸੀ। ਉਸਨੇ ਰੁੱਤਾਂ ਦੀਆਂ ਚਾਰ ਤਸਵੀਰਾਂ ਬਣਾਈਆਂ ਸਨ ਅਤੇ ਉਸਨੂੰ ਉਹ ਚੰਗੀ ਤਰ੍ਹਾਂ ਯਾਦ ਸਨ। ਇਸ ਲਈ ਉਹ ਰੁੱਤਾਂ ਦਾ ਵਿਸਥਾਰ ਨਾਲ ਵਰਣਨ ਕਰ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. What does the message "The goddess of art smiled on me... and then it vanished" mean?</strong></p>
+          <p class="punjabi-txt">"ਕਲਾ ਦੀ ਦੇਵੀ ਮੇਰੇ 'ਤੇ ਮਿਹਰਬਾਨ ਹੋਈ... ਅਤੇ ਫਿਰ ਲੋਪ (ਗਾਇਬ) ਹੋ ਗਈ" ਸੰਦੇਸ਼ ਦਾ ਕੀ ਮਤਲਬ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The author had regained his eyesight after the third operation. Now he hoped that he would be able to see Naeem who had helped him so much. But when he read Naeem’s letter, all his hope was lost.</p>
+          <p class="punjabi-txt">ਲੇਖਕ ਨੂੰ ਤੀਜੇ ਆਪ੍ਰੇਸ਼ਨ ਤੋਂ ਬਾਅਦ ਆਪਣੀਆਂ ਅੱਖਾਂ ਦੀ ਰੌਸ਼ਨੀ ਵਾਪਸ ਮਿਲ ਗਈ ਸੀ। ਹੁਣ ਉਸਨੂੰ ਉਮੀਦ ਸੀ ਕਿ ਉਹ ਨਈਮ ਨੂੰ ਦੇਖ ਸਕੇਗਾ ਜਿਸਨੇ ਉਸਦੀ ਇੰਨੀ ਮਦਦ ਕੀਤੀ ਸੀ। ਪਰ ਜਦੋਂ ਉਸਨੇ ਨਈਮ ਦੀ ਚਿੱਠੀ ਪੜ੍ਹੀ, ਤਾਂ ਉਸਦੀ ਸਾਰੀ ਆਸ ਟੁੱਟ ਗਈ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Naeem was in the hospital when the author regained his eyesight. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Who did the author meet in the hospital ward?</p>
+          <p>(i) Naeem &nbsp;&nbsp; (ii) Bobby Gillian &nbsp;&nbsp; (iii) Subbiah &nbsp;&nbsp; (iv) Della</p>
+          <p class="ans-txt"><strong>Ans:</strong> (i) Naeem</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. The author regained his eyesight after the ………..</p>
+          <p>(i) first operation &nbsp;&nbsp; (ii) second operation &nbsp;&nbsp; (iii) third operation &nbsp;&nbsp; (iv) fourth operation</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iii) third operation</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. The author was a ……….. before he lost his eyesight.</p>
+          <p class="ans-txt"><strong>Ans:</strong> painter</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. The author knew that Naeem was also blind ……….. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Naeem urged the author to restart …………..</p>
+          <p>(i) dancing &nbsp;&nbsp; (ii) singing &nbsp;&nbsp; (iii) studying &nbsp;&nbsp; (iv) painting</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iv) painting</p>
+        </div>
+      `,
+      one_thousand_dollars: `
+        <h2>Class 10th - Supplementary Reader - Chapter 3: One Thousand Dollars</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Who gave $1,000 to Robert Gillian? Who did the money belong to? Why was it given to him?</strong></p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਨੂੰ 1,000 ਡਾਲਰ ਕਿਸ ਨੇ ਦਿੱਤੇ? ਪੈਸੇ ਕਿਸ ਦੇ ਸਨ? ਇਹ ਉਸਨੂੰ ਕਿਉਂ ਦਿੱਤੇ ਗਏ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The lawyers, Tolman and Sharp, gave $1,000 to Robert Gillian. The money belonged to his late uncle, Septimus Gillian. It was given to Robert according to his uncle’s will.</p>
+          <p class="punjabi-txt">ਵਕੀਲਾਂ, ਟੋਲਮੈਨ ਅਤੇ ਸ਼ਾਰਪ ਨੇ ਰੌਬਰਟ ਗਿਲੀਅਨ ਨੂੰ 1,000 ਡਾਲਰ ਦਿੱਤੇ। ਇਹ ਪੈਸੇ ਉਸਦੇ ਸਵਰਗੀ ਚਾਚੇ (ਜਾਂ ਤਾਏ), ਸੈਪਟੀਮਸ ਗਿਲੀਅਨ ਦੇ ਸਨ। ਇਹ ਰੌਬਰਟ ਨੂੰ ਉਸਦੇ ਚਾਚੇ ਦੀ ਵਸੀਅਤ ਦੇ ਅਨੁਸਾਰ ਦਿੱਤੇ ਗਏ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Why was Bobby Gillian not happy with the money given to him?</strong></p>
+          <p class="punjabi-txt">ਬੌਬੀ ਗਿਲੀਅਨ ਆਪਣੇ ਦਿੱਤੇ ਗਏ ਪੈਸਿਆਂ ਤੋਂ ਖੁਸ਼ ਕਿਉਂ ਨਹੀਂ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Bobby Gillian was not happy because he had expected to inherit a much larger amount from his rich uncle. He thought that $1,000 was too little.</p>
+          <p class="punjabi-txt">ਬੌਬੀ ਗਿਲੀਅਨ ਖੁਸ਼ ਨਹੀਂ ਸੀ ਕਿਉਂਕਿ ਉਸਨੂੰ ਆਪਣੇ ਅਮੀਰ ਚਾਚੇ ਤੋਂ ਬਹੁਤ ਵੱਡੀ ਰਕਮ ਮਿਲਣ ਦੀ ਉਮੀਦ ਸੀ। ਉਸਨੂੰ ਲੱਗਦਾ ਸੀ ਕਿ 1,000 ਡਾਲਰ ਬਹੁਤ ਘੱਟ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What was the condition laid down by the lawyer?</strong></p>
+          <p class="punjabi-txt">ਵਕੀਲ ਦੁਆਰਾ ਕਿਹੜੀ ਸਰਤ ਰੱਖੀ ਗਈ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The lawyer said that Gillian must spend the $1,000 and then submit a written account explaining how he had spent the money.</p>
+          <p class="punjabi-txt">ਵਕੀਲ ਨੇ ਕਿਹਾ ਕਿ ਗਿਲੀਅਨ ਨੂੰ 1,000 ਡਾਲਰ ਖਰਚ ਕਰਨੇ ਪੈਣਗੇ ਅਤੇ ਫਿਰ ਲਿਖਤੀ ਹਿਸਾਬ-ਕਿਤਾਬ ਦੇਣਾ ਪਵੇਗਾ ਕਿ ਉਸਨੇ ਪੈਸੇ ਕਿਵੇਂ ਖਰਚ ਕੀਤੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Who else got the money and how much?</strong></p>
+          <p class="punjabi-txt">ਹੋਰ ਕਿਸ-ਕਿਸ ਨੂੰ ਪੈਸੇ ਮਿਲੇ ਅਤੇ ਕਿੰਨੇ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The others who got money were the butler, the housekeeper, and Miss Hayden, who was the ward of Robert’s uncle. Each of them got ten dollars.</p>
+          <p class="punjabi-txt">ਹੋਰ ਜਿਨ੍ਹਾਂ ਨੂੰ ਪੈਸੇ ਮਿਲੇ, ਉਹ ਸਨ ਬਟਲਰ (ਨੌਕਰ), ਹਾਊਸਕੀਪਰ (ਘਰ ਦੀ ਦੇਖਭਾਲ ਕਰਨ ਵਾਲੀ) ਅਤੇ ਮਿਸ ਹੈਡਨ, ਜੋ ਰੌਬਰਟ ਦੇ ਚਾਚੇ ਦੀ ਵਾਰਡ (ਦੇਖਭਾਲ ਅਧੀਨ) ਸੀ। ਉਹਨਾਂ ਵਿੱਚੋਂ ਹਰੇਕ ਨੂੰ ਦਸ ਡਾਲਰ ਮਿਲੇ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Why was Old Bryson not serious in giving suggestions to Gillian? What were the suggestions given?</strong></p>
+          <p class="punjabi-txt">ਓਲਡ ਬ੍ਰਾਇਸਨ ਗਿਲੀਅਨ ਨੂੰ ਸੁਝਾਅ ਦੇਣ ਵਿੱਚ ਗੰਭੀਰ ਕਿਉਂ ਨਹੀਂ ਸੀ? ਕਿਹੜੇ ਸੁਝਾਅ ਦਿੱਤੇ ਗਏ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Old Bryson did not like Gillian. Therefore, he was not serious in giving his suggestions. He suggested that Gillian could buy a house, provide milk for babies, spend money in art galleries, pay for someone’s education, or buy a diamond pendant for Miss Lotta.</p>
+          <p class="punjabi-txt">ਓਲਡ ਬ੍ਰਾਇਸਨ ਗਿਲੀਅਨ ਨੂੰ ਪਸੰਦ ਨਹੀਂ ਕਰਦਾ ਸੀ। ਇਸ ਲਈ, ਉਹ ਸੁਝਾਅ ਦੇਣ ਵਿੱਚ ਗੰਭੀਰ ਨਹੀਂ ਸੀ। ਉਸਨੇ ਸੁਝਾਅ ਦਿੱਤਾ ਕਿ ਗਿਲੀਅਨ ਇੱਕ ਘਰ ਖਰੀਦ ਸਕਦਾ ਹੈ, ਬੱਚਿਆਂ ਲਈ ਦੁੱਧ ਦਾ ਪ੍ਰਬੰਧ ਕਰ ਸਕਦਾ ਹੈ, ਆਰਟ ਗੈਲਰੀਆਂ ਵਿੱਚ ਖਰਚ ਕਰ ਸਕਦਾ ਹੈ, ਕਿਸੇ ਦੀ ਪੜ੍ਹਾਈ ਦਾ ਖਰਚਾ ਚੁੱਕ ਸਕਦਾ ਹੈ, ਜਾਂ ਮਿਸ ਲੌਟਾ ਲਈ ਹੀਰੇ ਦਾ ਪੈਂਡੈਂਟ ਖਰੀਦ ਸਕਦਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. Which suggestion did Gillian accept? What did he do then?</strong></p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਕਿਹੜਾ ਸੁਝਾਅ ਮੰਨਿਆ? ਫਿਰ ਉਸਨੇ ਕੀ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gillian accepted the suggestion to buy a diamond pendant for Miss Lotta Lauriere. He phoned for a cab and went to the Columbine Theatre to visit Miss Lotta Lauriere.</p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਮਿਸ ਲੌਟਾ ਲੌਰੀਅਰ ਲਈ ਹੀਰੇ ਦਾ ਪੈਂਡੈਂਟ ਖਰੀਦਣ ਦਾ ਸੁਝਾਅ ਮੰਨ ਲਿਆ। ਉਸਨੇ ਕੈਬ (ਟੈਕਸੀ) ਬੁਲਾਈ ਅਤੇ ਮਿਸ ਲੌਟਾ ਲੌਰੀਅਰ ਨੂੰ ਮਿਲਣ ਲਈ ਕੋਲੰਬਾਈਨ ਥੀਏਟਰ ਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. Who was Miss Lotta Lauriere? Did she welcome Gillian's coming? Was she happy with his offer? Give reasons for your answer.</strong></p>
+          <p class="punjabi-txt">ਮਿਸ ਲੌਟਾ ਲੌਰੀਅਰ ਕੌਣ ਸੀ? ਕੀ ਉਸਨੇ ਗਿਲੀਅਨ ਦੇ ਆਉਣ ਦਾ ਸੁਆਗਤ ਕੀਤਾ? ਕੀ ਉਹ ਉਸਦੇ ਪ੍ਰਸਤਾਵ ਤੋਂ ਖੁਸ਼ ਸੀ? ਆਪਣੇ ਉੱਤਰ ਦੇ ਕਾਰਨ ਦੱਸੋ।</p>
+          <p class="ans-txt"><strong>Ans:</strong> Miss Lotta Lauriere was an actress at the Columbine Theatre. She did not warmly welcome Gillian because she was busy and seemed bored. She was not happy with his offer because she wanted a much costlier pendant.</p>
+          <p class="punjabi-txt">ਮਿਸ ਲੌਟਾ ਲੌਰੀਅਰ ਕੋਲੰਬਾਈਨ ਥੀਏਟਰ ਵਿੱਚ ਇੱਕ ਅਦਾਕਾਰਾ ਸੀ। ਉਸਨੇ ਗਿਲੀਅਨ ਦਾ ਨਿੱਘਾ ਸੁਆਗਤ ਨਹੀਂ ਕੀਤਾ ਕਿਉਂਕਿ ਉਹ ਮਸਰੂਫ ਸੀ ਅਤੇ ਅੱਕੀ ਹੋਈ ਲੱਗਦੀ ਸੀ। ਉਹ ਉਸਦੇ ਪ੍ਰਸਤਾਵ ਤੋਂ ਖੁਸ਼ ਨਹੀਂ ਸੀ ਕਿਉਂਕਿ ਉਹ ਬਹੁਤ ਮਹਿੰਗਾ ਪੈਂਡੈਂਟ ਚਾਹੁੰਦੀ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. What did Gillian ask the driver of the cab? Did he like his answer? How do you know?</strong></p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਕੈਬ ਡਰਾਈਵਰ ਨੂੰ ਕੀ ਪੁੱਛਿਆ? ਕੀ ਉਸਨੂੰ ਉਸਦਾ ਜਵਾਬ ਪਸੰਦ ਆਇਆ? ਤੁਹਾਨੂੰ ਕਿਵੇਂ ਪਤਾ ਲੱਗਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gillian asked the cab driver what he would do if he had $1,000. The driver said that he would open a saloon and make money with both hands, to which Gillian replied, "Oh, no... merely asked for curiosity" and told him to keep driving, showing he had no interest in that idea.</p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਕੈਬ ਡਰਾਈਵਰ ਨੂੰ ਪੁੱਛਿਆ ਕਿ ਜੇਕਰ ਉਸ ਕੋਲ 1,000 ਡਾਲਰ ਹੁੰਦੇ ਤਾਂ ਉਹ ਕੀ ਕਰਦਾ। ਡਰਾਈਵਰ ਨੇ ਕਿਹਾ ਕਿ ਉਹ ਇੱਕ ਸ਼ਰਾਬਖਾਨਾ (ਸਲੂਨ) ਖੋਲ੍ਹੇਗਾ ਅਤੇ ਦੋਵਾਂ ਹੱਥਾਂ ਨਾਲ ਪੈਸੇ ਕਮਾਏਗਾ, ਜਿਸ 'ਤੇ ਗਿਲੀਅਨ ਨੇ ਜਵਾਬ ਦਿੱਤਾ, "ਓ, ਨਹੀਂ... ਬੱਸ ਉਤਸੁਕਤਾ ਵਜੋਂ ਪੁੱਛਿਆ ਸੀ" ਅਤੇ ਉਸਨੂੰ ਗੱਡੀ ਚਲਾਉਂਦੇ ਰਹਿਣ ਲਈ ਕਿਹਾ, ਜਿਸ ਤੋਂ ਪਤਾ ਲੱਗਦਾ ਹੈ ਕਿ ਉਸਨੂੰ ਇਸ ਵਿਚਾਰ ਵਿੱਚ ਕੋਈ ਦਿਲਚਸਪੀ ਨਹੀਂ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. Who did Gillian talk to next? Why?</strong></p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਅੱਗੇ ਕਿਸ ਨਾਲ ਗੱਲ ਕੀਤੀ? ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gillian next talked to a blind man selling pencils on the sidewalk. He asked him what he would do if he had $1,000 because he wanted a sensible suggestion about how to spend the money.</p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਅੱਗੇ ਫੁੱਟਪਾਥ 'ਤੇ ਪੈਨਸਿਲਾਂ ਵੇਚਣ ਵਾਲੇ ਇੱਕ ਅੰਨ੍ਹੇ ਵਿਅਕਤੀ ਨਾਲ ਗੱਲ ਕੀਤੀ। ਉਸਨੇ ਉਸਨੂੰ ਪੁੱਛਿਆ ਕਿ ਜੇਕਰ ਉਸ ਕੋਲ 1,000 ਡਾਲਰ ਹੁੰਦੇ ਤਾਂ ਉਹ ਕੀ ਕਰਦਾ, ਕਿਉਂਕਿ ਉਹ ਪੈਸੇ ਖਰਚਣ ਦੇ ਤਰੀਕੇ ਬਾਰੇ ਇੱਕ ਸਮਝਦਾਰੀ ਭਰਿਆ ਸੁਝਾਅ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. Which is the correct answer? After talking to the blind man Gillian went to</strong></p>
+          <p>(a) Miss Hayden &nbsp;&nbsp; (b) the lawyers &nbsp;&nbsp; (c) Miss Lauriere</p>
+          <p class="punjabi-txt">ਸਹੀ ਉੱਤਰ ਕਿਹੜਾ ਹੈ? ਅੰਨ੍ਹੇ ਵਿਅਕਤੀ ਨਾਲ ਗੱਲ ਕਰਨ ਤੋਂ ਬਾਅਦ ਗਿਲੀਅਨ ਗਿਆ:</p>
+          <p class="ans-txt"><strong>Ans:</strong> (b) the lawyers</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. Why did Gillian give his money to Miss Hayden? What did he ask her to give him and why?</strong></p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਆਪਣੇ ਪੈਸੇ ਮਿਸ ਹੈਡਨ ਨੂੰ ਕਿਉਂ ਦਿੱਤੇ? ਉਸਨੇ ਉਸਨੂੰ ਕੀ ਦੇਣ ਲਈ ਕਿਹਾ ਅਤੇ ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gillian gave the $1,000 to Miss Hayden because he wanted to spend it on something that would bring her happiness. He asked her for a sheet of paper to write a note and account of his expenditure.</p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ 1,000 ਡਾਲਰ ਮਿਸ ਹੈਡਨ ਨੂੰ ਦਿੱਤੇ ਕਿਉਂਕਿ ਉਹ ਇਸਨੂੰ ਅਜਿਹੀ ਚੀਜ਼ 'ਤੇ ਖਰਚ ਕਰਨਾ ਚਾਹੁੰਦਾ ਸੀ ਜੋ ਉਸ ਲਈ ਖੁਸ਼ੀ ਲਿਆਵੇ। ਉਸਨੇ ਆਪਣੇ ਖਰਚੇ ਦਾ ਨੋਟ ਅਤੇ ਹਿਸਾਬ ਲਿਖਣ ਲਈ ਉਸ ਤੋਂ ਇੱਕ ਕਾਗਜ਼ ਦਾ ਟੁਕੜਾ ਮੰਗਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. What did Robert Gillian write in his note?</strong></p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਨੇ ਆਪਣੇ ਨੋਟ ਵਿੱਚ ਕੀ ਲਿਖਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Robert Gillian wrote: “Paid by the black sheep, Robert Gillian, $1,000 on the account of eternal happiness, to the best and dearest woman on earth.”</p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਨੇ ਲਿਖਿਆ: "ਕਾਲੀ ਭੇਡ (ਨਾਕਾਰਾ ਇਨਸਾਨ), ਰੌਬਰਟ ਗਿਲੀਅਨ ਦੁਆਰਾ, ਧਰਤੀ 'ਤੇ ਸਭ ਤੋਂ ਵਧੀਆ ਅਤੇ ਪਿਆਰੀ ਔਰਤ ਨੂੰ ਸਦਾ ਦੀ ਖੁਸ਼ੀ ਦੇ ਖਾਤੇ ਵਿੱਚ $ 1,000 ਦਾ ਭੁਗਤਾਨ ਕੀਤਾ ਗਿਆ।"</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. Why did Robert Gillian go to the lawyers again?</strong></p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਵਕੀਲਾਂ ਕੋਲ ਦੁਬਾਰਾ ਕਿਉਂ ਗਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Robert Gillian went to the lawyers again because he had spent the $1,000 and wanted to give them an account of how he had spent it.</p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਵਕੀਲਾਂ ਕੋਲ ਦੁਬਾਰਾ ਗਿਆ ਕਿਉਂਕਿ ਉਸਨੇ 1,000 ਡਾਲਰ ਖਰਚ ਕਰ ਦਿੱਤੇ ਸਨ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਇਸ ਗੱਲ ਦਾ ਹਿਸਾਬ ਦੇਣਾ ਚਾਹੁੰਦਾ ਸੀ ਕਿ ਉਸਨੇ ਇਹ ਪੈਸੇ ਕਿਵੇਂ ਖਰਚ ਕੀਤੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>14. What had Robert Gillian's uncle written in the post-script of his will?</strong></p>
+          <p class="punjabi-txt">ਰੌਬਰਟ ਗਿਲੀਅਨ ਦੇ ਚਾਚੇ ਨੇ ਆਪਣੀ ਵਸੀਅਤ ਦੇ ਪੋਸਟ-ਸਕ੍ਰਿਪਟ (ਪੱਤਰ ਦੇ ਅੰਤ ਵਿੱਚ ਵਾਧੂ ਨੋਟ) ਵਿੱਚ ਕੀ ਲਿਖਿਆ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The uncle wrote that if Gillian spent the $1,000 wisely and unselfishly, he would be rewarded with $5,000. However, if he spent it foolishly as he had in the past, that money would go to Miss Miriam Hayden.</p>
+          <p class="punjabi-txt">ਚਾਚੇ ਨੇ ਲਿਖਿਆ ਸੀ ਕਿ ਜੇਕਰ ਗਿਲੀਅਨ 1,000 ਡਾਲਰ ਸਮਝਦਾਰੀ ਅਤੇ ਬਿਨਾਂ ਸੁਆਰਥ ਦੇ ਖਰਚ ਕਰੇਗਾ, ਤਾਂ ਉਸਨੂੰ ਇਨਾਮ ਵਜੋਂ 5,000 ਡਾਲਰ ਦਿੱਤੇ ਜਾਣਗੇ। ਹਾਲਾਂਕਿ, ਜੇਕਰ ਉਸਨੇ ਇਸਨੂੰ ਅਤੀਤ ਦੀ ਤਰ੍ਹਾਂ ਮੂਰਖਤਾ ਨਾਲ ਖਰਚ ਕੀਤਾ, ਤਾਂ ਉਹ ਪੈਸਾ ਮਿਸ ਮਿਰੀਅਮ ਹੈਡਨ ਨੂੰ ਜਾਵੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>15. Why did Gillian not get the rest of the money? Was he sorry for his action?</strong></p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੂੰ ਬਾਕੀ ਪੈਸੇ ਕਿਉਂ ਨਹੀਂ ਮਿਲੇ? ਕੀ ਉਸਨੂੰ ਆਪਣੇ ਕੀਤੇ 'ਤੇ ਅਫਸੋਸ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Gillian lied to the lawyers and said he lost one thousand dollars on horse races. Because of this lie, he did not get the remaining $5,000. However, he was not sorry about it at all. Instead, he was happy because the money would now go to the woman he loved.</p>
+          <p class="punjabi-txt">ਗਿਲੀਅਨ ਨੇ ਵਕੀਲਾਂ ਨਾਲ ਝੂਠ ਬੋਲਿਆ ਅਤੇ ਕਿਹਾ ਕਿ ਉਹ ਘੋੜਿਆਂ ਦੀਆਂ ਦੌੜਾਂ ਵਿੱਚ ਇੱਕ ਹਜ਼ਾਰ ਡਾਲਰ ਹਾਰ ਗਿਆ ਸੀ। ਇਸ ਝੂਠ ਕਾਰਨ ਉਸਨੂੰ ਬਾਕੀ ਰਹਿੰਦੇ 5,000 ਡਾਲਰ ਨਹੀਂ ਮਿਲੇ। ਹਾਲਾਂਕਿ, ਉਸਨੂੰ ਇਸ ਗੱਲ ਦਾ ਬਿਲਕੁਲ ਵੀ ਅਫਸੋਸ ਨਹੀਂ ਸੀ। ਇਸ ਦੀ ਬਜਾਏ, ਉਹ ਖੁਸ਼ ਸੀ ਕਿਉਂਕਿ ਪੈਸੇ ਹੁਣ ਉਸ ਔਰਤ ਕੋਲ ਜਾਣਗੇ ਜਿਸਨੂੰ ਉਹ ਪਿਆਰ ਕਰਦਾ ਸੀ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. Robert lost the money on races. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. To whom did Bobby Gillian give his one thousand dollars?</p>
+          <p>(i) Butler &nbsp;&nbsp; (ii) Miss Hayden &nbsp;&nbsp; (iii) Lawyers &nbsp;&nbsp; (iv) Miss Lotta Lauriere</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) Miss Hayden</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Robert Gillian offered a ……………. to Miss Lotta Lauriere.</p>
+          <p class="ans-txt"><strong>Ans:</strong> pendant worth one thousand dollars</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Robert Gillian received one million dollars from his uncle’s will. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. The blind man was selling …………. on the walkside.</p>
+          <p>(i) books &nbsp;&nbsp; (ii) pencils &nbsp;&nbsp; (iii) pens &nbsp;&nbsp; (iv) notebooks</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) pencils</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Who was Miss Lotta Lauriere?</p>
+          <p class="ans-txt"><strong>Ans:</strong> She was an actress.</p>
+        </div>
+      `,
+      dying_detective: `
+        <h2>Class 10th - Supplementary Reader - Chapter 4: The Dying Detective</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+        
+        <div class="qa-block">
+          <p><strong>1. Who was Mrs. Hudson? Why did she go to Watson's house?</strong></p>
+          <p class="punjabi-txt">ਮਿਸਿਜ਼ ਹਡਸਨ ਕੌਣ ਸੀ? ਉਹ ਵਾਟਸਨ ਦੇ ਘਰ ਕਿਉਂ ਗਈ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Mrs. Hudson was Sherlock Holmes's landlady. She went to Watson's house because she was worried about Holmes, who was seriously ill.</p>
+          <p class="punjabi-txt">ਮਿਸਿਜ਼ ਹਡਸਨ ਸ਼ਰਲੌਕ ਹੋਮਜ਼ ਦੀ ਮਕਾਨ-ਮਾਲਕਣ ਸੀ। ਉਹ ਵਾਟਸਨ ਦੇ ਘਰ ਇਸ ਲਈ ਗਈ ਸੀ ਕਿਉਂਕਿ ਉਹ ਹੋਮਜ਼ ਲਈ ਚਿੰਤਤ ਸੀ, ਜੋ ਕਿ ਗੰਭੀਰ ਰੂਪ ਵਿੱਚ ਬੀਮਾਰ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. Where did Holmes get the illness from? When did he get it?</strong></p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੂੰ ਇਹ ਬੀਮਾਰੀ ਕਿੱਥੋਂ ਹੋਈ? ਉਸਨੂੰ ਇਹ ਕਦੋਂ ਹੋਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Holmes pretended that he got the illness from Chinese sailors while working on a case.</p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਬਹਾਨਾ ਬਣਾਇਆ ਸੀ ਕਿ ਉਸਨੂੰ ਇਹ ਬੀਮਾਰੀ ਚੀਨੀ ਜਹਾਜ਼ੀਆਂ ਤੋਂ ਇੱਕ ਕੇਸ ਦੀ ਜਾਂਚ ਦੌਰਾਨ ਹੋਈ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. What was Holmes' condition when Watson saw him?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਵਾਟਸਨ ਨੇ ਹੋਮਜ਼ ਨੂੰ ਦੇਖਿਆ ਤਾਂ ਉਸਦੀ ਹਾਲਤ ਕਿਹੋ ਜਿਹੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He was lying helplessly in bed with a thin, pale face, shining feverish eyes, red cheeks, and twitching hands.</p>
+          <p class="punjabi-txt">ਉਹ ਬਿਸਤਰੇ 'ਤੇ ਲਾਚਾਰ ਪਿਆ ਸੀ, ਉਸਦਾ ਚਿਹਰਾ ਪਤਲਾ ਅਤੇ ਪੀਲਾ ਸੀ, ਅੱਖਾਂ ਬੁਖਾਰ ਨਾਲ ਚਮਕ ਰਹੀਆਂ ਸਨ, ਗਲ੍ਹ ਲਾਲ ਸਨ ਅਤੇ ਹੱਥ ਕੰਬ (ਫੜਫੜਾ) ਰਹੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. Why did he not let Watson examine him?</strong></p>
+          <p class="punjabi-txt">ਉਸਨੇ ਵਾਟਸਨ ਨੂੰ ਆਪਣੀ ਜਾਂਚ (ਚੈੱਕਅੱਪ) ਕਿਉਂ ਨਹੀਂ ਕਰਨ ਦਿੱਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He said the sickness was very dangerous and spread by touch. In reality, he was only acting sick and did not want Watson to know.</p>
+          <p class="punjabi-txt">ਉਸਨੇ ਕਿਹਾ ਕਿ ਇਹ ਬੀਮਾਰੀ ਬਹੁਤ ਖਤਰਨਾਕ ਹੈ ਅਤੇ ਛੂਹਣ ਨਾਲ ਫੈਲਦੀ ਹੈ। ਅਸਲ ਵਿੱਚ, ਉਹ ਸਿਰਫ ਬੀਮਾਰ ਹੋਣ ਦਾ ਨਾਟਕ ਕਰ ਰਹਾ ਸੀ ਅਤੇ ਵਾਟਸਨ ਨੂੰ ਇਸ ਬਾਰੇ ਪਤਾ ਨਹੀਂ ਲੱਗਣ ਦੇਣਾ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. Till when was Watson asked to stay in Holmes' house?</strong></p>
+          <p class="punjabi-txt">ਵਾਟਸਨ ਨੂੰ ਹੋਮਜ਼ ਦੇ ਘਰ ਕਦੋਂ ਤੱਕ ਰਹਿਣ ਲਈ ਕਿਹਾ ਗਿਆ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Watson was asked to stay until six o'clock.</p>
+          <p class="punjabi-txt">ਵਾਟਸਨ ਨੂੰ ਛੇ ਵਜੇ ਤੱਕ ਰਹਿਣ ਲਈ ਕਿਹਾ ਗਿਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. Why did Holmes not let Watson touch his things? What did Watson think about Holmes then?</strong></p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਵਾਟਸਨ ਨੂੰ ਆਪਣੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਛੂਹਣ ਕਿਉਂ ਨਹੀਂ ਦਿੱਤਾ? ਉਸ ਸਮੇਂ ਵਾਟਸਨ ਨੇ ਹੋਮਜ਼ ਬਾਰੇ ਕੀ ਸੋਚਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Holmes did not want Watson to touch the ivory box containing the dangerous spring trap. Watson thought that the illness had affected Holmes’ mind.</p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨਹੀਂ ਚਾਹੁੰਦਾ ਸੀ ਕਿ ਵਾਟਸਨ ਉਸ ਹਾਥੀ-ਦੰਦ ਦੇ ਡੱਬੇ (ivory box) ਨੂੰ ਛੂਹੇ ਜਿਸ ਵਿੱਚ ਖਤਰਨਾਕ ਸਪ੍ਰਿੰਗ ਟ੍ਰੈਪ ਸੀ। ਵਾਟਸਨ ਨੇ ਸੋਚਿਆ ਕਿ ਬੀਮਾਰੀ ਨੇ ਹੋਮਜ਼ ਦੇ ਦਿਮਾਗ 'ਤੇ ਅਸਰ ਕਰ ਦਿੱਤਾ ਹੈ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. What did Holmes ask Watson to do before leaving his room?</strong></p>
+          <p class="punjabi-txt">ਆਪਣੇ ਕਮਰੇ ਤੋਂ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਹੋਮਜ਼ ਨੇ ਵਾਟਸਨ ਨੂੰ ਕੀ ਕਰਨ ਲਈ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He asked Watson to turn the gas-lamp half-on, put some papers on the table, and place the ivory box there using tongs. Then, he sent Watson to bring Mr. Culverton Smith.</p>
+          <p class="punjabi-txt">ਉਸਨੇ ਵਾਟਸਨ ਨੂੰ ਗੈਸ-ਲੈਂਪ ਅੱਧਾ ਜਲਾਉਣ, ਮੇਜ਼ 'ਤੇ ਕੁੱਝ ਕਾਗਜ਼ ਰੱਖਣ ਅਤੇ ਚਿਮਟੇ (tongs) ਦੀ ਮਦਦ ਨਾਲ ਹਾਥੀ-ਦੰਦ ਦਾ ਡੱਬਾ ਉੱਥੇ ਰੱਖਣ ਲਈ ਕਿਹਾ। ਫਿਰ, ਉਸਨੇ ਵਾਟਸਨ ਨੂੰ ਮਿਸਟਰ ਕਲਵਰਟਨ ਸਮਿੱਥ ਨੂੰ ਬੁਲਾਉਣ ਲਈ ਭੇਜਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. Who was Culverton Smith? Why did Holmes want him for the treatment of his disease?</strong></p>
+          <p class="punjabi-txt">ਕਲਵਰਟਨ ਸਮਿੱਥ ਕੌਣ ਸੀ? ਹੋਮਜ਼ ਆਪਣੀ ਬੀਮਾਰੀ ਦੇ ਇਲਾਜ ਲਈ ਉਸਨੂੰ ਕਿਉਂ ਚਾਹੁੰਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Culverton Smith was a planter living in Sumatra who had special knowledge of this Eastern disease. Holmes wanted him for the treatment of his disease only to catch him in his trap.</p>
+          <p class="punjabi-txt">ਕਲਵਰਟਨ ਸਮਿੱਥ ਸੁਮਾਤਰਾ ਵਿੱਚ ਰਹਿਣ ਵਾਲਾ ਇੱਕ ਪਲਾਂਟਰ (ਖੇਤੀਬਾੜੀ ਮਾਲਕ) ਸੀ ਜਿਸਨੂੰ ਇਸ ਪੂਰਬੀ ਬੀਮਾਰੀ ਦੀ ਵਿਸ਼ੇਸ਼ ਜਾਣਕਾਰੀ ਸੀ। ਹੋਮਜ਼ ਉਸਨੂੰ ਆਪਣੇ ਇਲਾਜ ਲਈ ਨਹੀਂ, ਸਗੋਂ ਆਪਣੇ ਜਾਲ ਵਿੱਚ ਫਸਾਉਣ ਲਈ ਬੁਲਾਉਣਾ ਚਾਹੁੰਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. What did Holmes ask Watson to say to Mr. Smith?</strong></p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਵਾਟਸਨ ਨੂੰ ਮਿਸਟਰ ਸਮਿੱਥ ਨੂੰ ਕੀ ਕਹਿਣ ਲਈ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Holmes asked Watson to convince Smith to come. He told Watson to explain how sick Holmes was and beg Smith for help because Holmes was dying.</p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਵਾਟਸਨ ਨੂੰ ਸਮਿੱਥ ਨੂੰ ਆਉਣ ਲਈ ਮਨਾਉਣ ਵਾਸਤੇ ਕਿਹਾ। ਉਸਨੇ ਵਾਟਸਨ ਨੂੰ ਕਿਹਾ ਕਿ ਉਹ ਸਮਿੱਥ ਨੂੰ ਦੱਸੇ ਕਿ ਹੋਮਜ਼ ਕਿੰਨਾ ਬੀਮਾਰ ਹੈ ਅਤੇ ਸਮਿੱਥ ਅੱਗੇ ਮਦਦ ਲਈ ਬੇਨਤੀ ਕਰੇ ਕਿਉਂਕਿ ਹੋਮਜ਼ ਮਰ ਰਿਹਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. Did Smith welcome Watson calling on him? How do you know?</strong></p>
+          <p class="punjabi-txt">ਕੀ ਸਮਿੱਥ ਨੇ ਵਾਟਸਨ ਦੇ ਆਉਣ ਦਾ ਸਵਾਗਤ ਕੀਤਾ? ਤੁਹਾਨੂੰ ਕਿਵੇਂ ਪਤਾ ਲੱਗਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> No, Smith did not welcome Watson at first. We know this because Watson heard Smith tell his butler to say he was not at home. However, Smith changed his mind as soon as he heard Holmes' name.</p>
+          <p class="punjabi-txt">ਨਹੀਂ, ਸਮਿੱਥ ਨੇ ਪਹਿਲਾਂ ਵਾਟਸਨ ਦਾ ਸਵਾਗਤ ਨਹੀਂ ਕੀਤਾ। ਸਾਨੂੰ ਇਸ ਤੋਂ ਪਤਾ ਲੱਗਦਾ ਹੈ ਕਿ ਵਾਟਸਨ ਨੇ ਸਮਿੱਥ ਨੂੰ ਆਪਣੇ ਨੌਕਰ (ਬਟਲਰ) ਨੂੰ ਇਹ ਕਹਿੰਦੇ ਸੁਣਿਆ ਕਿ ਉਹ ਘਰ 'ਤੇ ਨਹੀਂ ਹੈ। ਹਾਲਾਂਕਿ, ਜਿਵੇਂ ਹੀ ਉਸਨੇ ਹੋਮਜ਼ ਦਾ ਨਾਮ ਸੁਣਿਆ, ਉਸਨੇ ਆਪਣਾ ਮਨ ਬਦਲ ਲਿਆ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. Why did Watson not come back with Smith?</strong></p>
+          <p class="punjabi-txt">ਵਾਟਸਨ ਸਮਿੱਥ ਦੇ ਨਾਲ ਵਾਪਸ ਕਿਉਂ ਨਹੀਂ ਆਇਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Watson did not come back with Smith because Holmes had asked him to leave first and return to the room before Smith arrived. So, Watson made an excuse that he had another appointment.</p>
+          <p class="punjabi-txt">ਵਾਟਸਨ ਸਮਿੱਥ ਦੇ ਨਾਲ ਵਾਪਸ ਇਸ ਲਈ ਨਹੀਂ ਆਇਆ ਕਿਉਂਕਿ ਹੋਮਜ਼ ਨੇ ਉਸਨੂੰ ਸਮਿੱਥ ਦੇ ਪਹੁੰਚਣ ਤੋਂ ਪਹਿਲਾਂ ਕਮਰੇ ਵਿੱਚ ਵਾਪਸ ਆਉਣ ਲਈ ਕਿਹਾ ਸੀ। ਇਸ ਲਈ, ਵਾਟਸਨ ਨੇ ਬਹਾਨਾ ਬਣਾਇਆ ਕਿ ਉਸਦੀ ਇੱਕ ਹੋਰ ਮੁਲਾਕਾਤ (ਮੀਟਿੰਗ) ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. What did Smith ask Watson when he finally met him?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਸਮਿੱਥ ਆਖਰਕਾਰ ਵਾਟਸਨ ਨੂੰ ਮਿਲਿਆ ਤਾਂ ਉਸਨੇ ਉਸਨੂੰ ਕੀ ਪੁੱਛਿਆ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Smith asked Watson if he came from Holmes and how Holmes was feeling. He also asked why Holmes thought Smith was the only person who could help him, and how Holmes caught the sickness.</p>
+          <p class="punjabi-txt">ਸਮਿੱਥ ਨੇ ਵਾਟਸਨ ਨੂੰ ਪੁੱਛਿਆ ਕਿ ਕੀ ਉਹ ਹੋਮਜ਼ ਵੱਲੋਂ ਆਇਆ ਹੈ ਅਤੇ ਹੋਮਜ਼ ਹੁਣ ਕਿਵੇਂ ਮਹਿਸੂਸ ਕਰ ਰਿਹਾ ਹੈ। ਉਸਨੇ ਇਹ ਵੀ ਪੁੱਛਿਆ ਕਿ ਹੋਮਜ਼ ਨੇ ਇਹ ਕਿਉਂ ਸੋਚਿਆ ਕਿ ਸਿਰਫ ਸਮਿੱਥ ਹੀ ਉਸਦੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ, ਅਤੇ ਹੋਮਜ਼ ਨੂੰ ਇਹ ਬੀਮਾਰੀ ਕਿਵੇਂ ਲੱਗੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. Did Smith go near Holmes to examine him? How do you know?</strong></p>
+          <p class="punjabi-txt">ਕੀ ਸਮਿੱਥ ਹੋਮਜ਼ ਦੀ ਜਾਂਚ ਕਰਨ ਲਈ ਉਸਦੇ ਨੇੜੇ ਗਿਆ ਸੀ? ਤੁਹਾਨੂੰ ਕਿਵੇਂ ਪਤਾ ਲੱਗਦਾ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Yes, Smith went near Holmes. We know this because he walked up to Holmes' bed to inspect his condition and picked up the ivory box to make sure Holmes had opened it and received the infection.</p>
+          <p class="punjabi-txt">ਹਾਂ, ਸਮਿੱਥ ਹੋਮਜ਼ ਦੇ ਨੇੜੇ ਗਿਆ ਸੀ। ਸਾਨੂੰ ਇਸ ਤੋਂ ਪਤਾ ਲੱਗਦਾ ਹੈ ਕਿ ਉਹ ਹੋਮਜ਼ ਦੀ ਹਾਲਤ ਦੇਖਣ ਲਈ ਉਸਦੇ ਬਿਸਤਰੇ ਤੱਕ ਗਿਆ ਅਤੇ ਇਹ ਯਕੀਨੀ ਬਣਾਉਣ ਲਈ ਹਾਥੀ-ਦੰਦ ਦਾ ਡੱਬਾ ਚੁੱਕਿਆ ਕਿ ਹੋਮਜ਼ ਨੇ ਇਸਨੂੰ ਖੋਲ੍ਹਿਆ ਸੀ ਅਤੇ ਜ਼ਹਿਰ ਉਸਦੇ ਸਰੀਰ ਵਿੱਚ ਚਲਾ ਗਿਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>14. Who was Victor Smith? What had happened to him and how?</strong></p>
+          <p class="punjabi-txt">ਵਿਕਟਰ ਸਮਿਥ ਕੌਣ ਸੀ? ਉਸ ਨਾਲ ਕੀ ਵਾਪਰਿਆ ਸੀ ਅਤੇ ਕਿਵੇਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Victor Smith was Culverton Smith's nephew. Culverton Smith killed him by sending him a sharp spring infected with a deadly disease by post. Victor died four days after receiving it.</p>
+          <p class="punjabi-txt">ਵਿਕਟਰ ਸਮਿਥ ਕਲਵਰਟਨ ਸਮਿੱਥ ਦਾ ਭਤੀਜਾ ਸੀ। ਕਲਵਰਟਨ ਸਮਿੱਥ ਨੇ ਉਸਨੂੰ ਡਾਕ ਰਾਹੀਂ ਇੱਕ ਖਤਰਨਾਕ ਬੀਮਾਰੀ ਨਾਲ ਸੰਕਰਮਿਤ ਤਿੱਖੀ ਸਪ੍ਰਿੰਗ ਭੇਜ ਕੇ ਮਾਰ ਦਿੱਤਾ ਸੀ। ਡੱਬਾ ਮਿਲਣ ਤੋਂ ਚਾਰ ਦਿਨਾਂ ਬਾਅਦ ਵਿਕਟਰ ਦੀ ਮੌਤ ਹੋ ਗਈ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>15. “You did it. I’ll forget everything,” Holmes said to Smith. What did Smith do and how? Did Holmes really mean what he said? Give examples in support of your answer.</strong></p>
+          <p class="punjabi-txt">"ਤੂੰ ਇਹ ਕੀਤਾ ਹੈ। ਮੈਂ ਸਭ ਕੁੱਝ ਭੁੱਲ ਜਾਵਾਂਗਾ," ਹੋਮਜ਼ ਨੇ ਸਮਿੱਥ ਨੂੰ ਕਿਹਾ। ਸਮਿੱਥ ਨੇ ਕੀ ਕੀਤਾ ਸੀ ਅਤੇ ਕਿਵੇਂ? ਕੀ ਹੋਮਜ਼ ਦਾ ਸੱਚਮੁੱਚ ਇਹੋ ਮਤਲਬ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Smith sent a poisoned spring-box to Holmes to infect him with the disease. Holmes did not really mean that he would forget everything. He said this only to trick Smith into confessing his crime. To catch him, Holmes had already arranged for Inspector Morton to hide outside and listen to the confession.</p>
+          <p class="punjabi-txt">ਸਮਿੱਥ ਨੇ ਹੋਮਜ਼ ਨੂੰ ਬੀਮਾਰ ਕਰਨ ਲਈ ਇੱਕ ਜ਼ਹਿਰੀਲੀ ਸਪ੍ਰਿੰਗ ਵਾਲਾ ਡੱਬਾ ਭੇਜਿਆ ਸੀ। ਹੋਮਜ਼ ਦਾ ਸੱਚਮੁੱਚ ਇਹ ਮਤਲਬ ਨਹੀਂ ਸੀ ਕਿ ਉਹ ਸਭ ਕੁੱਝ ਭੁੱਲ ਜਾਵੇਗਾ। ਉਸਨੇ ਇਹ ਸਿਰਫ ਸਮਿੱਥ ਤੋਂ ਜੁਰਮ ਕਬੂਲ ਕਰਵਾਉਣ ਲਈ ਕਿਹਾ ਸੀ। ਉਸਨੂੰ ਫੜਨ ਲਈ, ਹੋਮਜ਼ ਨੇ ਪਹਿਲਾਂ ਹੀ ਇੰਸਪੈਕਟਰ ਮੋਰਟਨ ਨੂੰ ਬਾਹਰ ਛਿਪ ਕੇ ਜੁਰਮ ਦੀ ਕਬੂਲੀਅਤ ਸੁਣਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਹੋਇਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>16. Why did Smith send an infected sharp spring in an ivory box?</strong></p>
+          <p class="punjabi-txt">ਸਮਿੱਥ ਨੇ ਹਾਥੀ-ਦੰਦ ਦੇ ਡੱਬੇ ਵਿੱਚ ਇੱਕ ਸੰਕਰਮਿਤ ਤਿੱਖੀ ਸਪ੍ਰਿੰਗ ਕਿਉਂ ਭੇਜੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Smith sent it to infect Holmes with the disease because Holmes knew too much about the murder of Victor Smith. He wanted to kill Holmes in the same way as he had killed Victor.</p>
+          <p class="punjabi-txt">ਸਮਿੱਥ ਨੇ ਹੋਮਜ਼ ਨੂੰ ਬੀਮਾਰ ਕਰਨ ਲਈ ਇਹ ਭੇਜਿਆ ਸੀ ਕਿਉਂਕਿ ਹੋਮਜ਼ ਵਿਕਟਰ ਸਮਿੱਥ ਦੇ ਖੂਨ ਬਾਰੇ ਬਹੁਤ ਕੁੱਝ ਜਾਣਦਾ ਸੀ। ਉਹ ਹੋਮਜ਼ ਨੂੰ ਵੀ ਉਸੇ ਤਰ੍ਹਾਂ ਮਾਰਨਾ ਚਾਹੁੰਦਾ ਸੀ ਜਿਵੇਂ ਉਸਨੇ ਵਿਕਟਰ ਨੂੰ ਮਾਰਿਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>17. Why did Holmes ask Smith to turn up the gas?</strong></p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਸਮਿੱਥ ਨੂੰ ਗੈਸ ਦੀ ਰੋਸ਼ਨੀ ਵਧਾਉਣ ਲਈ ਕਿਉਂ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Holmes asked him to turn up the gas as a signal for Inspector Morton to come in and arrest Smith.</p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਉਸਨੂੰ ਗੈਸ ਦੀ ਰੋਸ਼ਨੀ ਵਧਾਉਣ ਲਈ ਇੰਸਪੈਕਟਰ ਮੋਰਟਨ ਨੂੰ ਅੰਦਰ ਆਉਣ ਅਤੇ ਸਮਿੱਥ ਨੂੰ ਗ੍ਰਿਫਤਾਰ ਕਰਨ ਦਾ ਇਸ਼ਾਰਾ ਦੇਣ ਲਈ ਕਿਹਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>18. Who arrested Smith? What were the charges against him?</strong></p>
+          <p class="punjabi-txt">ਸਮਿੱਥ ਨੂੰ ਕਿਸ ਨੇ ਗ੍ਰਿਫਤਾਰ ਕੀਤਾ? ਉਸ 'ਤੇ ਕੀ ਦੋਸ਼ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Inspector Morton of Scotland Yard arrested Smith. The charges were the murder of Victor Savage and the attempted murder of Sherlock Holmes.</p>
+          <p class="punjabi-txt">ਸਕਾਟਲੈਂਡ ਯਾਰਡ ਦੇ ਇੰਸਪੈਕਟਰ ਮੋਰਟਨ ਨੇ ਸਮਿੱਥ ਨੂੰ ਗ੍ਰਿਫਤਾਰ ਕੀਤਾ। ਉਸ 'ਤੇ ਵਿਕਟਰ ਸੈਵੇਜ ਦੇ ਖੂਨ ਅਤੇ ਸ਼ਰਲੌਕ ਹੋਮਜ਼ ਨੂੰ ਮਾਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਦੇ ਦੋਸ਼ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>19. Why did Holmes pretend to be ill? What did he do and say to appear ill?</strong></p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਬੀਮਾਰ ਹੋਣ ਦਾ ਨਾਟਕ ਕਿਉਂ ਕੀਤਾ? ਬੀਮਾਰ ਦਿਸਣ ਲਈ ਉਸਨੇ ਕੀ ਕੀਤਾ ਅਤੇ ਕੀ ਕਿਹਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Holmes pretended to be ill to set a trap for Mr. Smith. To look ill, he did not eat or drink for three days. He also put make-up on his face and spoke like a person out of his mind.</p>
+          <p class="punjabi-txt">ਹੋਮਜ਼ ਨੇ ਮਿਸਟਰ ਸਮਿੱਥ ਨੂੰ ਜਾਲ ਵਿੱਚ ਫਸਾਉਣ ਲਈ ਬੀਮਾਰ ਹੋਣ ਦਾ ਨਾਟਕ ਕੀਤਾ। ਬੀਮਾਰ ਦਿਸਣ ਲਈ, ਉਸਨੇ ਤਿੰਨ ਦਿਨਾਂ ਤੱਕ ਕੁੱਝ ਨਹੀਂ ਖਾਧਾ-ਪੀਤਾ। ਉਸਨੇ ਆਪਣੇ ਚਿਹਰੇ 'ਤੇ ਮੇਕਅੱਪ ਵੀ ਕੀਤਾ ਅਤੇ ਇੱਕ ਪਾਗਲ ਵਰਗੇ ਵਿਅਕਤੀ ਵਾਂਗ ਗੱਲ ਕੀਤੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>20. Should Holmes have spoken so rudely to Watson? Why?</strong></p>
+          <p class="punjabi-txt">ਕੀ ਹੋਮਜ਼ ਨੂੰ ਵਾਟਸਨ ਨਾਲ ਇੰਨੀ ਰੁੱਖੀ ਤਰ੍ਹਾਂ ਗੱਲ ਕਰਨੀ ਚਾਹੀਦੀ ਸੀ? ਕਿਉਂ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> No, Holmes should not have spoken so rudely to Watson. Watson was his close friend and was only trying to help him. However, Holmes behaved rudely because he wanted to keep his plan secret and make his illness look real. Holmes later apologized to Watson for his rudeness.</p>
+          <p class="punjabi-txt">ਨਹੀਂ, ਹੋਮਜ਼ ਨੂੰ ਵਾਟਸਨ ਨਾਲ ਇੰਨੀ ਰੁੱਖੀ ਤਰ੍ਹਾਂ ਗੱਲ ਨਹੀਂ ਕਰਨੀ ਚਾਹੀਦੀ ਸੀ। ਵਾਟਸਨ ਉਸਦਾ ਪੱਕਾ ਦੋਸਤ ਸੀ ਅਤੇ ਸਿਰਫ ਉਸਦੀ ਮਦਦ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਸੀ। ਹਾਲਾਂਕਿ, ਹੋਮਜ਼ ਨੇ ਰੁੱਖਾ ਵਿਵਹਾਰ ਇਸ ਲਈ ਕੀਤਾ ਕਿਉਂਕਿ ਉਹ ਆਪਣੀ ਯੋਜਨਾ ਨੂੰ ਗੁਪਤ ਰੱਖਣਾ ਚਾਹੁੰਦਾ ਸੀ ਅਤੇ ਆਪਣੀ ਬੀਮਾਰੀ ਨੂੰ ਅਸਲੀ ਦਿਖਾਉਣਾ ਚਾਹੁੰਦਾ ਸੀ। ਹੋਮਜ਼ ਨੇ ਬਾਅਦ ਵਿੱਚ ਆਪਣੇ ਰੁੱਖੇ ਵਿਵਹਾਰ ਲਈ ਵਾਟਸਨ ਤੋਂ ਮਾਫੀ ਮੰਗੀ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. What was Watson by profession ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Watson was a doctor by profession.</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. Holmes got the illness from some …</p>
+          <p>(i) Chinese sailors &nbsp;&nbsp; (ii) Indian sailors &nbsp;&nbsp; (iii) English sailors &nbsp;&nbsp; (iv) Russian sailors.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (i) Chinese sailors</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. Smith sent Holmes an infected sharp spring in …..</p>
+          <p>(i) a silver box &nbsp;&nbsp; (ii) an ivory box &nbsp;&nbsp; (iii) a golden box &nbsp;&nbsp; (iv) a red box.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) an ivory box</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Victor Smith killed Culverton Smith. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> False</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Holmes did not want Watson to touch his things. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Who was charged with the murder of his nephew ?</p>
+          <p>(i) Mrs Hudson &nbsp;&nbsp; (ii) Morton &nbsp;&nbsp; (iii) Smith &nbsp;&nbsp; (iv) Watson.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iii) Smith</p>
+        </div>
+      `,
+      how_much_land: `
+        <h2>Class 10th - Supplementary Reader - Chapter 5: How Much Land Does A Man Need?</h2>
+        
+        <h3>Short Answer Type Questions</h3>
+
+        <div class="qa-block">
+          <p><strong>1. What did the two women discuss? Were they related to each other?</strong></p>
+          <p class="punjabi-txt">ਦੋਵਾਂ ਔਰਤਾਂ ਨੇ ਕੀ ਚਰਚਾ ਕੀਤੀ? ਕੀ ਉਹ ਆਪਸ ਵਿੱਚ ਰਿਸ਼ਤੇਦਾਰ ਸਨ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The two women discussed the differences between town life and village life. Yes, they were sisters. The elder sister was married to a tradesman in town, while the younger sister was married to a peasant in the village.</p>
+          <p class="punjabi-txt">ਦੋਵਾਂ ਔਰਤਾਂ ਨੇ ਸ਼ਹਿਰੀ ਜੀਵਨ ਅਤੇ ਪਿੰਡ ਦੇ ਜੀਵਨ ਵਿਚਕਾਰ ਅੰਤਰ ਬਾਰੇ ਚਰਚਾ ਕੀਤੀ। ਹਾਂ, ਉਹ ਭੈਣਾਂ ਸਨ। ਵੱਡੀ ਭੈਣ ਦਾ ਵਿਆਹ ਸ਼ਹਿਰ ਦੇ ਇੱਕ ਵਪਾਰੀ ਨਾਲ ਹੋਇਆ ਸੀ, ਜਦੋਂ ਕਿ ਛੋਟੀ ਭੈਣ ਦਾ ਵਿਆਹ ਪਿੰਡ ਦੇ ਇੱਕ ਕਿਸਾਨ ਨਾਲ ਹੋਇਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>2. What did one woman say in defence of rural life? What was the counter-argument?</strong></p>
+          <p class="punjabi-txt">ਇੱਕ ਔਰਤ ਨੇ ਪੇਂਡੂ ਜੀਵਨ ਦੇ ਹੱਕ ਵਿੱਚ ਕੀ ਕਿਹਾ? ਇਸ ਦੇ ਵਿਰੋਧ ਵਿੱਚ ਕੀ ਦਲੀਲ ਦਿੱਤੀ ਗਈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The younger sister said that rural life was peaceful and safe. Peasants might live roughly, but they were free from anxiety and always had enough to eat. The elder sister argued that town life was more comfortable, with better clothes, food and other comforts.</p>
+          <p class="punjabi-txt">ਛੋਟੀ ਭੈਣ ਨੇ ਕਿਹਾ ਕਿ ਪੇਂਡੂ ਜੀਵਨ ਸ਼ਾਂਤੀਪੂਰਨ ਅਤੇ ਸੁਰੱਖਿਅਤ ਸੀ। ਕਿਸਾਨ ਭਾਵੇਂ ਸਾਦਾ ਜੀਵਨ ਬਤੀਤ ਕਰਦੇ ਸਨ, ਪਰ ਉਹ ਚਿੰਤਾਵਾਂ ਤੋਂ ਮੁਕਤ ਸਨ ਅਤੇ ਉਨ੍ਹਾਂ ਕੋਲ ਖਾਣ ਲਈ ਹਮੇਸ਼ਾ ਕਾਫ਼ੀ ਭੋਜਨ ਹੁੰਦਾ ਸੀ। ਵੱਡੀ ਭੈਣ ਨੇ ਦਲੀਲ ਦਿੱਤੀ ਕਿ ਸ਼ਹਿਰ ਦੀ ਜ਼ਿੰਦਗੀ ਵਧੇਰੇ ਆਰਾਮਦਾਇਕ ਸੀ, ਜਿੱਥੇ ਚੰਗੇ ਕੱਪੜੇ, ਭੋਜਨ ਅਤੇ ਹੋਰ ਸਹੂਲਤਾਂ ਮਿਲਦੀਆਂ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>3. Pakhom listened to the women's chatter. He started brooding and reached a conclusion. What was the conclusion?</strong></p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਨੇ ਔਰਤਾਂ ਦੀਆਂ ਗੱਲਾਂ ਸੁਣੀਆਂ। ਉਹ ਸੋਚਾਂ ਵਿੱਚ ਪੈ ਗਿਆ ਅਤੇ ਇੱਕ ਨਤੀਜੇ 'ਤੇ ਪਹੁੰਚਿਆ। ਉਹ ਨਤੀਜਾ ਕੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Pakhom concluded that the only trouble in a peasant's life was the lack of land. He thought that if he had plenty of land, he would not fear even the Devil himself.</p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਨੇ ਸਿੱਟਾ ਕੱਢਿਆ ਕਿ ਇੱਕ ਕਿਸਾਨ ਦੀ ਜ਼ਿੰਦਗੀ ਵਿੱਚ ਇੱਕੋ ਮੁਸ਼ਕਲ ਜ਼ਮੀਨ ਦੀ ਘਾਟ ਸੀ। ਉਸ ਨੇ ਸੋਚਿਆ ਕਿ ਜੇ ਉਸ ਕੋਲ ਬਹੁਤ ਸਾਰੀ ਜ਼ਮੀਨ ਹੁੰਦੀ, ਤਾਂ ਉਹ ਖ਼ੁਦ ਸ਼ੈਤਾਨ ਤੋਂ ਵੀ ਨਾ ਡਰਦਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>4. When the Devil heard Pakhom's musings, what did he decide?</strong></p>
+          <p class="punjabi-txt">ਜਦੋਂ ਸ਼ੈਤਾਨ ਨੇ ਪਾਖੋਮ ਦੇ ਵਿਚਾਰ ਸੁਣੇ, ਤਾਂ ਉਸ ਨੇ ਕੀ ਫ਼ੈਸਲਾ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Devil decided to give Pakhom enough land and use that very land to bring him under his power.</p>
+          <p class="punjabi-txt">ਸ਼ੈਤਾਨ ਨੇ ਪਾਖੋਮ ਨੂੰ ਕਾਫ਼ੀ ਜ਼ਮੀਨ ਦੇਣ ਅਤੇ ਉਸੇ ਜ਼ਮੀਨ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਉਸ ਨੂੰ ਆਪਣੇ ਵੱਸ ਵਿੱਚ ਕਰਨ ਦਾ ਫ਼ੈਸਲਾ ਕੀਤਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>5. The estate-owner on whose land Pakhom was a tenant sold her land. Who bought the land?</strong></p>
+          <p class="punjabi-txt">ਜਿਸ ਜ਼ਮੀਨ 'ਤੇ ਪਾਖੋਮ ਕਿਰਾਏਦਾਰ ਵਜੋਂ ਰਹਿੰਦਾ ਸੀ, ਉਸ ਜ਼ਮੀਨ ਦੀ ਮਾਲਕਣ ਨੇ ਆਪਣੀ ਜ਼ਮੀਨ ਵੇਚ ਦਿੱਤੀ। ਇਹ ਜ਼ਮੀਨ ਕਿਸ ਨੇ ਖਰੀਦੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> A neighbour of Pakhom bought fifty acres of the land. Seeing this, Pakhom also decided to buy land and purchased forty acres from the lady.</p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਦੇ ਇੱਕ ਗੁਆਂਢੀ ਨੇ ਪੰਜਾਹ ਏਕੜ ਜ਼ਮੀਨ ਖਰੀਦੀ। ਇਹ ਦੇਖ ਕੇ ਪਾਖੋਮ ਨੇ ਵੀ ਜ਼ਮੀਨ ਖਰੀਦਣ ਦਾ ਫ਼ੈਸਲਾ ਕੀਤਾ ਅਤੇ ਉਸ ਔਰਤ ਤੋਂ ਚਾਲੀ ਏਕੜ ਜ਼ਮੀਨ ਖਰੀਦੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>6. How did Pakhom manage to put together the money for buying the land?</strong></p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਨੇ ਜ਼ਮੀਨ ਖਰੀਦਣ ਲਈ ਪੈਸਿਆਂ ਦਾ ਪ੍ਰਬੰਧ ਕਿਵੇਂ ਕੀਤਾ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Pakhom and his wife had saved one hundred roubles. They sold a colt and half of their bees. They hired out one of their sons as a labourer and took his wages in advance. They borrowed the remaining money from his brother-in-law.</p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਅਤੇ ਉਸ ਦੀ ਪਤਨੀ ਨੇ ਇੱਕ ਸੌ ਰੂਬਲ ਬਚਾ ਕੇ ਰੱਖੇ ਹੋਏ ਸਨ। ਉਨ੍ਹਾਂ ਨੇ ਇੱਕ ਘੋੜੇ ਦਾ ਬੱਚਾ ਅਤੇ ਆਪਣੀਆਂ ਮਧੂ-ਮੱਖੀਆਂ ਵਿੱਚੋਂ ਅੱਧੀਆਂ ਵੇਚ ਦਿੱਤੀਆਂ। ਉਨ੍ਹਾਂ ਨੇ ਆਪਣੇ ਇੱਕ ਪੁੱਤਰ ਨੂੰ ਮਜ਼ਦੂਰ ਵਜੋਂ ਕੰਮ 'ਤੇ ਲਾਇਆ ਅਤੇ ਉਸ ਦੀ ਮਜ਼ਦੂਰੀ ਪਹਿਲਾਂ ਹੀ ਲੈ ਲਈ। ਬਾਕੀ ਪੈਸੇ ਉਨ੍ਹਾਂ ਨੇ ਆਪਣੇ ਸਾਲੇ ਤੋਂ ਉਧਾਰ ਲਏ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>7. Pakhom met a stranger one day. Who was this stranger? What information did he give to Pakhom?</strong></p>
+          <p class="punjabi-txt">ਇੱਕ ਦਿਨ ਪਾਖੋਮ ਨੂੰ ਇੱਕ ਅਜਨਬੀ ਮਿਲਿਆ। ਇਹ ਅਜਨਬੀ ਕੌਣ ਸੀ? ਉਸ ਨੇ ਪਾਖੋਮ ਨੂੰ ਕੀ ਜਾਣਕਾਰੀ ਦਿੱਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The stranger was a peasant who was passing through the village. He told Pakhom that plenty of fertile land was available beyond the Volga River, where crops grew very well and people could easily get rich.</p>
+          <p class="punjabi-txt">ਉਹ ਅਜਨਬੀ ਇੱਕ ਕਿਸਾਨ ਸੀ ਜੋ ਪਿੰਡ ਵਿੱਚੋਂ ਲੰਘ ਰਿਹਾ ਸੀ। ਉਸ ਨੇ ਪਾਖੋਮ ਨੂੰ ਦੱਸਿਆ ਕਿ ਵੋਲਗਾ ਦਰਿਆ ਤੋਂ ਪਾਰ ਬਹੁਤ ਸਾਰੀ ਉਪਜਾਊ ਜ਼ਮੀਨ ਉਪਲਬਧ ਸੀ, ਜਿੱਥੇ ਫ਼ਸਲਾਂ ਬਹੁਤ ਚੰਗੀ ਤਰ੍ਹਾਂ ਉੱਗਦੀਆਂ ਸਨ ਅਤੇ ਲੋਕ ਆਸਾਨੀ ਨਾਲ ਅਮੀਰ ਬਣ ਸਕਦੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>8. A trader told Pakhom something about the land of the Bashkirs. What was it?</strong></p>
+          <p class="punjabi-txt">ਇੱਕ ਵਪਾਰੀ ਨੇ ਪਾਖੋਮ ਨੂੰ ਬਸ਼ਕੀਰਾਂ ਦੀ ਜ਼ਮੀਨ ਬਾਰੇ ਕੁਝ ਦੱਸਿਆ। ਉਹ ਕੀ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The trader told Pakhom that he bought a lot of land from the Bashkirs for just 1,000 roubles. He said the Bashkirs were simple people. They would give land very cheaply if you gave them gifts.</p>
+          <p class="punjabi-txt">ਵਪਾਰੀ ਨੇ ਪਾਖੋਮ ਨੂੰ ਦੱਸਿਆ ਕਿ ਉਸ ਨੇ ਬਸ਼ਕੀਰਾਂ ਤੋਂ ਸਿਰਫ਼ 1,000 ਰੂਬਲ ਵਿੱਚ ਬਹੁਤ ਸਾਰੀ ਜ਼ਮੀਨ ਖਰੀਦੀ ਸੀ। ਉਸ ਨੇ ਕਿਹਾ ਕਿ ਬਸ਼ਕੀਰ ਸਿੱਧੇ-ਸਾਦੇ ਲੋਕ ਸਨ। ਜੇ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਤੋਹਫ਼ੇ ਦਿੰਦੇ, ਤਾਂ ਉਹ ਬਹੁਤ ਸਸਤੇ ਵਿੱਚ ਜ਼ਮੀਨ ਦੇ ਦਿੰਦੇ ਸਨ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>9. Who were the Bashkirs? How did Pakhom make friends with them?</strong></p>
+          <p class="punjabi-txt">ਬਸ਼ਕੀਰ ਕੌਣ ਸਨ? ਪਾਖੋਮ ਨੇ ਉਨ੍ਹਾਂ ਨਾਲ ਦੋਸਤੀ ਕਿਵੇਂ ਕੀਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The Bashkirs were simple people who lived in tents. Pakhom made friends with them by giving them gifts like clothes, tea, wine, and carpets.</p>
+          <p class="punjabi-txt">ਬਸ਼ਕੀਰ ਸਿੱਧੇ-ਸਾਦੇ ਲੋਕ ਸਨ ਜੋ ਤੰਬੂਆਂ ਵਿੱਚ ਰਹਿੰਦੇ ਸਨ। ਪਾਖੋਮ ਨੇ ਉਨ੍ਹਾਂ ਨੂੰ ਕੱਪੜੇ, ਚਾਹ, ਸ਼ਰਾਬ ਅਤੇ ਗਲੀਚਿਆਂ ਵਰਗੇ ਤੋਹਫ਼ੇ ਦੇ ਕੇ ਉਨ੍ਹਾਂ ਨਾਲ ਦੋਸਤੀ ਕੀਤੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>10. The Bashkirs wanted to repay Pakhom for his gifts. What did Pakhom want from them?</strong></p>
+          <p class="punjabi-txt">ਬਸ਼ਕੀਰ ਪਾਖੋਮ ਵੱਲੋਂ ਦਿੱਤੇ ਤੋਹਫ਼ਿਆਂ ਦਾ ਬਦਲਾ ਦੇਣਾ ਚਾਹੁੰਦੇ ਸਨ। ਪਾਖੋਮ ਉਨ੍ਹਾਂ ਤੋਂ ਕੀ ਚਾਹੁੰਦਾ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Pakhom wanted their land from them. It was for this purpose only that he had come there.</p>
+          <p class="punjabi-txt">ਪਾਖੋਮ ਉਨ੍ਹਾਂ ਤੋੰ ਉਨ੍ਹਾਂ ਦੀ ਜ਼ਮੀਨ ਚਾਹੁੰਦਾ ਸੀ। ਉਹ ਉੱਥੇ ਸਿਰਫ਼ ਇਸੇ ਮਕਸਦ ਲਈ ਆਇਆ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>11. “Our price is always the same: One thousand roubles a day,” the chief said. What did he mean?</strong></p>
+          <p class="punjabi-txt">ਮੁਖੀ ਨੇ ਕਿਹਾ, “ਸਾਡੀ ਕੀਮਤ ਹਮੇਸ਼ਾ ਇੱਕੋ ਜਿਹੀ ਹੁੰਦੀ ਹੈ: ਇੱਕ ਦਿਨ ਲਈ ਇੱਕ ਹਜ਼ਾਰ ਰੂਬਲ।” ਉਸ ਦਾ ਕੀ ਮਤਲਬ ਸੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> He meant that for 1,000 roubles, a person could buy as much land as he could walk around on foot in one single day.</p>
+          <p class="punjabi-txt">ਉਸ ਦਾ ਮਤਲਬ ਸੀ ਕਿ 1,000 ਰੂਬਲ ਦੇ ਕੇ ਇੱਕ ਵਿਅਕਤੀ ਉੱਨੀ ਜ਼ਮੀਨ ਖਰੀਦ ਸਕਦਾ ਸੀ, ਜਿੰਨੀ ਜ਼ਮੀਨ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਉਹ ਇੱਕੋ ਦਿਨ ਵਿੱਚ ਪੈਦਲ ਤੁਰ ਕੇ ਚੱਕਰ ਲਾ ਸਕਦਾ ਸੀ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>12. On what condition did the chief agree to sell land to Pakhom?</strong></p>
+          <p class="punjabi-txt">ਮੁਖੀ ਨੇ ਪਾਖੋਮ ਨੂੰ ਕਿਸ ਸ਼ਰਤ 'ਤੇ ਜ਼ਮੀਨ ਵੇਚਣ ਲਈ ਸਹਿਮਤੀ ਦਿੱਤੀ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The condition was that Pakhom had to return to his starting point before sunset on the same day; otherwise, he would lose his money.</p>
+          <p class="punjabi-txt">ਸ਼ਰਤ ਇਹ ਸੀ ਕਿ ਪਾਖੋਮ ਨੂੰ ਉਸੇ ਦਿਨ ਸੂਰਜ ਡੁੱਬਣ ਤੋਂ ਪਹਿਲਾਂ ਆਪਣੇ ਸ਼ੁਰੂਆਤੀ ਸਥਾਨ 'ਤੇ ਵਾਪਸ ਆਉਣਾ ਪਵੇਗਾ। ਨਹੀਂ ਤਾਂ ਉਹ ਆਪਣੇ ਪੈਸੇ ਗੁਆ ਬੈਠੇਗਾ।</p>
+        </div>
+
+        <div class="qa-block">
+          <p><strong>13. What is the moral of the story?</strong></p>
+          <p class="punjabi-txt">ਕਹਾਣੀ ਤੋਂ ਸਾਨੂੰ ਕੀ ਸਿੱਖਿਆ ਮਿਲਦੀ ਹੈ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> The moral of the story is that extreme greed leads to destruction. A person should be satisfied with what he has and should not be greedy for more. In the end, six feet of land was all he needed for his grave.</p>
+          <p class="punjabi-txt">ਕਹਾਣੀ ਦੀ ਸਿੱਖਿਆ ਇਹ ਹੈ ਕਿ ਬਹੁਤ ਜ਼ਿਆਦਾ ਲਾਲਚ ਤਬਾਹੀ ਵੱਲ ਲੈ ਜਾਂਦਾ ਹੈ। ਮਨੁੱਖ ਨੂੰ ਆਪਣੀ ਮੌਜੂਦਾ ਚੀਜ਼ਾਂ ਨਾਲ ਸੰਤੁਸ਼ਟ ਰਹਿਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਹੋਰ ਜ਼ਿਆਦਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਲਾਲਚ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ। ਅੰਤ ਵਿੱਚ, ਉਸ ਦੀ ਕਬਰ ਲਈ ਸਿਰਫ਼ ਛੇ ਫੁੱਟ ਜ਼ਮੀਨ ਹੀ ਕਾਫ਼ੀ ਸੀ।</p>
+        </div>
+
+        <h3>Objective Type Questions</h3>
+
+        <div class="qa-block">
+          <p>1. The two women discussing about village and town life were __________.</p>
+          <p>(i) friends &nbsp;&nbsp; (ii) sisters &nbsp;&nbsp; (iii) neighbours &nbsp;&nbsp; (iv) enemies.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) sisters</p>
+        </div>
+
+        <div class="qa-block">
+          <p>2. The Bashkirs had plenty of ____________.</p>
+          <p>(i) cattle &nbsp;&nbsp; (ii) money &nbsp;&nbsp; (iii) land &nbsp;&nbsp; (iv) gold.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (iii) land</p>
+        </div>
+
+        <div class="qa-block">
+          <p>3. How much land did Pakhom manage to buy from the estate owner ?</p>
+          <p class="ans-txt"><strong>Ans:</strong> Forty acres</p>
+        </div>
+
+        <div class="qa-block">
+          <p>4. Pakhom was a very ________ man.</p>
+          <p>(i) helpful &nbsp;&nbsp; (ii) greedy &nbsp;&nbsp; (iii) kind &nbsp;&nbsp; (iv) selfish.</p>
+          <p class="ans-txt"><strong>Ans:</strong> (ii) greedy</p>
+        </div>
+
+        <div class="qa-block">
+          <p>5. Pakhom was dead in the end. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>6. Pakhom borrowed some money from his brother-in-law. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
+        </div>
+
+        <div class="qa-block">
+          <p>7. Pakhom met a stranger who was a peasant. (True/False)</p>
+          <p class="ans-txt"><strong>Ans:</strong> True</p>
         </div>
       `
     };
